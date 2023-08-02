@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" skipfailedinvocationcounts="true">
+
+	<test
+		name="IADL0101 Meal Preparation Response: Select an option
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyMealPrepOption1" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="IADL0102 Meal Preparation Response: Independent - No help, setup, or supervision
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyMealPrepOption2" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="IADL0103 Meal Preparation Response: Setup help only
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyMealPrepOption3" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="IADL0104 Meal Preparation Response: Supervision - oversight/cueing
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyMealPrepOption4" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="IADL0105 Meal Preparation Response: Limited assistance - help on some occasions
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyMealPrepOption5" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="IADL0106 Meal Preparation Response: Extensive assistance - help throughout task, but performs 50% or more
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyMealPrepOption6" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="IADL0107 Meal Preparation Response: Maximal assistance - help throughout task, but performs less than 50%
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyMealPrepOption7" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="IADL0108 Meal Preparation Response: Total dependence - full performance by others during entire period
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyMealPrepOption8" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="IADL0109 Meal Preparation Response: Activity did not occur - during entire period
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyMealPrepOption9" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="IADL0201 Ordinary Housework Response: Select an option
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyOrdinaryHouseworkOption1" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="IADL0202 Ordinary Housework Response: Independent - No help, setup, or supervision
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyOrdinaryHouseworkOption2" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="IADL0203 Ordinary Housework Response: Setup help only
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyOrdinaryHouseworkOption3" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="IADL0204 Ordinary Housework Response: Supervision - oversight/cueing
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyOrdinaryHouseworkOption4" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="IADL0205 Ordinary Housework Response: Limited assistance - help on some occasions
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyOrdinaryHouseworkOption5" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="IADL0206 Ordinary Housework Response:Extensive assistance - help throughout task, but performs 50% or more
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyOrdinaryHouseworkOption6" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="IADL0207 Ordinary Housework Response: Maximal assistance - help throughout task, but performs less than 50%
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyOrdinaryHouseworkOption7" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="IADL0208 Ordinary Housework Response: Total dependence - full performance by others during entire period
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyOrdinaryHouseworkOption8" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="IADL0209 Ordinary Housework Response: Activity did not occur - during entire period
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyOrdinaryHouseworkOption9" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+	<test
+		name="IADL0301 Shopping Response: Select an option
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyShoppingOption1" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="IADL0302 Shopping Response: Independent - No help, setup, or supervision
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyShoppingOption2" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="IADL0303 Shopping Response: Setup help only
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyShoppingOption3" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="IADL0304 Shopping Response: Supervision - oversight/cueing
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyShoppingOption4" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="IADL0305 Shopping Response: Limited assistance - help on some occasions
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyShoppingOption5" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="IADL0306 Shopping Response: Extensive assistance - help throughout task, but performs 50% or more of task on own
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyShoppingOption6" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="IADL0307 Shopping Response: Maximal assistance - help throughout task, but performs less than 50% of task on own
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyShoppingOption7" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test
+		name="IADL0308 Shopping Response: Total dependence - full performance by others during entire period
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyShoppingOption8" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="IADL0309 Shopping Response: Activity did not occur - during entire period
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyShoppingOption9" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite> 
+

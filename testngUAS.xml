@@ -1,0 +1,1156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="classes" skipfailedinvocationcounts="true">
+	<test
+		name="UAS0101 Cognitive Skills Dropdown: Select an option">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyCognitiveSkillOption1" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="UAS0102 Cognitive Skills Dropdown: Independent - Decisions consistent, reasonable and safe 
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyCognitiveSkillOption2" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="UAS0103 Cognitive Skills Dropdown: Modified independence - Some difficulty in new situations only
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyCognitiveSkillOption3" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="UAS0104 Cognitive Skills Dropdown: Minimally impaired - In specific recurring situations, decisions become poor or unsafe; cues / supervision necessary at those times
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyCognitiveSkillOption4" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="UAS0105 Cognitive Skills Dropdown: Moderately impaired - Decisions consistently poor or unsafe; cues/supervision required at all times
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyCognitiveSkillOption5" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="UAS0106 Cognitive Skills Dropdown: Severely impaired - Never or rarely makes decisions
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyCognitiveSkillOption6" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="UAS0107 Cognitive Skills Dropdown: No discernable consciousness
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyCognitiveSkillOption7" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="UAS0201 Psychiatric Anxiety Dropdown: Select an option
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyPsychiatricAnxietyOption1" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="UAS0202 Psychiatric Anxiety Dropdown: Not Present
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyPsychiatricAnxietyOption2" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="UAS0203 Psychiatric Anxiety Dropdown: Primary diagnosis/diagnosis for stay/placement
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyPsychiatricAnxietyOption3" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="UAS0204 Psychiatric Anxiety Dropdown: Diagnosis present, receiving active treatment
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyPsychiatricAnxietyOption4" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="UAS0205 Psychiatric Anxiety Dropdown: Diagnosis present, monitored but no active treatment
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyPsychiatricAnxietyOption5" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="UAS0301 Wandering Dropdown: Select an option
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyWanderingOption1" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="UAS0302 Wandering Dropdown: Select: Not Present
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyWanderingOption2" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="UAS0303 Wandering Dropdown: Select: Present but not exhibited in last 3 days
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyWanderingOption3" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="UAS0304 Wandering Dropdown: Select: Exhibited on 1-2 days of last 3 days
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyWanderingOption4" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="UAS0305 Wandering Dropdown: Select: Exhibited daily in last 3 days
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyWanderingOption5" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="UAS0401 Psychiatric Depression Dropdown: Select an option
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyPsychiatricDepressionOption1" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="UAS0402 Psychiatric Depression Dropdown: Not Present
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyPsychiatricDepressionOption2" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="UAS0403 Psychiatric Depression Dropdown: Primary diagnosis/diagnosis for current stay
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyPsychiatricDepressionOption3" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="UAS0404 Psychiatric Depression Dropdown: Diagnosis present, receiving active treatment
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyPsychiatricDepressionOption4" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="UAS0405 Psychiatric Depression Dropdown: Diagnosis present, monitored but no active treatment
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyPsychiatricDepressionOption5" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="UAS0501 Verbal Abuse Dropdown: Select an option
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyVerbalAbuseOption1" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="UAS0502 Verbal Abuse Dropdown: Not Present
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyVerbalAbuseOption2" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="UAS0503 Verbal Abuse Dropdown: Present but not exhibited in last 3 days
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyVerbalAbuseOption3" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="UAS0504 Verbal Abuse Dropdown: Exhibited on 1-2 days of last 3 days
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyVerbalAbuseOption4" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="UAS0505 Verbal Abuse Dropdown: Exhibited daily in last 3 days
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyVerbalAbuseOption5" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="UAS0601 Psychiatric Schizophrenia Dropdown: Select an option
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyPsychiatricSchizophreniaOption1" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="UAS0602 Psychiatric Schizophrenia Dropdown: Not Present
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyPsychiatricSchizophreniaOption2" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="UAS0603 Psychiatric Schizophrenia Dropdown: Primary diagnosis/diagnosis for current stay
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyPsychiatricSchizophreniaOption3" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="UAS0604 Psychiatric Schizophrenia Dropdown: Diagnosis present, receiving active treatment
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyPsychiatricSchizophreniaOption4" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="UAS0605 Psychiatric Schizophrenia Dropdown: Diagnosis present, monitored but no active treatment
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyPsychiatricSchizophreniaOption5" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="UAS0701 Physical Abuse Dropdown: Select an option
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyPhysicalAbuseOption1" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="UAS0702 Physical Abuse Dropdown: Not Present
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyPhysicalAbuseOption2" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="UAS0703 Physical Abuse Dropdown: Present but not exhibited in last 3 days
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyPhysicalAbuseOption3" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="UAS0704 Physical Abuse Dropdown: Exhibited on 1-2 days of last 3 days
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyPhysicalAbuseOption4" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="UAS0705 Physical Abuse Dropdown: Exhibited daily in last 3 days
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyPhysicalAbuseOption5" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="UAS0801 Dyspnea Dropdown: Select an option
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyDyspneaOption1" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="UAS0802 Dyspnea Dropdown: Absence of symptom
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyDyspneaOption2" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="UAS0803 Dyspnea Dropdown: Absent at rest, but present when performed moderate activities
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyDyspneaOption3" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="UAS0804 Dyspnea Dropdown: Absent at rest, but present when performed normal day-to-day activities
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyDyspneaOption4" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="UAS0805 Dyspnea Dropdown: Present at rest
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyDyspneaOption5" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="UAS0901 Socially inappropriate or disruptive behavior Dropdown: Select an option
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifySIDBoption1" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="UAS0902 Socially inappropriate or disruptive behavior Dropdown: Not Present
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifySIDBoption2" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="UAS0903 Socially inappropriate or disruptive behavior Dropdown: Present but not exhibited in last 3 days
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifySIDBoption3" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="UAS0904 Socially inappropriate or disruptive behavior Dropdown: Exhibited on 1-2 days of last 3 days
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifySIDBoption4" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="UAS0905 Socially inappropriate or disruptive behavior Dropdown: Exhibited daily in last 3 days
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifySIDBoption5" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="UAS1001 Fatige Dropdown: Select an option
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyFatigueOption1" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="UAS1002 Fatige Dropdown: None
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyFatigueOption2" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="UAS1003 Fatige Dropdown: Minimal - Diminished energy but completes normal day-to-day activities
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyFatigueOption3" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="UAS1004 Fatige Dropdown: Moderate - Due to diminished energy, UNABLE TO FINISH normal day-to-day activities
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyFatigueOption4" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="UAS1005 Fatige Dropdown: Severe - Due to diminished energy, UNABLE TO START SOME normal day-to-day activities
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyFatigueOption5" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="UAS1006 Fatige Dropdown: Unable to commence any normal day-to-day activities - Due to diminished energy
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyFatigueOption6" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="UAS1101 IPSBPD Dropdown: Select an option
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyIPSBPDoption1" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="UAS1102 IPSBPD Dropdown: Not Present
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyIPSBPDoption2" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="UAS1103 IPSBPD Dropdown: Present but not exhibited in last 3 days
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyIPSBPDoption3" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="UAS1104 IPSBPD Dropdown: Exhibited on 1-2 days of last 3 days
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyIPSBPDoption4" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="UAS1105 IPSBPD Dropdown: Exhibited daily in last 3 days
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyIPSBPDoption5" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="UAS1201 Pain Dropdown: Select an option
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyPainOption1" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="UAS1202 Pain Dropdown: No issue of pain
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyPainOption2" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="UAS1203 Pain Dropdown: Controlled adequately by therapeutic regimen
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyPainOption3" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="UAS1204 Pain Dropdown: Controlled when therapeutic regimen followed, but not always followed as ordered
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyPainOption4" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="UAS1205 Pain Dropdown: Therapeutic regimen followed, but pain control not adequate
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyPainOption5" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="UAS1206 Pain Dropdown: No therapeutic regimen being followed for pain; pain not adequately controlled
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyPainOption6" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="UAS1301 Resist Care Dropdown: Select an option
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyResistCareOption1" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test
+		name="UAS1302 Resist Care Dropdown: Not Present
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyResistCareOption2" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="UAS1303 Resist Care Dropdown: Present but not exhibited in last 3 days
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyResistCareOption3" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="UAS1304 Select: Exhibited on 1-2 days of last 3 days
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyResistCareOption4" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="UAS1305 Resist Care Dropdown: Exhibited daily in last 3 days
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyResistCareOption5" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite> 
+
