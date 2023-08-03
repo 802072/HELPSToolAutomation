@@ -63,16 +63,8 @@ public class BaseTestDD {
 
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
-//	@BeforeTest
-//	public void setup(ITestContext context) throws IOException, InterruptedException {
 
 		extentTest = extentReports.createTest(context.getName());
-//		WebDriverManager.chromedriver().setup();
-//		driver = new ChromeDriver();
-//		
-//		driver.manage().window().maximize();
-//		
-//		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
 		// LOGIN
 		// open login page
@@ -92,21 +84,8 @@ public class BaseTestDD {
 		extentTest.log(Status.PASS, log2,
 				MediaEntityBuilder.createScreenCaptureFromPath(captureScreenshot(log2 + ".jpg")).build());
 
-//		try {
-//			ArrayList LI003A = d.getData("LI003A", "beforeTest");
-//			WebElement useAnotherAcc = driver.findElement(By.xpath((String) LI003A.get(5)));
-//			if (useAnotherAcc.isDisplayed()) {
-//
-//				// Click Use Another Account
-//				useAnotherAcc.click();
-//				String log3A = (String) LI003A.get(0) + " " + LI003A.get(1);
-//				extentTest.log(Status.PASS, log3A,
-//						MediaEntityBuilder.createScreenCaptureFromPath(captureScreenshot(log3A + ".jpg")).build());
-//			}
-//		} catch (Exception e) {
-//		}
-
 		// enter username
+		Thread.sleep(3000);
 		ArrayList LI003 = d.getData("LI003", "beforeTest");
 		WebElement userName = driver.findElement(By.xpath((String) LI003.get(5)));
 		userName.sendKeys((String) LI003.get(6));
@@ -153,6 +132,8 @@ public class BaseTestDD {
 		extentTest.log(Status.PASS, log7,
 				MediaEntityBuilder.createScreenCaptureFromPath(captureScreenshot(log7 + ".jpg")).build());
 
+		
+		//UPLOAD FILE
 		ArrayList file1 = d.getData("File1", "beforeTest");
 		String fileName = (String) file1.get(1);
 		String path = (String) file1.get(2);
@@ -221,15 +202,20 @@ public class BaseTestDD {
 	@BeforeSuite
 	public void initialiseExtentReports() {
 
+		//ALL
 //		ExtentSparkReporter sparkReporter_all = new ExtentSparkReporter("HelpsToolDropdown.html");
 //		sparkReporter_all.config().setReportName("Helps Tool: Verify Dropdown Option Values");
-//		ExtentSparkReporter sparkReporter_all = new ExtentSparkReporter("HelpsToolUASDropdown.html");
-//		sparkReporter_all.config().setReportName("Helps Tool: Verify UAS Assessment Details Dropdown Option Values");
+		
+		//UAS
+		ExtentSparkReporter sparkReporter_all = new ExtentSparkReporter("HelpsToolUASDropdown.html");
+		sparkReporter_all.config().setReportName("Helps Tool: Verify UAS Assessment Details Dropdown Option Values");
 
-		ExtentSparkReporter sparkReporter_all = new ExtentSparkReporter("HelpsToolIADLDropdown.html");
-		sparkReporter_all.config().setReportName("Helps Tool: Verify IADL - Capacity Dropdown Option Values");
-		// ExtentSparkReporter sparkReporter_all = new
-		// ExtentSparkReporter("HelpsADLDropdown.html");
+		//IADL
+//		ExtentSparkReporter sparkReporter_all = new ExtentSparkReporter("HelpsToolIADLDropdown.html");
+//		sparkReporter_all.config().setReportName("Helps Tool: Verify IADL - Capacity Dropdown Option Values");
+		
+		//ADL
+// 		ExtentSparkReporter sparkReporter_all = new ExtentSparkReporter("HelpsADLDropdown.html");
 //		sparkReporter_all.config().setReportName("Helps Tool: Verify ADL - Self Performance Option Values");	
 		extentReports = new ExtentReports();
 		extentReports.attachReporter(sparkReporter_all);
@@ -254,8 +240,21 @@ public class BaseTestDD {
 			extentTest.fail(m.getName() + " has failed");
 			extentTest.log(Status.FAIL, result.getThrowable(),
 					MediaEntityBuilder.createScreenCaptureFromPath(screenshotpath).build());
-		} else if (result.getStatus() == ITestResult.SUCCESS) {
+			
+		} 
+		if (result.getStatus() == ITestResult.SKIP) {
 
+			String screenshotpath = null;
+			screenshotpath = captureScreenshot("skipTest.jpg");
+			extentTest.skip(m.getName() + " has skipped");
+			extentTest.log(Status.SKIP, result.getThrowable(),
+					MediaEntityBuilder.createScreenCaptureFromPath(screenshotpath).build());
+			
+		}
+		
+		
+		else if (result.getStatus() == ITestResult.SUCCESS) {
+			extentTest.pass(m.getName() + " has passed");
 		}
 
 		extentTest.assignCategory(m.getAnnotation(Test.class).groups());
@@ -277,71 +276,6 @@ public class BaseTestDD {
 		} catch (IOException e) {
 			throw new UnableSaveSnapshotException(e);
 		}
-	}
-
-	@SuppressWarnings("rawtypes")
-	public void uploadAndSubmitFile(String fileName, String path)
-			throws InterruptedException, IOException, AWTException {
-//		// Click Import HCS Assessment
-//		ArrayList UF001 = d.getData("UF001", "beforeTest");
-//		WebElement importBtn = driver.findElement(By.xpath((String) UF001.get(5)));
-//		String log8 = (String) UF001.get(0) + " " + UF001.get(1);
-//		extentTest.log(Status.PASS, log8,
-//				MediaEntityBuilder.createScreenCaptureFromPath(captureScreenshot(log8 + fileName + ".jpg")).build());
-//		importBtn.click();
-//		Thread.sleep(5000);
-//
-//		// Click Choose File
-//		ArrayList UF002 = d.getData("UF002", "beforeTest");
-//		// String fileName = (String) UF002.get(6);
-//		WebElement chooseFileBtn = driver.findElement(By.xpath((String) UF002.get(5)));
-//		String log9 = (String) UF002.get(0) + " " + UF002.get(1);
-//		extentTest.log(Status.PASS, (String) UF002.get(0) + " Choose File: " + fileName,
-//				MediaEntityBuilder.createScreenCaptureFromPath(captureScreenshot(log9 + fileName + ".jpg")).build());
-//
-//		// log Upload File
-//		ArrayList UF003 = d.getData("UF003", "beforeTest");
-//		// String path= (String) UF003.get(6);
-//		String log10 = (String) UF003.get(0) + " " + UF003.get(1);
-//		extentTest.log(Status.PASS, (String) UF003.get(0) + " " + UF003.get(1) + " " + fileName,
-//				MediaEntityBuilder.createScreenCaptureFromPath(captureScreenshot(log10 + fileName + ".jpg")).build());
-//
-//		Actions builder = new Actions(driver);
-//		builder.moveToElement(chooseFileBtn).click().build().perform();
-//
-//		// Upload Function
-//		Thread.sleep(5000);
-//		Robot rb = new Robot();
-//		StringSelection str = new StringSelection(path);
-//		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(str, null);
-//		Thread.sleep(5000);
-//
-//		// press Contol+V for pasting
-//		rb.keyPress(KeyEvent.VK_CONTROL);
-//		rb.keyPress(KeyEvent.VK_V);
-//		Thread.sleep(2000);
-//
-//		// release Contol+V for pasting
-//		rb.keyRelease(KeyEvent.VK_CONTROL);
-//		rb.keyRelease(KeyEvent.VK_V);
-//		Thread.sleep(2000);
-//
-//		// for pressing and releasing Enter
-//		rb.keyPress(KeyEvent.VK_ENTER);
-//		rb.keyRelease(KeyEvent.VK_ENTER);
-//
-//		Thread.sleep(5000);
-//
-//		// Click Submit File
-//		ArrayList UF004 = d.getData("UF004", "beforeTest");
-//		WebElement submitBtn = driver.findElement(By.xpath((String) UF004.get(5)));
-//		submitBtn.click();
-//		String log11 = (String) UF004.get(0) + " " + UF004.get(1);
-//		extentTest.log(Status.PASS, (String) UF004.get(0) + " Submit File: " + fileName,
-//				MediaEntityBuilder.createScreenCaptureFromPath(captureScreenshot(log11 + fileName + ".jpg")).build());
-//
-//		Thread.sleep(5000);
-
 	}
 
 	public void selectOptionAndTakeScreenshot(String rowName) throws IOException, InterruptedException {
@@ -438,9 +372,4 @@ public class BaseTestDD {
 				MediaEntityBuilder.createScreenCaptureFromPath(captureScreenshot("AT008" + ssID + ".jpg")).build());
 	}
 
-//	@AfterTest
-//	public void close() throws IOException, InterruptedException {
-//
-//		driver.quit();
-//	}
 }
