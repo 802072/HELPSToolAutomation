@@ -95,7 +95,39 @@ public class BaseTestDD {
 
 		extentTest = extentReports.createTest(context.getName());
 
-		// LOGIN
+	}
+
+	@AfterMethod
+	public void checkStatus(Method m, ITestResult result) throws IOException {
+		if (result.getStatus() == ITestResult.FAILURE) {
+
+			String screenshotpath = null;
+			screenshotpath = captureScreenshot("failTest.jpg");
+			extentTest.fail(m.getName() + " has failed");
+			extentTest.log(Status.FAIL, result.getThrowable(),
+					MediaEntityBuilder.createScreenCaptureFromPath(screenshotpath).build());
+
+		}
+		if (result.getStatus() == ITestResult.SKIP) {
+
+			String screenshotpath = null;
+			screenshotpath = captureScreenshot("skipTest.jpg");
+			extentTest.skip(m.getName() + " has skipped");
+			extentTest.log(Status.SKIP, result.getThrowable(),
+					MediaEntityBuilder.createScreenCaptureFromPath(screenshotpath).build());
+
+		}
+
+		else if (result.getStatus() == ITestResult.SUCCESS) {
+			extentTest.pass(m.getName() + " has passed");
+		}
+
+		extentTest.assignCategory(m.getAnnotation(Test.class).groups());
+		driver.quit();
+	}
+
+	// LOGIN
+	public void login() throws IOException, InterruptedException {
 		// Open Login Page
 		ArrayList LI001 = d.getData("LI001", "beforeTest");
 		driver.get((String) LI001.get(6));
@@ -158,7 +190,10 @@ public class BaseTestDD {
 		String log7 = (String) LI007.get(0) + " " + LI007.get(1);
 		extentTest.log(Status.PASS, log7,
 				MediaEntityBuilder.createScreenCaptureFromPath(captureScreenshot(log7 + ".jpg")).build());
+	}
 
+	// UPLOAD FILE
+	public void uploadFile() throws IOException, InterruptedException, AWTException {
 		// UPLOAD FILE
 		ArrayList file1 = d.getData("File1", "beforeTest");
 		String fileName = (String) file1.get(1);
@@ -226,35 +261,6 @@ public class BaseTestDD {
 
 	}
 
-	@AfterMethod
-	public void checkStatus(Method m, ITestResult result) throws IOException {
-		if (result.getStatus() == ITestResult.FAILURE) {
-
-			String screenshotpath = null;
-			screenshotpath = captureScreenshot("failTest.jpg");
-			extentTest.fail(m.getName() + " has failed");
-			extentTest.log(Status.FAIL, result.getThrowable(),
-					MediaEntityBuilder.createScreenCaptureFromPath(screenshotpath).build());
-
-		}
-		if (result.getStatus() == ITestResult.SKIP) {
-
-			String screenshotpath = null;
-			screenshotpath = captureScreenshot("skipTest.jpg");
-			extentTest.skip(m.getName() + " has skipped");
-			extentTest.log(Status.SKIP, result.getThrowable(),
-					MediaEntityBuilder.createScreenCaptureFromPath(screenshotpath).build());
-
-		}
-
-		else if (result.getStatus() == ITestResult.SUCCESS) {
-			extentTest.pass(m.getName() + " has passed");
-		}
-
-		extentTest.assignCategory(m.getAnnotation(Test.class).groups());
-		driver.quit();
-	}
-
 	public String captureScreenshot(String screenShotName) throws IOException {
 		// Shutterbug Working Code
 		Files.createDirectories(Paths.get(System.getProperty("user.dir") + "/screenshots/"));
@@ -272,15 +278,6 @@ public class BaseTestDD {
 		}
 	}
 
-	public void selectOption(String rowName) throws IOException, InterruptedException {
-		ArrayList<String> list = d.getData(rowName, "TC01");
-		WebElement selectOption = driver.findElement(By.xpath((String) list.get(7)));
-		selectOption.click();
-		Thread.sleep(3000);
-		extentTest.log(Status.PASS, (String) list.get(3),
-				MediaEntityBuilder.createScreenCaptureFromPath(captureScreenshot(rowName + ".jpg")).build());
-	}
-
 	public void clickDropdown(String rowNameDD) throws IOException, InterruptedException {
 		// Click dropdown
 		ArrayList<String> listDD = d.getData(rowNameDD, "TC01");
@@ -292,16 +289,25 @@ public class BaseTestDD {
 				.createScreenCaptureFromPath(captureScreenshot((String) listDD.get(0) + ".jpg")).build());
 	}
 
+	public void selectOption(String rowName) throws IOException, InterruptedException {
+		ArrayList<String> list = d.getData(rowName, "TC01");
+		WebElement selectOption = driver.findElement(By.xpath((String) list.get(7)));
+		selectOption.click();
+		Thread.sleep(3000);
+		extentTest.log(Status.PASS, (String) list.get(3),
+				MediaEntityBuilder.createScreenCaptureFromPath(captureScreenshot(rowName + ".jpg")).build());
+	}
+
 	public void signatureAndLogout(String sheetName, String ssID) throws InterruptedException, IOException {
-		
-		//Click Final Recommendation Menu
+
+		// Click Final Recommendation Menu
 		ArrayList AT001 = d.getData("AT001", sheetName);
 		WebElement finalRecMenu = driver.findElement(By.xpath((String) AT001.get(6)));
 		finalRecMenu.click();
 		extentTest.log(Status.PASS, (String) AT001.get(2),
 				MediaEntityBuilder.createScreenCaptureFromPath(captureScreenshot("Final Rec" + ssID + ".jpg")).build());
 		Thread.sleep(3000);
-		
+
 		// Add a Signature into the Nurse Signature Box
 		ArrayList AT002 = d.getData("AT002", sheetName);
 		WebElement canvas = driver.findElement(By.xpath((String) AT002.get(6)));

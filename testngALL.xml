@@ -2056,7 +2056,7 @@
 			<class
 				name="dropDownTest.DropdownTest">
 				<methods>
-					<include name="verifyDressingLBodyOption1" />
+					<include name="verifyDressingLbodyOption1" />
 				</methods>
 			</class>
 		</classes>
@@ -2073,7 +2073,7 @@
 			<class
 				name="dropDownTest.DropdownTest">
 				<methods>
-					<include name="verifyDressingLBodyOption2" />
+					<include name="verifyDressingLbodyOption2" />
 				</methods>
 			</class>
 		</classes>
@@ -2089,7 +2089,7 @@
 			<class
 				name="dropDownTest.DropdownTest">
 				<methods>
-					<include name="verifyDressingLBodyOption3" />
+					<include name="verifyDressingLbodyOption3" />
 				</methods>
 			</class>
 		</classes>
@@ -2105,7 +2105,7 @@
 			<class
 				name="dropDownTest.DropdownTest">
 				<methods>
-					<include name="verifyDressingLBodyOption4" />
+					<include name="verifyDressingLbodyOption4" />
 				</methods>
 			</class>
 		</classes>
@@ -2121,7 +2121,7 @@
 			<class
 				name="dropDownTest.DropdownTest">
 				<methods>
-					<include name="verifyDressingLBodyOption5" />
+					<include name="verifyDressingLbodyOption5" />
 				</methods>
 			</class>
 		</classes>
@@ -2137,7 +2137,7 @@
 			<class
 				name="dropDownTest.DropdownTest">
 				<methods>
-					<include name="verifyDressingLBodyOption6" />
+					<include name="verifyDressingLbodyOption6" />
 				</methods>
 			</class>
 		</classes>
@@ -2153,7 +2153,7 @@
 			<class
 				name="dropDownTest.DropdownTest">
 				<methods>
-					<include name="verifyDressingLBodyOption7" />
+					<include name="verifyDressingLbodyOption7" />
 				</methods>
 			</class>
 		</classes>
@@ -2169,7 +2169,7 @@
 			<class
 				name="dropDownTest.DropdownTest">
 				<methods>
-					<include name="verifyDressingLBodyOption8" />
+					<include name="verifyDressingLbodyOption8" />
 				</methods>
 			</class>
 		</classes>
@@ -2185,7 +2185,7 @@
 			<class
 				name="dropDownTest.DropdownTest">
 				<methods>
-					<include name="verifyDressingLBodyOption9" />
+					<include name="verifyDressingLbodyOption9" />
 				</methods>
 			</class>
 		</classes>
