@@ -63,7 +63,6 @@ public class BaseTestDD {
 
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
-
 		extentTest = extentReports.createTest(context.getName());
 
 		// LOGIN
@@ -132,8 +131,7 @@ public class BaseTestDD {
 		extentTest.log(Status.PASS, log7,
 				MediaEntityBuilder.createScreenCaptureFromPath(captureScreenshot(log7 + ".jpg")).build());
 
-		
-		//UPLOAD FILE
+		// UPLOAD FILE
 		ArrayList file1 = d.getData("File1", "beforeTest");
 		String fileName = (String) file1.get(1);
 		String path = (String) file1.get(2);
@@ -202,19 +200,19 @@ public class BaseTestDD {
 	@BeforeSuite
 	public void initialiseExtentReports() {
 
-		//ALL
+		// ALL
 //		ExtentSparkReporter sparkReporter_all = new ExtentSparkReporter("HelpsToolDropdown.html");
 //		sparkReporter_all.config().setReportName("Helps Tool: Verify Dropdown Option Values");
-		
-		//UAS
+
+		// UAS
 		ExtentSparkReporter sparkReporter_all = new ExtentSparkReporter("HelpsToolUASDropdown.html");
 		sparkReporter_all.config().setReportName("Helps Tool: Verify UAS Assessment Details Dropdown Option Values");
 
-		//IADL
+		// IADL
 //		ExtentSparkReporter sparkReporter_all = new ExtentSparkReporter("HelpsToolIADLDropdown.html");
 //		sparkReporter_all.config().setReportName("Helps Tool: Verify IADL - Capacity Dropdown Option Values");
-		
-		//ADL
+
+		// ADL
 // 		ExtentSparkReporter sparkReporter_all = new ExtentSparkReporter("HelpsADLDropdown.html");
 //		sparkReporter_all.config().setReportName("Helps Tool: Verify ADL - Self Performance Option Values");	
 		extentReports = new ExtentReports();
@@ -240,8 +238,8 @@ public class BaseTestDD {
 			extentTest.fail(m.getName() + " has failed");
 			extentTest.log(Status.FAIL, result.getThrowable(),
 					MediaEntityBuilder.createScreenCaptureFromPath(screenshotpath).build());
-			
-		} 
+
+		}
 		if (result.getStatus() == ITestResult.SKIP) {
 
 			String screenshotpath = null;
@@ -249,10 +247,9 @@ public class BaseTestDD {
 			extentTest.skip(m.getName() + " has skipped");
 			extentTest.log(Status.SKIP, result.getThrowable(),
 					MediaEntityBuilder.createScreenCaptureFromPath(screenshotpath).build());
-			
+
 		}
-		
-		
+
 		else if (result.getStatus() == ITestResult.SUCCESS) {
 			extentTest.pass(m.getName() + " has passed");
 		}

@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite" parallel="classes" skipfailedinvocationcounts="true">
+	<listeners>
+		<listener class-name="ListenerImp.AnnotationListener"></listener>
+	</listeners>
 	<test
 		name="UAS0101 Cognitive Skills Dropdown: Select an option">
 		<parameter
@@ -1087,7 +1090,7 @@
 			</class>
 		</classes>
 	</test>
-	
+
 	<test
 		name="UAS1302 Resist Care Dropdown: Not Present
 ">
@@ -1152,7 +1155,7 @@
 			</class>
 		</classes>
 	</test>
-	
+
 	<test
 		name="IADL0101 Meal Preparation Response: Select an option
 ">
@@ -1569,7 +1572,7 @@
 			</class>
 		</classes>
 	</test>
-	
+
 	<test
 		name="IADL0308 Shopping Response: Total dependence - full performance by others during entire period
 ">
@@ -1602,10 +1605,9 @@
 			</class>
 		</classes>
 	</test>
-	
-	
-	
-		<test
+
+
+	<test
 		name="ADL0101 Bathing Response: Select an option
 ">
 		<parameter
@@ -1750,7 +1752,7 @@
 			</class>
 		</classes>
 	</test>
-	
+
 	<test
 		name="ADL0201 Personal Hygiene Response: Select an option
 ">

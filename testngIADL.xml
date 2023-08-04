@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite" skipfailedinvocationcounts="true">
-
+	<listeners>
+		<listener class-name="ListenerImp.AnnotationListener"></listener>
+	</listeners>
 	<test
 		name="IADL0101 Meal Preparation Response: Select an option
 ">
@@ -418,7 +420,7 @@
 			</class>
 		</classes>
 	</test>
-	
+
 	<test
 		name="IADL0308 Shopping Response: Total dependence - full performance by others during entire period
 ">
