@@ -54,11 +54,41 @@ public class BaseTestDD {
 
 	DataDrivenHT d = new DataDrivenHT();
 
+	@BeforeSuite
+	public void initialiseExtentReports() {
+		// ALL
+		ExtentSparkReporter sparkReporter_all = new ExtentSparkReporter("HelpsToolDropdown.html");
+		sparkReporter_all.config().setReportName("Helps Tool: Verify Dropdown Option Values");
+
+		// UAS
+//		ExtentSparkReporter sparkReporter_all = new ExtentSparkReporter("HelpsToolUASDropdown.html");
+//		sparkReporter_all.config().setReportName("Helps Tool: Verify UAS Assessment Details Dropdown Option Values");
+
+		// IADL
+//		ExtentSparkReporter sparkReporter_all = new ExtentSparkReporter("HelpsToolIADLDropdown.html");
+//		sparkReporter_all.config().setReportName("Helps Tool: Verify IADL - Capacity Dropdown Option Values");
+
+		// ADL
+// 		ExtentSparkReporter sparkReporter_all = new ExtentSparkReporter("HelpsADLDropdown.html");
+//		sparkReporter_all.config().setReportName("Helps Tool: Verify ADL - Self Performance Option Values");	
+		extentReports = new ExtentReports();
+		extentReports.attachReporter(sparkReporter_all);
+
+		extentReports.setSystemInfo("OS", System.getProperty("os.name"));
+		extentReports.setSystemInfo("Java Version", System.getProperty("java.version"));
+		extentReports.setSystemInfo("Environment", "Test Environment");
+		// extentReports.setSystemInfo("Environment", "Production Environment");
+	}
+
+	@AfterSuite
+	public void generateExtentReports() throws Exception {
+		extentReports.flush();
+	}
+
 	@BeforeMethod
 	public void intiDriver(ITestContext context) throws IOException, InterruptedException, AWTException {
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
-
 		driver.manage().window().maximize();
 
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -66,7 +96,7 @@ public class BaseTestDD {
 		extentTest = extentReports.createTest(context.getName());
 
 		// LOGIN
-		// open login page
+		// Open Login Page
 		ArrayList LI001 = d.getData("LI001", "beforeTest");
 		driver.get((String) LI001.get(6));
 		Thread.sleep(3000);
@@ -83,7 +113,7 @@ public class BaseTestDD {
 		extentTest.log(Status.PASS, log2,
 				MediaEntityBuilder.createScreenCaptureFromPath(captureScreenshot(log2 + ".jpg")).build());
 
-		// enter username
+		// Enter Username
 		Thread.sleep(3000);
 		ArrayList LI003 = d.getData("LI003", "beforeTest");
 		WebElement userName = driver.findElement(By.xpath((String) LI003.get(5)));
@@ -92,7 +122,7 @@ public class BaseTestDD {
 		extentTest.log(Status.PASS, log3,
 				MediaEntityBuilder.createScreenCaptureFromPath(captureScreenshot(log3 + ".jpg")).build());
 
-		// click Next
+		// Click Next
 		ArrayList LI004 = d.getData("LI004", "beforeTest");
 		WebElement next = driver.findElement(By.xpath((String) LI004.get(5)));
 		next.click();
@@ -101,7 +131,7 @@ public class BaseTestDD {
 				MediaEntityBuilder.createScreenCaptureFromPath(captureScreenshot(log4 + ".jpg")).build());
 
 		Thread.sleep(5000);
-		// enter password
+		// Enter Password
 		ArrayList LI005 = d.getData("LI005", "beforeTest");
 		WebElement pwd = driver.findElement(By.xpath((String) LI005.get(5)));
 		pwd.sendKeys((String) LI005.get(6));
@@ -109,9 +139,7 @@ public class BaseTestDD {
 		extentTest.log(Status.PASS, log5,
 				MediaEntityBuilder.createScreenCaptureFromPath(captureScreenshot(log5 + ".jpg")).build());
 
-		// driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-
-		// click Signin
+		// Click Signin
 		ArrayList LI006 = d.getData("LI006", "beforeTest");
 		WebElement signIn = driver.findElement(By.xpath((String) LI006.get(5)));
 		((JavascriptExecutor) driver).executeScript("arguments[0].click();", signIn);
@@ -135,6 +163,7 @@ public class BaseTestDD {
 		ArrayList file1 = d.getData("File1", "beforeTest");
 		String fileName = (String) file1.get(1);
 		String path = (String) file1.get(2);
+
 		// Click Import HCS Assessment
 		ArrayList UF001 = d.getData("UF001", "beforeTest");
 		WebElement importBtn = driver.findElement(By.xpath((String) UF001.get(5)));
@@ -152,7 +181,7 @@ public class BaseTestDD {
 		extentTest.log(Status.PASS, (String) UF002.get(0) + " Choose File: " + fileName,
 				MediaEntityBuilder.createScreenCaptureFromPath(captureScreenshot(log9 + fileName + ".jpg")).build());
 
-		// log Upload File
+		// Log Upload File
 		ArrayList UF003 = d.getData("UF003", "beforeTest");
 		// String path= (String) UF003.get(6);
 		String log10 = (String) UF003.get(0) + " " + UF003.get(1);
@@ -195,38 +224,6 @@ public class BaseTestDD {
 
 		Thread.sleep(5000);
 
-	}
-
-	@BeforeSuite
-	public void initialiseExtentReports() {
-
-		// ALL
-//		ExtentSparkReporter sparkReporter_all = new ExtentSparkReporter("HelpsToolDropdown.html");
-//		sparkReporter_all.config().setReportName("Helps Tool: Verify Dropdown Option Values");
-
-		// UAS
-		ExtentSparkReporter sparkReporter_all = new ExtentSparkReporter("HelpsToolUASDropdown.html");
-		sparkReporter_all.config().setReportName("Helps Tool: Verify UAS Assessment Details Dropdown Option Values");
-
-		// IADL
-//		ExtentSparkReporter sparkReporter_all = new ExtentSparkReporter("HelpsToolIADLDropdown.html");
-//		sparkReporter_all.config().setReportName("Helps Tool: Verify IADL - Capacity Dropdown Option Values");
-
-		// ADL
-// 		ExtentSparkReporter sparkReporter_all = new ExtentSparkReporter("HelpsADLDropdown.html");
-//		sparkReporter_all.config().setReportName("Helps Tool: Verify ADL - Self Performance Option Values");	
-		extentReports = new ExtentReports();
-		extentReports.attachReporter(sparkReporter_all);
-
-		extentReports.setSystemInfo("OS", System.getProperty("os.name"));
-		extentReports.setSystemInfo("Java Version", System.getProperty("java.version"));
-		extentReports.setSystemInfo("Environment", "Test Environment");
-		// extentReports.setSystemInfo("Environment", "Production Environment");
-	}
-
-	@AfterSuite
-	public void generateExtentReports() throws Exception {
-		extentReports.flush();
 	}
 
 	@AfterMethod
@@ -275,7 +272,7 @@ public class BaseTestDD {
 		}
 	}
 
-	public void selectOptionAndTakeScreenshot(String rowName) throws IOException, InterruptedException {
+	public void selectOption(String rowName) throws IOException, InterruptedException {
 		ArrayList<String> list = d.getData(rowName, "TC01");
 		WebElement selectOption = driver.findElement(By.xpath((String) list.get(7)));
 		selectOption.click();
@@ -295,78 +292,83 @@ public class BaseTestDD {
 				.createScreenCaptureFromPath(captureScreenshot((String) listDD.get(0) + ".jpg")).build());
 	}
 
-	public void signAndLogout(String sheetName, String ssID) throws InterruptedException, IOException {
-		driver.findElement(By.xpath("//a[contains(text(), 'Final Recommendation ')]")).click();
-		extentTest.log(Status.PASS, "Click Final Recommendation",
+	public void signatureAndLogout(String sheetName, String ssID) throws InterruptedException, IOException {
+		
+		//Click Final Recommendation Menu
+		ArrayList AT001 = d.getData("AT001", sheetName);
+		WebElement finalRecMenu = driver.findElement(By.xpath((String) AT001.get(6)));
+		finalRecMenu.click();
+		extentTest.log(Status.PASS, (String) AT001.get(2),
 				MediaEntityBuilder.createScreenCaptureFromPath(captureScreenshot("Final Rec" + ssID + ".jpg")).build());
 		Thread.sleep(3000);
+		
 		// Add a Signature into the Nurse Signature Box
-		ArrayList AT001 = d.getData("AT001", sheetName);
-		WebElement canvas = driver.findElement(By.xpath((String) AT001.get(6)));
+		ArrayList AT002 = d.getData("AT002", sheetName);
+		WebElement canvas = driver.findElement(By.xpath((String) AT002.get(6)));
 		Actions builder = new Actions(driver);
 		Action signature = builder.moveToElement(canvas).clickAndHold().moveByOffset(200, 50).moveByOffset(10, 0)
 				.click().build();
 		signature.perform();
-		extentTest.log(Status.PASS, (String) AT001.get(2),
-				MediaEntityBuilder.createScreenCaptureFromPath(captureScreenshot("AT001" + ssID + ".jpg")).build());
-
-		// Click Accept Signature Button
-		ArrayList AT002 = d.getData("AT002", sheetName);
-		WebElement acceptSign = driver.findElement(By.xpath((String) AT002.get(6)));
-		acceptSign.click();
 		extentTest.log(Status.PASS, (String) AT002.get(2),
 				MediaEntityBuilder.createScreenCaptureFromPath(captureScreenshot("AT002" + ssID + ".jpg")).build());
 
+		// Click Accept Signature Button
+		ArrayList AT003 = d.getData("AT003", sheetName);
+		WebElement acceptSign = driver.findElement(By.xpath((String) AT003.get(6)));
+		acceptSign.click();
+		extentTest.log(Status.PASS, (String) AT003.get(2),
+				MediaEntityBuilder.createScreenCaptureFromPath(captureScreenshot("AT003" + ssID + ".jpg")).build());
+
 //		// Click Clear Signature Button
-//		ArrayList AT003 = d.getData("AT003", sheetName);
-//		WebElement clearSign = driver.findElement(By.xpath((String) AT003.get(6)));
+//		ArrayList AT004 = d.getData("AT004", sheetName);
+//		WebElement clearSign = driver.findElement(By.xpath((String) AT004.get(6)));
 //		clearSign.click();
 //		Thread.sleep(5000);
-//		extentTest.log(Status.PASS, (String) AT003.get(2),
-//				MediaEntityBuilder.createScreenCaptureFromPath(captureScreenshot("AT003" + ssID + ".jpg")).build());
+//		extentTest.log(Status.PASS, (String) AT004.get(2),
+//				MediaEntityBuilder.createScreenCaptureFromPath(captureScreenshot("AT004" + ssID + ".jpg")).build());
 //
 //		// Add a Signature into the Nurse Signature Box
-//		ArrayList AT004 = d.getData("AT004", sheetName);
-//		// WebElement canvas1 = driver.findElement(By.xpath((String) AT004.get(6)));
+//		ArrayList AT005 = d.getData("AT005", sheetName);
+//		// WebElement canvas1 = driver.findElement(By.xpath((String) AT005.get(6)));
 //		// Action signature1 =
 //		// builder.moveToElement(canvas).clickAndHold().moveByOffset(200,
 //		// 50).moveByOffset(10, 0)
 //		// .click().build();
 //		signature.perform();
 //		Thread.sleep(5000);
-//		extentTest.log(Status.PASS, (String) AT004.get(2),
-//				MediaEntityBuilder.createScreenCaptureFromPath(captureScreenshot("AT004" + ssID + ".jpg")).build());
-//
-//		// Click Accept Signature Button
-//		ArrayList AT005 = d.getData("AT005", sheetName);
-//		WebElement acceptSign1 = driver.findElement(By.xpath((String) AT005.get(6)));
-//		acceptSign.click();
-//		String log65 = (String) AT005.get(0) + " " + AT005.get(2);
 //		extentTest.log(Status.PASS, (String) AT005.get(2),
 //				MediaEntityBuilder.createScreenCaptureFromPath(captureScreenshot("AT005" + ssID + ".jpg")).build());
+//
+//		// Click Accept Signature Button
+//		ArrayList AT006 = d.getData("AT006", sheetName);
+//		WebElement acceptSign1 = driver.findElement(By.xpath((String) AT006.get(6)));
+//		acceptSign.click();
+//		String log65 = (String) AT006.get(0) + " " + AT006.get(2);
+//		extentTest.log(Status.PASS, (String) AT006.get(2),
+//				MediaEntityBuilder.createScreenCaptureFromPath(captureScreenshot("AT006" + ssID + ".jpg")).build());
 
 		Thread.sleep(5000);
 		// Click the Complete Assessment Button
-		ArrayList AT006 = d.getData("AT006", sheetName);
-		WebElement completeAssessment = driver.findElement(By.xpath((String) AT006.get(6)));
-		completeAssessment.click();
-		extentTest.log(Status.PASS, (String) AT006.get(2),
-				MediaEntityBuilder.createScreenCaptureFromPath(captureScreenshot("AT006" + ssID + ".jpg")).build());
-
-		// Click Welcome
 		ArrayList AT007 = d.getData("AT007", sheetName);
-		WebElement welcome = driver.findElement(By.xpath((String) AT007.get(6)));
-		welcome.click();
+		WebElement completeAssessment = driver.findElement(By.xpath((String) AT007.get(6)));
+		completeAssessment.click();
 		extentTest.log(Status.PASS, (String) AT007.get(2),
 				MediaEntityBuilder.createScreenCaptureFromPath(captureScreenshot("AT007" + ssID + ".jpg")).build());
 
-		// Click Sign Out
+		// Click Welcome
 		ArrayList AT008 = d.getData("AT008", sheetName);
-		WebElement signOut = driver.findElement(By.xpath((String) AT008.get(6)));
-		signOut.click();
-		Thread.sleep(5000);
+		WebElement welcome = driver.findElement(By.xpath((String) AT008.get(6)));
+		welcome.click();
 		extentTest.log(Status.PASS, (String) AT008.get(2),
 				MediaEntityBuilder.createScreenCaptureFromPath(captureScreenshot("AT008" + ssID + ".jpg")).build());
+
+		// Click Sign Out
+		ArrayList AT009 = d.getData("AT009", sheetName);
+		WebElement signOut = driver.findElement(By.xpath((String) AT009.get(6)));
+		signOut.click();
+		Thread.sleep(5000);
+		extentTest.log(Status.PASS, (String) AT009.get(2),
+				MediaEntityBuilder.createScreenCaptureFromPath(captureScreenshot("AT009" + ssID + ".jpg")).build());
 	}
 
 }

@@ -5,7 +5,7 @@
 		<listener class-name="ListenerImp.AnnotationListener"></listener>
 	</listeners>
 	<test
-		name="ADL0101 Bathing Response: Select an option
+		name="ADL0101 Bathing Response: 1. Select an option
 ">
 		<parameter
 			name="browserName" value="chrome" />
@@ -22,7 +22,7 @@
 	</test>
 
 	<test
-		name="ADL0102 Bathing Response: Independent - no physical assistance, setup, or supervision in any episode
+		name="ADL0102 Bathing Response: 2. Independent - no physical assistance, setup, or supervision in any episode
 ">
 		<parameter
 			name="browserName" value="chrome" />
@@ -38,7 +38,7 @@
 		</classes>
 	</test>
 	<test
-		name="ADL0103 Bathing Response: Independent, setup help only - article or device provided or placed within reach, no physical assistance or supervision in any episode
+		name="ADL0103 Bathing Response: 3. Independent, setup help only - article or device provided or placed within reach, no physical assistance or supervision in any episode
 ">
 		<parameter
 			name="browserName" value="chrome" />
@@ -54,7 +54,7 @@
 		</classes>
 	</test>
 	<test
-		name="ADL0104 Bathing Response: Supervision - oversight/cueing
+		name="ADL0104 Bathing Response: 4. Supervision - oversight/cueing
 ">
 		<parameter
 			name="browserName" value="chrome" />
@@ -70,7 +70,7 @@
 		</classes>
 	</test>
 	<test
-		name="ADL0105 Bathing Response: Limited assistance - guided maneuvering of limbs, physical guidance without taking weight
+		name="ADL0105 Bathing Response: 5. Limited assistance - guided maneuvering of limbs, physical guidance without taking weight
 ">
 		<parameter
 			name="browserName" value="chrome" />
@@ -86,7 +86,7 @@
 		</classes>
 	</test>
 	<test
-		name="ADL0106 Bathing Response: Extensive assistance - weight-bearing support (including lifting limbs) by 1 helper where person still performs 50% or more of subtasks
+		name="ADL0106 Bathing Response: 6. Extensive assistance - weight-bearing support (including lifting limbs) by 1 helper where person still performs 50% or more of subtasks
 ">
 		<parameter
 			name="browserName" value="chrome" />
@@ -102,7 +102,7 @@
 		</classes>
 	</test>
 	<test
-		name="ADL0107 Bathing Response:  Maximal assistance - weight-bearing support (including lifting limbs) by 2+ helpers - OR - weight-bearing support for more than 50% of subtasks
+		name="ADL0107 Bathing Response: 7. Maximal assistance - weight-bearing support (including lifting limbs) by 2+ helpers - OR - weight-bearing support for more than 50% of subtasks
 ">
 		<parameter
 			name="browserName" value="chrome" />
@@ -118,7 +118,7 @@
 		</classes>
 	</test>
 	<test
-		name="ADL0108 Bathing Response: Total dependence - full performance by others during all episodes
+		name="ADL0108 Bathing Response: 8. Total dependence - full performance by others during all episodes
 ">
 		<parameter
 			name="browserName" value="chrome" />
@@ -134,7 +134,7 @@
 		</classes>
 	</test>
 	<test
-		name="ADL0109 Bathing Response: Activity did not occur during entire period
+		name="ADL0109 Bathing Response: 9. Activity did not occur during entire period
 ">
 		<parameter
 			name="browserName" value="chrome" />
@@ -151,7 +151,7 @@
 	</test>
 
 	<test
-		name="ADL0201 Personal Hygiene Response: Select an option
+		name="ADL0201 Personal Hygiene Response: 1. Select an option
 ">
 		<parameter
 			name="browserName" value="chrome" />
@@ -168,7 +168,7 @@
 	</test>
 
 	<test
-		name="ADL0202 Personal Hygiene Response: Independent - no physical assistance, setup, or supervision in any episode
+		name="ADL0202 Personal Hygiene Response: 2. Independent - no physical assistance, setup, or supervision in any episode
 ">
 		<parameter
 			name="browserName" value="chrome" />
@@ -184,7 +184,7 @@
 		</classes>
 	</test>
 	<test
-		name="ADL0203 Personal Hygiene Response: Independent, setup help only - article or device provided or placed within reach, no physical assistance or supervision in any episode
+		name="ADL0203 Personal Hygiene Response: 3. Independent, setup help only - article or device provided or placed within reach, no physical assistance or supervision in any episode
 ">
 		<parameter
 			name="browserName" value="chrome" />
@@ -200,7 +200,7 @@
 		</classes>
 	</test>
 	<test
-		name="ADL0204 Personal Hygiene Response: Supervision - oversight/cueing
+		name="ADL0204 Personal Hygiene Response: 4. Supervision - oversight/cueing
 ">
 		<parameter
 			name="browserName" value="chrome" />
@@ -216,7 +216,7 @@
 		</classes>
 	</test>
 	<test
-		name="ADL0205 Personal Hygiene Response: Limited assistance - guided maneuvering of limbs, physical guidance without taking weight
+		name="ADL0205 Personal Hygiene Response: 5. Limited assistance - guided maneuvering of limbs, physical guidance without taking weight
 ">
 		<parameter
 			name="browserName" value="chrome" />
@@ -232,7 +232,7 @@
 		</classes>
 	</test>
 	<test
-		name="ADL0206 Personal Hygiene Response: Extensive assistance - weight-bearing support (including lifting limbs) by 1 helper where person still performs 50% or more of subtasks
+		name="ADL0206 Personal Hygiene Response: 6. Extensive assistance - weight-bearing support (including lifting limbs) by 1 helper where person still performs 50% or more of subtasks
 ">
 		<parameter
 			name="browserName" value="chrome" />
@@ -248,7 +248,7 @@
 		</classes>
 	</test>
 	<test
-		name="ADL0207 Personal Hygiene Response:  Maximal assistance - weight-bearing support (including lifting limbs) by 2+ helpers - OR - weight-bearing support for more than 50% of subtasks
+		name="ADL0207 Personal Hygiene Response: 7. Maximal assistance - weight-bearing support (including lifting limbs) by 2+ helpers - OR - weight-bearing support for more than 50% of subtasks
 ">
 		<parameter
 			name="browserName" value="chrome" />
@@ -264,7 +264,7 @@
 		</classes>
 	</test>
 	<test
-		name="ADL0208 Personal Hygiene Response: Total dependence - full performance by others during all episodes
+		name="ADL0208 Personal Hygiene Response: 8. Total dependence - full performance by others during all episodes
 ">
 		<parameter
 			name="browserName" value="chrome" />
@@ -280,7 +280,7 @@
 		</classes>
 	</test>
 	<test
-		name="ADL0209 Personal Hygiene Response: Activity did not occur during entire period
+		name="ADL0209 Personal Hygiene Response: 9. Activity did not occur during entire period
 ">
 		<parameter
 			name="browserName" value="chrome" />
@@ -297,7 +297,7 @@
 	</test>
 
 	<test
-		name="ADL0301 Dressing Upper Body Response: Select an option
+		name="ADL0301 Dressing Upper Body Response: 1. Select an option
 ">
 		<parameter
 			name="browserName" value="chrome" />
@@ -314,7 +314,7 @@
 	</test>
 
 	<test
-		name="ADL0302 Dressing Upper Body Response: Independent - no physical assistance, setup, or supervision in any episode
+		name="ADL0302 Dressing Upper Body Response: 2. Independent - no physical assistance, setup, or supervision in any episode
 ">
 		<parameter
 			name="browserName" value="chrome" />
@@ -330,7 +330,7 @@
 		</classes>
 	</test>
 	<test
-		name="ADL0303 Dressing Upper Body Response: Independent, setup help only - article or device provided or placed within reach, no physical assistance or supervision in any episode
+		name="ADL0303 Dressing Upper Body Response: 3. Independent, setup help only - article or device provided or placed within reach, no physical assistance or supervision in any episode
 ">
 		<parameter
 			name="browserName" value="chrome" />
@@ -346,7 +346,7 @@
 		</classes>
 	</test>
 	<test
-		name="ADL0304 Dressing Upper Body Response: Supervision - oversight/cueing
+		name="ADL0304 Dressing Upper Body Response: 4. Supervision - oversight/cueing
 ">
 		<parameter
 			name="browserName" value="chrome" />
@@ -362,7 +362,7 @@
 		</classes>
 	</test>
 	<test
-		name="ADL0305 Dressing Upper Body Response: Limited assistance - guided maneuvering of limbs, physical guidance without taking weight
+		name="ADL0305 Dressing Upper Body Response: 5. Limited assistance - guided maneuvering of limbs, physical guidance without taking weight
 ">
 		<parameter
 			name="browserName" value="chrome" />
@@ -378,7 +378,7 @@
 		</classes>
 	</test>
 	<test
-		name="ADL0306 Dressing Upper Body Response: Extensive assistance - weight-bearing support (including lifting limbs) by 1 helper where person still performs 50% or more of subtasks
+		name="ADL0306 Dressing Upper Body Response: 6. Extensive assistance - weight-bearing support (including lifting limbs) by 1 helper where person still performs 50% or more of subtasks
 ">
 		<parameter
 			name="browserName" value="chrome" />
@@ -394,7 +394,7 @@
 		</classes>
 	</test>
 	<test
-		name="ADL0307 Dressing Upper Body Response:  Maximal assistance - weight-bearing support (including lifting limbs) by 2+ helpers - OR - weight-bearing support for more than 50% of subtasks
+		name="ADL0307 Dressing Upper Body Response: 7. Maximal assistance - weight-bearing support (including lifting limbs) by 2+ helpers - OR - weight-bearing support for more than 50% of subtasks
 ">
 		<parameter
 			name="browserName" value="chrome" />
@@ -410,7 +410,7 @@
 		</classes>
 	</test>
 	<test
-		name="ADL0308 Dressing Upper Body Response: Total dependence - full performance by others during all episodes
+		name="ADL0308 Dressing Upper Body Response: 8. Total dependence - full performance by others during all episodes
 ">
 		<parameter
 			name="browserName" value="chrome" />
@@ -426,7 +426,7 @@
 		</classes>
 	</test>
 	<test
-		name="ADL0309 Dressing Upper Body Response: Activity did not occur during entire period
+		name="ADL0309 Dressing Upper Body Response: 9. Activity did not occur during entire period
 ">
 		<parameter
 			name="browserName" value="chrome" />
@@ -443,7 +443,7 @@
 	</test>
 
 	<test
-		name="ADL0401 Dressing Lower Body Response: Select an option
+		name="ADL0401 Dressing Lower Body Response: 1. Select an option
 ">
 		<parameter
 			name="browserName" value="chrome" />
@@ -460,7 +460,7 @@
 	</test>
 
 	<test
-		name="ADL0402 Dressing Lower Body Response: Independent - no physical assistance, setup, or supervision in any episode
+		name="ADL0402 Dressing Lower Body Response: 2. Independent - no physical assistance, setup, or supervision in any episode
 ">
 		<parameter
 			name="browserName" value="chrome" />
@@ -476,7 +476,7 @@
 		</classes>
 	</test>
 	<test
-		name="ADL0403 Dressing Lower Body Response: Independent, setup help only - article or device provided or placed within reach, no physical assistance or supervision in any episode
+		name="ADL0403 Dressing Lower Body Response: 3. Independent, setup help only - article or device provided or placed within reach, no physical assistance or supervision in any episode
 ">
 		<parameter
 			name="browserName" value="chrome" />
@@ -492,7 +492,7 @@
 		</classes>
 	</test>
 	<test
-		name="ADL0404 Dressing Lower Body Response: Supervision - oversight/cueing
+		name="ADL0404 Dressing Lower Body Response: 4. Supervision - oversight/cueing
 ">
 		<parameter
 			name="browserName" value="chrome" />
@@ -508,7 +508,7 @@
 		</classes>
 	</test>
 	<test
-		name="ADL0405 Dressing Lower Body Response: Limited assistance - guided maneuvering of limbs, physical guidance without taking weight
+		name="ADL0405 Dressing Lower Body Response: 5. Limited assistance - guided maneuvering of limbs, physical guidance without taking weight
 ">
 		<parameter
 			name="browserName" value="chrome" />
@@ -524,7 +524,7 @@
 		</classes>
 	</test>
 	<test
-		name="ADL0406 Dressing Lower Body Response: Extensive assistance - weight-bearing support (including lifting limbs) by 1 helper where person still performs 50% or more of subtasks
+		name="ADL0406 Dressing Lower Body Response: 6. Extensive assistance - weight-bearing support (including lifting limbs) by 1 helper where person still performs 50% or more of subtasks
 ">
 		<parameter
 			name="browserName" value="chrome" />
@@ -540,7 +540,7 @@
 		</classes>
 	</test>
 	<test
-		name="ADL0407 Dressing Lower Body Response:  Maximal assistance - weight-bearing support (including lifting limbs) by 2+ helpers - OR - weight-bearing support for more than 50% of subtasks
+		name="ADL0407 Dressing Lower Body Response: 7. Maximal assistance - weight-bearing support (including lifting limbs) by 2+ helpers - OR - weight-bearing support for more than 50% of subtasks
 ">
 		<parameter
 			name="browserName" value="chrome" />
@@ -556,7 +556,7 @@
 		</classes>
 	</test>
 	<test
-		name="ADL0408 Dressing Lower Body Response: Total dependence - full performance by others during all episodes
+		name="ADL0408 Dressing Lower Body Response: 8. Total dependence - full performance by others during all episodes
 ">
 		<parameter
 			name="browserName" value="chrome" />
@@ -572,7 +572,7 @@
 		</classes>
 	</test>
 	<test
-		name="ADL0409 Dressing Lower Body Response: Activity did not occur during entire period
+		name="ADL0409 Dressing Lower Body Response: 9. Activity did not occur during entire period
 ">
 		<parameter
 			name="browserName" value="chrome" />
@@ -589,7 +589,7 @@
 	</test>
 
 	<test
-		name="ADL0501 Locomotion Response: Select an option
+		name="ADL0501 Locomotion Response: 1. Select an option
 ">
 		<parameter
 			name="browserName" value="chrome" />
@@ -606,7 +606,7 @@
 	</test>
 
 	<test
-		name="ADL0502 Locomotion Response: Independent - no physical assistance, setup, or supervision in any episode
+		name="ADL0502 Locomotion Response: 2. Independent - no physical assistance, setup, or supervision in any episode
 ">
 		<parameter
 			name="browserName" value="chrome" />
@@ -622,7 +622,7 @@
 		</classes>
 	</test>
 	<test
-		name="ADL0503 Locomotion Response: Independent, setup help only - article or device provided or placed within reach, no physical assistance or supervision in any episode
+		name="ADL0503 Locomotion Response: 3. Independent, setup help only - article or device provided or placed within reach, no physical assistance or supervision in any episode
 ">
 		<parameter
 			name="browserName" value="chrome" />
@@ -638,7 +638,7 @@
 		</classes>
 	</test>
 	<test
-		name="ADL0504 Locomotion Response: Supervision - oversight/cueing
+		name="ADL0504 Locomotion Response: 4. Supervision - oversight/cueing
 ">
 		<parameter
 			name="browserName" value="chrome" />
@@ -654,7 +654,7 @@
 		</classes>
 	</test>
 	<test
-		name="ADL0505 Locomotion Response: Limited assistance - guided maneuvering of limbs, physical guidance without taking weight
+		name="ADL0505 Locomotion Response: 5. Limited assistance - guided maneuvering of limbs, physical guidance without taking weight
 ">
 		<parameter
 			name="browserName" value="chrome" />
@@ -670,7 +670,7 @@
 		</classes>
 	</test>
 	<test
-		name="ADL0506 Locomotion Response: Extensive assistance - weight-bearing support (including lifting limbs) by 1 helper where person still performs 50% or more of subtasks
+		name="ADL0506 Locomotion Response: 6. Extensive assistance - weight-bearing support (including lifting limbs) by 1 helper where person still performs 50% or more of subtasks
 ">
 		<parameter
 			name="browserName" value="chrome" />
@@ -686,7 +686,7 @@
 		</classes>
 	</test>
 	<test
-		name="ADL0507 Locomotion Response:  Maximal assistance - weight-bearing support (including lifting limbs) by 2+ helpers - OR - weight-bearing support for more than 50% of subtasks
+		name="ADL0507 Locomotion Response: 7. Maximal assistance - weight-bearing support (including lifting limbs) by 2+ helpers - OR - weight-bearing support for more than 50% of subtasks
 ">
 		<parameter
 			name="browserName" value="chrome" />
@@ -702,7 +702,7 @@
 		</classes>
 	</test>
 	<test
-		name="ADL0508 Locomotion Response: Total dependence - full performance by others during all episodes
+		name="ADL0508 Locomotion Response: 8. Total dependence - full performance by others during all episodes
 ">
 		<parameter
 			name="browserName" value="chrome" />
@@ -718,7 +718,7 @@
 		</classes>
 	</test>
 	<test
-		name="ADL0509 Locomotion Response: Activity did not occur during entire period
+		name="ADL0509 Locomotion Response: 9. Activity did not occur during entire period
 ">
 		<parameter
 			name="browserName" value="chrome" />
@@ -735,7 +735,7 @@
 	</test>
 
 	<test
-		name="ADL0601 Transfer Toilet Response: Select an option
+		name="ADL0601 Transfer Toilet Response: 1. Select an option
 ">
 		<parameter
 			name="browserName" value="chrome" />
@@ -752,7 +752,7 @@
 	</test>
 
 	<test
-		name="ADL0602 Transfer Toilet Response: Independent - no physical assistance, setup, or supervision in any episode
+		name="ADL0602 Transfer Toilet Response: 2. Independent - no physical assistance, setup, or supervision in any episode
 ">
 		<parameter
 			name="browserName" value="chrome" />
@@ -768,7 +768,7 @@
 		</classes>
 	</test>
 	<test
-		name="ADL0603 Transfer Toilet Response: Independent, setup help only - article or device provided or placed within reach, no physical assistance or supervision in any episode
+		name="ADL0603 Transfer Toilet Response: 3. Independent, setup help only - article or device provided or placed within reach, no physical assistance or supervision in any episode
 ">
 		<parameter
 			name="browserName" value="chrome" />
@@ -784,7 +784,7 @@
 		</classes>
 	</test>
 	<test
-		name="ADL0604 Transfer Toilet Response: Supervision - oversight/cueing
+		name="ADL0604 Transfer Toilet Response: 4. Supervision - oversight/cueing
 ">
 		<parameter
 			name="browserName" value="chrome" />
@@ -800,7 +800,7 @@
 		</classes>
 	</test>
 	<test
-		name="ADL0605 Transfer Toilet Response: Limited assistance - guided maneuvering of limbs, physical guidance without taking weight
+		name="ADL0605 Transfer Toilet Response: 5. Limited assistance - guided maneuvering of limbs, physical guidance without taking weight
 ">
 		<parameter
 			name="browserName" value="chrome" />
@@ -816,7 +816,7 @@
 		</classes>
 	</test>
 	<test
-		name="ADL0606 Transfer Toilet Response: Extensive assistance - weight-bearing support (including lifting limbs) by 1 helper where person still performs 50% or more of subtasks
+		name="ADL0606 Transfer Toilet Response: 6. Extensive assistance - weight-bearing support (including lifting limbs) by 1 helper where person still performs 50% or more of subtasks
 ">
 		<parameter
 			name="browserName" value="chrome" />
@@ -832,7 +832,7 @@
 		</classes>
 	</test>
 	<test
-		name="ADL0607 Transfer Toilet Response:  Maximal assistance - weight-bearing support (including lifting limbs) by 2+ helpers - OR - weight-bearing support for more than 50% of subtasks
+		name="ADL0607 Transfer Toilet Response: 7. Maximal assistance - weight-bearing support (including lifting limbs) by 2+ helpers - OR - weight-bearing support for more than 50% of subtasks
 ">
 		<parameter
 			name="browserName" value="chrome" />
@@ -848,7 +848,7 @@
 		</classes>
 	</test>
 	<test
-		name="ADL0608 Transfer Toilet Response: Total dependence - full performance by others during all episodes
+		name="ADL0608 Transfer Toilet Response: 8. Total dependence - full performance by others during all episodes
 ">
 		<parameter
 			name="browserName" value="chrome" />
@@ -864,7 +864,7 @@
 		</classes>
 	</test>
 	<test
-		name="ADL0609 Transfer Toilet Response: Activity did not occur during entire period
+		name="ADL0609 Transfer Toilet Response: 9. Activity did not occur during entire period
 ">
 		<parameter
 			name="browserName" value="chrome" />
@@ -881,7 +881,7 @@
 	</test>
 
 	<test
-		name="ADL0701 Toileting Response: Select an option
+		name="ADL0701 Toileting Response: 1. Select an option
 ">
 		<parameter
 			name="browserName" value="chrome" />
@@ -898,7 +898,7 @@
 	</test>
 
 	<test
-		name="ADL0702 Toileting Response: Independent - no physical assistance, setup, or supervision in any episode
+		name="ADL0702 Toileting Response: 2. Independent - no physical assistance, setup, or supervision in any episode
 ">
 		<parameter
 			name="browserName" value="chrome" />
@@ -914,7 +914,7 @@
 		</classes>
 	</test>
 	<test
-		name="ADL0703 Toileting Response: Independent, setup help only - article or device provided or placed within reach, no physical assistance or supervision in any episode
+		name="ADL0703 Toileting Response: 3. Independent, setup help only - article or device provided or placed within reach, no physical assistance or supervision in any episode
 ">
 		<parameter
 			name="browserName" value="chrome" />
@@ -930,7 +930,7 @@
 		</classes>
 	</test>
 	<test
-		name="ADL0704 Toileting Response: Supervision - oversight/cueing
+		name="ADL0704 Toileting Response: 4. Supervision - oversight/cueing
 ">
 		<parameter
 			name="browserName" value="chrome" />
@@ -946,7 +946,7 @@
 		</classes>
 	</test>
 	<test
-		name="ADL0705 Toileting Response: Limited assistance - guided maneuvering of limbs, physical guidance without taking weight
+		name="ADL0705 Toileting Response: 5. Limited assistance - guided maneuvering of limbs, physical guidance without taking weight
 ">
 		<parameter
 			name="browserName" value="chrome" />
@@ -962,7 +962,7 @@
 		</classes>
 	</test>
 	<test
-		name="ADL0706 Toileting Response: Extensive assistance - weight-bearing support (including lifting limbs) by 1 helper where person still performs 50% or more of subtasks
+		name="ADL0706 Toileting Response: 6. Extensive assistance - weight-bearing support (including lifting limbs) by 1 helper where person still performs 50% or more of subtasks
 ">
 		<parameter
 			name="browserName" value="chrome" />
@@ -978,7 +978,7 @@
 		</classes>
 	</test>
 	<test
-		name="ADL0707 Toileting Response:  Maximal assistance - weight-bearing support (including lifting limbs) by 2+ helpers - OR - weight-bearing support for more than 50% of subtasks
+		name="ADL0707 Toileting Response: 7. Maximal assistance - weight-bearing support (including lifting limbs) by 2+ helpers - OR - weight-bearing support for more than 50% of subtasks
 ">
 		<parameter
 			name="browserName" value="chrome" />
@@ -994,7 +994,7 @@
 		</classes>
 	</test>
 	<test
-		name="ADL0708 Toileting Response: Total dependence - full performance by others during all episodes
+		name="ADL0708 Toileting Response: 8. Total dependence - full performance by others during all episodes
 ">
 		<parameter
 			name="browserName" value="chrome" />
@@ -1010,7 +1010,7 @@
 		</classes>
 	</test>
 	<test
-		name="ADL0709 Toileting Response: Activity did not occur during entire period
+		name="ADL0709 Toileting Response: 9. Activity did not occur during entire period
 ">
 		<parameter
 			name="browserName" value="chrome" />
@@ -1027,7 +1027,7 @@
 	</test>
 
 	<test
-		name="ADL0801 Bed Mobility Response: Select an option
+		name="ADL0801 Bed Mobility Response: 1. Select an option
 ">
 		<parameter
 			name="browserName" value="chrome" />
@@ -1044,7 +1044,7 @@
 	</test>
 
 	<test
-		name="ADL0802 Bed Mobility Response: Independent - no physical assistance, setup, or supervision in any episode
+		name="ADL0802 Bed Mobility Response: 2. Independent - no physical assistance, setup, or supervision in any episode
 ">
 		<parameter
 			name="browserName" value="chrome" />
@@ -1060,7 +1060,7 @@
 		</classes>
 	</test>
 	<test
-		name="ADL0803 Bed Mobility Response: Independent, setup help only - article or device provided or placed within reach, no physical assistance or supervision in any episode
+		name="ADL0803 Bed Mobility Response: 3. Independent, setup help only - article or device provided or placed within reach, no physical assistance or supervision in any episode
 ">
 		<parameter
 			name="browserName" value="chrome" />
@@ -1076,7 +1076,7 @@
 		</classes>
 	</test>
 	<test
-		name="ADL0804 Bed Mobility Response: Supervision - oversight/cueing
+		name="ADL0804 Bed Mobility Response: 4. Supervision - oversight/cueing
 ">
 		<parameter
 			name="browserName" value="chrome" />
@@ -1092,7 +1092,7 @@
 		</classes>
 	</test>
 	<test
-		name="ADL0805 Bed Mobility Response: Limited assistance - guided maneuvering of limbs, physical guidance without taking weight
+		name="ADL0805 Bed Mobility Response: 5. Limited assistance - guided maneuvering of limbs, physical guidance without taking weight
 ">
 		<parameter
 			name="browserName" value="chrome" />
@@ -1108,7 +1108,7 @@
 		</classes>
 	</test>
 	<test
-		name="ADL0806 Bed Mobility Response: Extensive assistance - weight-bearing support (including lifting limbs) by 1 helper where person still performs 50% or more of subtasks
+		name="ADL0806 Bed Mobility Response: 6. Extensive assistance - weight-bearing support (including lifting limbs) by 1 helper where person still performs 50% or more of subtasks
 ">
 		<parameter
 			name="browserName" value="chrome" />
@@ -1124,7 +1124,7 @@
 		</classes>
 	</test>
 	<test
-		name="ADL0807 Bed Mobility Response:  Maximal assistance - weight-bearing support (including lifting limbs) by 2+ helpers - OR - weight-bearing support for more than 50% of subtasks
+		name="ADL0807 Bed Mobility Response: 7. Maximal assistance - weight-bearing support (including lifting limbs) by 2+ helpers - OR - weight-bearing support for more than 50% of subtasks
 ">
 		<parameter
 			name="browserName" value="chrome" />
@@ -1140,7 +1140,7 @@
 		</classes>
 	</test>
 	<test
-		name="ADL0808 Bed Mobility Response: Total dependence - full performance by others during all episodes
+		name="ADL0808 Bed Mobility Response: 8. Total dependence - full performance by others during all episodes
 ">
 		<parameter
 			name="browserName" value="chrome" />
@@ -1156,7 +1156,7 @@
 		</classes>
 	</test>
 	<test
-		name="ADL0809 Bed Mobility Response: Activity did not occur during entire period
+		name="ADL0809 Bed Mobility Response: 9. Activity did not occur during entire period
 ">
 		<parameter
 			name="browserName" value="chrome" />
@@ -1173,7 +1173,7 @@
 	</test>
 
 	<test
-		name="ADL0901 Eating Response: Select an option
+		name="ADL0901 Eating Response: 1. Select an option
 ">
 		<parameter
 			name="browserName" value="chrome" />
@@ -1190,7 +1190,7 @@
 	</test>
 
 	<test
-		name="ADL0902 Eating Response: Independent - no physical assistance, setup, or supervision in any episode
+		name="ADL0902 Eating Response: 2. Independent - no physical assistance, setup, or supervision in any episode
 ">
 		<parameter
 			name="browserName" value="chrome" />
@@ -1206,7 +1206,7 @@
 		</classes>
 	</test>
 	<test
-		name="ADL0903 Eating Response: Independent, setup help only - article or device provided or placed within reach, no physical assistance or supervision in any episode
+		name="ADL0903 Eating Response: 3. Independent, setup help only - article or device provided or placed within reach, no physical assistance or supervision in any episode
 ">
 		<parameter
 			name="browserName" value="chrome" />
@@ -1222,7 +1222,7 @@
 		</classes>
 	</test>
 	<test
-		name="ADL0904 Eating Response: Supervision - oversight/cueing
+		name="ADL0904 Eating Response: 4. Supervision - oversight/cueing
 ">
 		<parameter
 			name="browserName" value="chrome" />
@@ -1238,7 +1238,7 @@
 		</classes>
 	</test>
 	<test
-		name="ADL0905 Eating Response: Limited assistance - guided maneuvering of limbs, physical guidance without taking weight
+		name="ADL0905 Eating Response: 5. Limited assistance - guided maneuvering of limbs, physical guidance without taking weight
 ">
 		<parameter
 			name="browserName" value="chrome" />
@@ -1254,7 +1254,7 @@
 		</classes>
 	</test>
 	<test
-		name="ADL0906 Eating Response: Extensive assistance - weight-bearing support (including lifting limbs) by 1 helper where person still performs 50% or more of subtasks
+		name="ADL0906 Eating Response: 6. Extensive assistance - weight-bearing support (including lifting limbs) by 1 helper where person still performs 50% or more of subtasks
 ">
 		<parameter
 			name="browserName" value="chrome" />
@@ -1270,7 +1270,7 @@
 		</classes>
 	</test>
 	<test
-		name="ADL0907 Eating Response:  Maximal assistance - weight-bearing support (including lifting limbs) by 2+ helpers - OR - weight-bearing support for more than 50% of subtasks
+		name="ADL0907 Eating Response: 7. Maximal assistance - weight-bearing support (including lifting limbs) by 2+ helpers - OR - weight-bearing support for more than 50% of subtasks
 ">
 		<parameter
 			name="browserName" value="chrome" />
@@ -1286,7 +1286,7 @@
 		</classes>
 	</test>
 	<test
-		name="ADL0908 Eating Response: Total dependence - full performance by others during all episodes
+		name="ADL0908 Eating Response: 8. Total dependence - full performance by others during all episodes
 ">
 		<parameter
 			name="browserName" value="chrome" />
@@ -1302,7 +1302,7 @@
 		</classes>
 	</test>
 	<test
-		name="ADL0909 Eating Response: Activity did not occur during entire period
+		name="ADL0909 Eating Response: 9. Activity did not occur during entire period
 ">
 		<parameter
 			name="browserName" value="chrome" />
