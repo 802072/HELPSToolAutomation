@@ -666,7 +666,8 @@ public class DropdownTest extends BaseTestDD {
 		signatureAndLogout("afterTest", "UAS1202");
 	}
 
-	// Option3: Controlled adequately by therapeutic regimen
+	// Option3: Pain intensity acceptable to individual; no treatment regimen or
+	// change in regimen required
 	@Test(groups = "UAS Assessment Details: Pain")
 	public void verifyPainOption3() throws IOException, InterruptedException, AWTException {
 		login();
@@ -676,9 +677,7 @@ public class DropdownTest extends BaseTestDD {
 		signatureAndLogout("afterTest", "UAS1203");
 	}
 
-	// Option4: Controlled when therapeutic regimen followed, but not always
-	// followed
-	// as ordered
+	// Option4: Controlled adequately by therapeutic regimen
 	@Test(groups = "UAS Assessment Details: Pain")
 	public void verifyPainOption4() throws IOException, InterruptedException, AWTException {
 		login();
@@ -688,7 +687,8 @@ public class DropdownTest extends BaseTestDD {
 		signatureAndLogout("afterTest", "UAS1204");
 	}
 
-	// Option5: Therapeutic regimen followed, but pain control not adequate
+	// Option5: Controlled when therapeutic regimen followed, but not always
+	// followed as ordered
 	@Test(groups = "UAS Assessment Details: Pain")
 	public void verifyPainOption5() throws IOException, InterruptedException, AWTException {
 		login();
@@ -698,8 +698,7 @@ public class DropdownTest extends BaseTestDD {
 		signatureAndLogout("afterTest", "UAS1205");
 	}
 
-	// Option6: No therapeutic regimen being followed for pain; pain not adequately
-	// controlled
+	// Option6: Therapeutic regimen followed, but pain control not adequate
 	@Test(groups = "UAS Assessment Details: Pain")
 	public void verifyPainOption6() throws IOException, InterruptedException, AWTException {
 		login();
@@ -707,6 +706,17 @@ public class DropdownTest extends BaseTestDD {
 		clickDropdown("UAS1200");
 		selectOption("UAS1206");
 		signatureAndLogout("afterTest", "UAS1206");
+	}
+
+	// Option7: No therapeutic regimen being followed for pain; pain not adequately
+	// controlled
+	@Test(groups = "UAS Assessment Details: Pain")
+	public void verifyPainOption7() throws IOException, InterruptedException, AWTException {
+		login();
+		uploadFile();
+		clickDropdown("UAS1200");
+		selectOption("UAS1207");
+		signatureAndLogout("afterTest", "UAS1207");
 	}
 
 	// Resist Care
@@ -763,7 +773,7 @@ public class DropdownTest extends BaseTestDD {
 	// IADL
 	// Meal Preparation Response
 	// Option1: Select an option
-	@Test(groups = "IADL - Capacity: Meal Preparation")
+	@Test(groups = "IADL - Capacity: Meal Preparation Response")
 	public void verifyMealPrepOption1() throws IOException, InterruptedException, AWTException {
 		login();
 		uploadFile();
@@ -774,7 +784,7 @@ public class DropdownTest extends BaseTestDD {
 
 	// option2: //Option2: Independent - no physical assistance, setup, or
 	// supervision in any episode
-	@Test(groups = "IADL - Capacity: Meal Preparation")
+	@Test(groups = "IADL - Capacity: Meal Preparation Response")
 	public void verifyMealPrepOption2() throws IOException, InterruptedException, AWTException {
 		login();
 		uploadFile();
@@ -784,7 +794,7 @@ public class DropdownTest extends BaseTestDD {
 	}
 
 	// Option3: Setup help only
-	@Test(groups = "IADL - Capacity: Meal Preparation")
+	@Test(groups = "IADL - Capacity: Meal Preparation Response")
 	public void verifyMealPrepOption3() throws IOException, InterruptedException, AWTException {
 		login();
 		uploadFile();
@@ -794,7 +804,7 @@ public class DropdownTest extends BaseTestDD {
 	}
 
 	// Option4: Supervision - oversight/cueing
-	@Test(groups = "IADL - Capacity: Meal Preparation")
+	@Test(groups = "IADL - Capacity: Meal Preparation Response")
 	public void verifyMealPrepOption4() throws IOException, InterruptedException, AWTException {
 		login();
 		uploadFile();
@@ -805,7 +815,7 @@ public class DropdownTest extends BaseTestDD {
 
 	// Option5: Limited assistance - guided maneuvering of limbs, physical guidance
 	// without taking weight
-	@Test(groups = "IADL - Capacity: Meal Preparation")
+	@Test(groups = "IADL - Capacity: Meal Preparation Response")
 	public void verifyMealPrepOption5() throws IOException, InterruptedException, AWTException {
 		login();
 		uploadFile();
@@ -817,7 +827,7 @@ public class DropdownTest extends BaseTestDD {
 	// Option6: Extensive assistance - help throughout task, but performs 50% or
 	// more
 	// of task on own
-	@Test(groups = "IADL - Capacity: Meal Preparation")
+	@Test(groups = "IADL - Capacity: Meal Preparation Response")
 	public void verifyMealPrepOption6() throws IOException, InterruptedException, AWTException {
 		login();
 		uploadFile();
@@ -829,7 +839,7 @@ public class DropdownTest extends BaseTestDD {
 	// Option7: Maximal assistance - help throughout task, but performs less than
 	// 50%
 	// of task on own
-	@Test(groups = "IADL - Capacity: Meal Preparation")
+	@Test(groups = "IADL - Capacity: Meal Preparation Response")
 	public void verifyMealPrepOption7() throws IOException, InterruptedException, AWTException {
 		login();
 		uploadFile();
@@ -840,7 +850,7 @@ public class DropdownTest extends BaseTestDD {
 
 	// Option8: Select: Total dependence - full performance by others during all
 	// episodes
-	@Test(groups = "IADL - Capacity: Meal Preparation")
+	@Test(groups = "IADL - Capacity: Meal Preparation Response")
 	public void verifyMealPrepOption8() throws IOException, InterruptedException, AWTException {
 		login();
 		uploadFile();
@@ -850,7 +860,7 @@ public class DropdownTest extends BaseTestDD {
 	}
 
 	// Option9: Activity did not occur - during entire period
-	@Test(groups = "IADL - Capacity: Meal Preparation")
+	@Test(groups = "IADL - Capacity: Meal Preparation Response")
 	public void verifyMealPrepOption9() throws IOException, InterruptedException, AWTException {
 		login();
 		uploadFile();

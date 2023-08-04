@@ -1008,7 +1008,7 @@
 	</test>
 
 	<test
-		name="UAS1203 Pain Dropdown: 3. Controlled adequately by therapeutic regimen
+		name="UAS1203 Pain Dropdown: 3. Pain intensity acceptable to individual; no treatment regimen or change in regimen required
 ">
 		<parameter
 			name="browserName" value="chrome" />
@@ -1025,7 +1025,7 @@
 	</test>
 
 	<test
-		name="UAS1204 Pain Dropdown: 4. Controlled when therapeutic regimen followed, but not always followed as ordered
+		name="UAS1204 Pain Dropdown: 4. Controlled adequately by therapeutic regimen
 ">
 		<parameter
 			name="browserName" value="chrome" />
@@ -1042,7 +1042,7 @@
 	</test>
 
 	<test
-		name="UAS1205 Pain Dropdown: 5. Therapeutic regimen followed, but pain control not adequate
+		name="UAS1205 Pain Dropdown: 5. Controlled when therapeutic regimen followed, but not always followed as ordered 
 ">
 		<parameter
 			name="browserName" value="chrome" />
@@ -1058,7 +1058,7 @@
 		</classes>
 	</test>
 	<test
-		name="UAS1206 Pain Dropdown: 6. No therapeutic regimen being followed for pain; pain not adequately controlled
+		name="UAS1206 Pain Dropdown: 6. Therapeutic regimen followed, but pain control not adequate
 ">
 		<parameter
 			name="browserName" value="chrome" />
@@ -1074,6 +1074,23 @@
 		</classes>
 	</test>
 
+	<test
+		name="UAS1207 Pain Dropdown: 7. No therapeutic regimen being followed for pain; pain not adequately controlled
+">
+		<parameter
+			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.DropdownTest">
+				<methods>
+					<include name="verifyPainOption7" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
 	<test
 		name="UAS1301 Resist Care Dropdown: 1. Select an option
 ">

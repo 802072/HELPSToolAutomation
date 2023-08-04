@@ -115,7 +115,6 @@ public class BaseTestDD {
 			extentTest.skip(m.getName() + " has skipped");
 			extentTest.log(Status.SKIP, result.getThrowable(),
 					MediaEntityBuilder.createScreenCaptureFromPath(screenshotpath).build());
-
 		}
 
 		else if (result.getStatus() == ITestResult.SUCCESS) {
@@ -175,8 +174,6 @@ public class BaseTestDD {
 		ArrayList LI006 = d.getData("LI006", "beforeTest");
 		WebElement signIn = driver.findElement(By.xpath((String) LI006.get(5)));
 		((JavascriptExecutor) driver).executeScript("arguments[0].click();", signIn);
-		// signIn.click();
-		System.out.println("Clicked signin button");
 		Thread.sleep(5000);
 		String log6 = (String) LI006.get(0) + " " + LI006.get(1);
 		extentTest.log(Status.PASS, log6,
