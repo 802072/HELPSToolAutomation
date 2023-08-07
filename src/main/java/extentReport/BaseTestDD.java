@@ -10,11 +10,13 @@ import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.lang.reflect.Method;
 import java.nio.file.*;
+import java.time.Duration;
 import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
 
 import javax.imageio.ImageIO;
 
+import org.apache.hc.core5.util.Timeout;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -44,6 +46,9 @@ import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
 import dataDriven.DataDrivenHT;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import java.util.concurrent.TimeUnit;
 
 public class BaseTestDD {
 	public static WebDriver driver;
@@ -69,7 +74,7 @@ public class BaseTestDD {
 //		sparkReporter_all.config().setReportName("Helps Tool: Verify IADL - Capacity Dropdown Option Values");
 
 		// ADL
-// 		ExtentSparkReporter sparkReporter_all = new ExtentSparkReporter("HelpsADLDropdown.html");
+// 		ExtentSparkReporter sparkReporter_all = new ExtentSparkReporter("HelpsToolADLDropdown.html");
 //		sparkReporter_all.config().setReportName("Helps Tool: Verify ADL - Self Performance Option Values");	
 		extentReports = new ExtentReports();
 		extentReports.attachReporter(sparkReporter_all);
@@ -86,7 +91,7 @@ public class BaseTestDD {
 	}
 
 	@BeforeMethod
-	public void intiDriver(ITestContext context) throws IOException, InterruptedException, AWTException {
+	public void initDriver(ITestContext context) throws IOException, InterruptedException, AWTException {
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
@@ -127,29 +132,31 @@ public class BaseTestDD {
 
 	// LOGIN
 	public void login() throws IOException, InterruptedException {
+		WebDriverWait w = new WebDriverWait(driver, Duration.ofSeconds(10));
+		// w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("")));
+
 		// Open Login Page
 		ArrayList LI001 = d.getData("LI001", "beforeTest");
 		driver.get((String) LI001.get(6));
-		Thread.sleep(3000);
-		String log1 = (String) LI001.get(0) + " " + LI001.get(1);
+		ArrayList LI002 = d.getData("LI002", "beforeTest");
+		w.until(ExpectedConditions.presenceOfElementLocated(By.xpath((String) LI002.get(5))));
+		String log1 = (String) LI001.get(1);
 		extentTest.log(Status.PASS, log1,
 				MediaEntityBuilder.createScreenCaptureFromPath(captureScreenshot(log1 + ".jpg")).build());
 
 		// Click Login Button
-		ArrayList LI002 = d.getData("LI002", "beforeTest");
 		WebElement loginButton = driver.findElement(By.xpath((String) LI002.get(5)));
 		loginButton.click();
-		Thread.sleep(3000);
-		String log2 = (String) LI002.get(0) + " " + LI002.get(1);
+		ArrayList LI003 = d.getData("LI003", "beforeTest");
+		w.until(ExpectedConditions.presenceOfElementLocated(By.xpath((String) LI003.get(5))));
+		String log2 = (String) LI002.get(1);
 		extentTest.log(Status.PASS, log2,
 				MediaEntityBuilder.createScreenCaptureFromPath(captureScreenshot(log2 + ".jpg")).build());
 
 		// Enter Username
-		Thread.sleep(3000);
-		ArrayList LI003 = d.getData("LI003", "beforeTest");
 		WebElement userName = driver.findElement(By.xpath((String) LI003.get(5)));
 		userName.sendKeys((String) LI003.get(6));
-		String log3 = (String) LI003.get(0) + " " + LI003.get(1);
+		String log3 = (String) LI003.get(1);
 		extentTest.log(Status.PASS, log3,
 				MediaEntityBuilder.createScreenCaptureFromPath(captureScreenshot(log3 + ".jpg")).build());
 
@@ -157,16 +164,16 @@ public class BaseTestDD {
 		ArrayList LI004 = d.getData("LI004", "beforeTest");
 		WebElement next = driver.findElement(By.xpath((String) LI004.get(5)));
 		next.click();
-		String log4 = (String) LI004.get(0) + " " + LI004.get(1);
+		String log4 = (String) LI004.get(1);
+		ArrayList LI005 = d.getData("LI005", "beforeTest");
+		w.until(ExpectedConditions.presenceOfElementLocated(By.xpath((String) LI005.get(5))));
 		extentTest.log(Status.PASS, log4,
 				MediaEntityBuilder.createScreenCaptureFromPath(captureScreenshot(log4 + ".jpg")).build());
 
-		Thread.sleep(5000);
 		// Enter Password
-		ArrayList LI005 = d.getData("LI005", "beforeTest");
 		WebElement pwd = driver.findElement(By.xpath((String) LI005.get(5)));
 		pwd.sendKeys((String) LI005.get(6));
-		String log5 = (String) LI005.get(0) + " " + LI005.get(1);
+		String log5 = (String) LI005.get(1);
 		extentTest.log(Status.PASS, log5,
 				MediaEntityBuilder.createScreenCaptureFromPath(captureScreenshot(log5 + ".jpg")).build());
 
@@ -174,57 +181,59 @@ public class BaseTestDD {
 		ArrayList LI006 = d.getData("LI006", "beforeTest");
 		WebElement signIn = driver.findElement(By.xpath((String) LI006.get(5)));
 		((JavascriptExecutor) driver).executeScript("arguments[0].click();", signIn);
-		Thread.sleep(5000);
-		String log6 = (String) LI006.get(0) + " " + LI006.get(1);
+		ArrayList LI007 = d.getData("LI007", "beforeTest");
+		w.until(ExpectedConditions.visibilityOfElementLocated(By.xpath((String) LI007.get(6))));
+		String log6 = (String) LI006.get(1);
 		extentTest.log(Status.PASS, log6,
 				MediaEntityBuilder.createScreenCaptureFromPath(captureScreenshot(log6 + ".jpg")).build());
 
-		// Click Yes to "Stay Signed In?"
-		ArrayList LI007 = d.getData("LI007", "beforeTest");
+		// Click No to "Stay Signed In?"
 		WebElement no = driver.findElement(By.xpath((String) LI007.get(6)));
 		no.click();
-		Thread.sleep(3000);
-		String log7 = (String) LI007.get(0) + " " + LI007.get(1);
+		ArrayList UF001 = d.getData("UF001", "beforeTest");
+		w.until(ExpectedConditions.presenceOfElementLocated(By.xpath((String) UF001.get(5))));
+		String log7 = (String) LI007.get(1);
 		extentTest.log(Status.PASS, log7,
-				MediaEntityBuilder.createScreenCaptureFromPath(captureScreenshot(log7 + ".jpg")).build());
+				MediaEntityBuilder.createScreenCaptureFromPath(captureScreenshot("LI007" + ".jpg")).build());
 	}
 
 	// UPLOAD FILE
 	public void uploadFile() throws IOException, InterruptedException, AWTException {
+		WebDriverWait w = new WebDriverWait(driver, Duration.ofSeconds(3));
+		// w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("")));
+
 		// UPLOAD FILE
 		ArrayList file1 = d.getData("File1", "beforeTest");
 		String fileName = (String) file1.get(1);
-		String path = (String) file1.get(2);
+		String path = System.getProperty("user.dir") + (String) file1.get(2);
 
 		// Click Import HCS Assessment
 		ArrayList UF001 = d.getData("UF001", "beforeTest");
 		WebElement importBtn = driver.findElement(By.xpath((String) UF001.get(5)));
-		String log8 = (String) UF001.get(0) + " " + UF001.get(1);
+		String log8 = (String) UF001.get(1);
 		extentTest.log(Status.PASS, log8,
 				MediaEntityBuilder.createScreenCaptureFromPath(captureScreenshot(log8 + fileName + ".jpg")).build());
 		importBtn.click();
-		Thread.sleep(3000);
+		ArrayList UF002 = d.getData("UF002", "beforeTest");
+		w.until(ExpectedConditions.presenceOfElementLocated(By.xpath((String) UF002.get(5))));
 
 		// Click Choose File
-		ArrayList UF002 = d.getData("UF002", "beforeTest");
-		// String fileName = (String) UF002.get(6);
 		WebElement chooseFileBtn = driver.findElement(By.xpath((String) UF002.get(5)));
-		String log9 = (String) UF002.get(0) + " " + UF002.get(1);
+		String log9 = (String) UF002.get(1);
 		extentTest.log(Status.PASS, (String) UF002.get(0) + " Choose File: " + fileName,
 				MediaEntityBuilder.createScreenCaptureFromPath(captureScreenshot(log9 + fileName + ".jpg")).build());
 
 		// Log Upload File
 		ArrayList UF003 = d.getData("UF003", "beforeTest");
-		// String path= (String) UF003.get(6);
-		String log10 = (String) UF003.get(0) + " " + UF003.get(1);
+		String log10 = (String) UF003.get(1);
 		extentTest.log(Status.PASS, (String) UF003.get(0) + " " + UF003.get(1) + " " + fileName,
 				MediaEntityBuilder.createScreenCaptureFromPath(captureScreenshot(log10 + fileName + ".jpg")).build());
 
 		Actions builder = new Actions(driver);
 		builder.moveToElement(chooseFileBtn).click().build().perform();
-
+		Thread.sleep(2000);
+		
 		// Upload Function
-		Thread.sleep(3000);
 		Robot rb = new Robot();
 		StringSelection str = new StringSelection(path);
 		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(str, null);
@@ -243,19 +252,15 @@ public class BaseTestDD {
 		// for pressing and releasing Enter
 		rb.keyPress(KeyEvent.VK_ENTER);
 		rb.keyRelease(KeyEvent.VK_ENTER);
-
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 
 		// Click Submit File
 		ArrayList UF004 = d.getData("UF004", "beforeTest");
 		WebElement submitBtn = driver.findElement(By.xpath((String) UF004.get(5)));
 		submitBtn.click();
-		String log11 = (String) UF004.get(0) + " " + UF004.get(1);
+		String log11 = (String) UF004.get(1);
 		extentTest.log(Status.PASS, (String) UF004.get(0) + " Submit File: " + fileName,
 				MediaEntityBuilder.createScreenCaptureFromPath(captureScreenshot(log11 + fileName + ".jpg")).build());
-
-		Thread.sleep(5000);
-
 	}
 
 	public String captureScreenshot(String screenShotName) throws IOException {
@@ -276,34 +281,34 @@ public class BaseTestDD {
 	}
 
 	public void clickDropdown(String rowNameDD) throws IOException, InterruptedException {
-		// Click dropdown
+		WebDriverWait w = new WebDriverWait(driver, Duration.ofSeconds(3));
+		// Click Dropdown
 		ArrayList<String> listDD = d.getData(rowNameDD, "TC01");
+		w.until(ExpectedConditions.presenceOfElementLocated(By.xpath((String) listDD.get(7))));
 		WebElement dropdown = driver.findElement(By.xpath((String) listDD.get(7)));
-		Thread.sleep(3000);
 		dropdown.click();
-
 		extentTest.log(Status.PASS, (String) listDD.get(3), MediaEntityBuilder
 				.createScreenCaptureFromPath(captureScreenshot((String) listDD.get(0) + ".jpg")).build());
 	}
 
 	public void selectOption(String rowName) throws IOException, InterruptedException {
+		WebDriverWait w = new WebDriverWait(driver, Duration.ofSeconds(3));
 		ArrayList<String> list = d.getData(rowName, "TC01");
 		WebElement selectOption = driver.findElement(By.xpath((String) list.get(7)));
 		selectOption.click();
-		Thread.sleep(3000);
+		w.until(ExpectedConditions.presenceOfElementLocated(By.xpath((String) list.get(7))));
 		extentTest.log(Status.PASS, (String) list.get(3),
 				MediaEntityBuilder.createScreenCaptureFromPath(captureScreenshot(rowName + ".jpg")).build());
 	}
 
 	public void signatureAndLogout(String sheetName, String ssID) throws InterruptedException, IOException {
-
+		WebDriverWait w = new WebDriverWait(driver, Duration.ofSeconds(5));
 		// Click Final Recommendation Menu
 		ArrayList AT001 = d.getData("AT001", sheetName);
 		WebElement finalRecMenu = driver.findElement(By.xpath((String) AT001.get(6)));
 		finalRecMenu.click();
 		extentTest.log(Status.PASS, (String) AT001.get(2),
 				MediaEntityBuilder.createScreenCaptureFromPath(captureScreenshot("Final Rec" + ssID + ".jpg")).build());
-		Thread.sleep(3000);
 
 		// Add a Signature into the Nurse Signature Box
 		ArrayList AT002 = d.getData("AT002", sheetName);
@@ -350,9 +355,9 @@ public class BaseTestDD {
 //		extentTest.log(Status.PASS, (String) AT006.get(2),
 //				MediaEntityBuilder.createScreenCaptureFromPath(captureScreenshot("AT006" + ssID + ".jpg")).build());
 
-		Thread.sleep(5000);
-		// Click the Complete Assessment Button
 		ArrayList AT007 = d.getData("AT007", sheetName);
+		w.until(ExpectedConditions.presenceOfElementLocated(By.xpath((String) AT007.get(6))));
+		// Click the Complete Assessment Button
 		WebElement completeAssessment = driver.findElement(By.xpath((String) AT007.get(6)));
 		completeAssessment.click();
 		extentTest.log(Status.PASS, (String) AT007.get(2),
@@ -369,7 +374,7 @@ public class BaseTestDD {
 		ArrayList AT009 = d.getData("AT009", sheetName);
 		WebElement signOut = driver.findElement(By.xpath((String) AT009.get(6)));
 		signOut.click();
-		Thread.sleep(5000);
+		w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@ng-click='vm.login()']")));
 		extentTest.log(Status.PASS, (String) AT009.get(2),
 				MediaEntityBuilder.createScreenCaptureFromPath(captureScreenshot("AT009" + ssID + ".jpg")).build());
 	}

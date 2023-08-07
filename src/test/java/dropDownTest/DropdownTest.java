@@ -49,6 +49,8 @@ public class DropdownTest extends BaseTestDD {
 	JavascriptExecutor js = (JavascriptExecutor) driver;
 	DataDrivenHT d = new DataDrivenHT();
 
+	//UAS Assessment Details
+	//Cognitive Skills for Daily Decision Making
 	// Option1: Select an option
 	@Test(groups = "UAS Assessment Details: Cognitive Skills for Daily Decision Making")
 	public void verifyCognitiveSkillOption1() throws IOException, InterruptedException, AWTException {
@@ -79,7 +81,8 @@ public class DropdownTest extends BaseTestDD {
 		signatureAndLogout("afterTest", "UAS0103");
 	}
 
-	// Option4: Modified independence - Some difficulty in new situations only
+	// Option4: Minimally impaired - In specific recurring situations, decisions
+	// become poor or unsafe; cues / supervision necessary at those times
 	@Test(groups = "UAS Assessment Details: Cognitive Skills for Daily Decision Making")
 	public void verifyCognitiveSkillOption4() throws IOException, InterruptedException, AWTException {
 		login();
@@ -89,8 +92,8 @@ public class DropdownTest extends BaseTestDD {
 		signatureAndLogout("afterTest", "UAS0104");
 	}
 
-	// Option5: Minimally impaired - In specific recurring situations, decisions
-	// become poor or unsafe; cues / supervision necessary at those times
+	// Option5: Moderately impaired - Decisions consistently poor or unsafe;
+	// cues/supervision required at all times
 	@Test(groups = "UAS Assessment Details: Cognitive Skills for Daily Decision Making")
 	public void verifyCognitiveSkillOption5() throws IOException, InterruptedException, AWTException {
 		login();
@@ -100,8 +103,7 @@ public class DropdownTest extends BaseTestDD {
 		signatureAndLogout("afterTest", "UAS0105");
 	}
 
-	// Option6: Moderately impaired - Decisions consistently poor or unsafe;
-	// cues/supervision required at all times
+	// Option6: Severely impaired - Never or rarely makes decisions
 	@Test(groups = "UAS Assessment Details: Cognitive Skills for Daily Decision Making")
 	public void verifyCognitiveSkillOption6() throws IOException, InterruptedException, AWTException {
 		login();
@@ -111,7 +113,7 @@ public class DropdownTest extends BaseTestDD {
 		signatureAndLogout("afterTest", "UAS0106");
 	}
 
-	// Option7
+	// Option7: No discernable consciousness
 	@Test(groups = "UAS Assessment Details: Cognitive Skills for Daily Decision Making")
 	public void verifyCognitiveSkillOption7() throws IOException, InterruptedException, AWTException {
 		login();
@@ -121,7 +123,7 @@ public class DropdownTest extends BaseTestDD {
 		signatureAndLogout("afterTest", "UAS0107");
 	}
 
-	// Option1
+	// Option1: Select an option
 	@Test(groups = "UAS Assessment Details: Psychiatric Anxiety")
 	public void verifyPsychiatricAnxietyOption1() throws IOException, InterruptedException, AWTException {
 		login();
@@ -131,7 +133,7 @@ public class DropdownTest extends BaseTestDD {
 		signatureAndLogout("afterTest", "UAS0201");
 	}
 
-	// Option2
+	// Option2: Not Present
 	@Test(groups = "UAS Assessment Details: Psychiatric Anxiety")
 	public void verifyPsychiatricAnxietyOption2() throws IOException, InterruptedException, AWTException {
 		login();
@@ -437,7 +439,7 @@ public class DropdownTest extends BaseTestDD {
 		signatureAndLogout("afterTest", "UAS0801");
 	}
 
-	// Option2:
+	// Option2: Absence of symptom
 	@Test(groups = "UAS Assessment Details: Dyspnea")
 	public void verifyDyspneaOption2() throws IOException, InterruptedException, AWTException {
 		login();
@@ -478,9 +480,9 @@ public class DropdownTest extends BaseTestDD {
 		signatureAndLogout("afterTest", "UAS0805");
 	}
 
-	// Socially inappropriate or disruptive behavior
-	// Option1
-	@Test(groups = "UAS Assessment Details: Socially inappropriate or disruptive behavior")
+	// Socially Inappropriate Or Disruptive Behavior
+	// Option1: Select an Option
+	@Test(groups = "UAS Assessment Details: Socially Inappropriate Or Disruptive Behavior")
 	public void verifySIDBoption1() throws IOException, InterruptedException, AWTException {
 		login();
 		uploadFile();
@@ -490,7 +492,7 @@ public class DropdownTest extends BaseTestDD {
 	}
 
 	// Option2: Not Present
-	@Test(groups = "UAS Assessment Details: Socially inappropriate or disruptive behavior")
+	@Test(groups = "UAS Assessment Details: Socially Inappropriate Or Disruptive Behavior")
 	public void verifySIDBoption2() throws IOException, InterruptedException, AWTException {
 		login();
 		uploadFile();
@@ -500,7 +502,7 @@ public class DropdownTest extends BaseTestDD {
 	}
 
 	// Option3: Present but not exhibited in last 3 days
-	@Test(groups = "UAS Assessment Details: Socially inappropriate or disruptive behavior")
+	@Test(groups = "UAS Assessment Details: Socially Inappropriate Or Disruptive Behavior")
 	public void verifySIDBoption3() throws IOException, InterruptedException, AWTException {
 		login();
 		uploadFile();
@@ -510,7 +512,7 @@ public class DropdownTest extends BaseTestDD {
 	}
 
 	// Option4: Exhibited on 1-2 days of last 3 days
-	@Test(groups = "UAS Assessment Details: Socially inappropriate or disruptive behavior")
+	@Test(groups = "UAS Assessment Details: Socially Inappropriate Or Disruptive Behavior")
 	public void verifySIDBoption4() throws IOException, InterruptedException, AWTException {
 		login();
 		uploadFile();
@@ -520,7 +522,7 @@ public class DropdownTest extends BaseTestDD {
 	}
 
 	// Option5: Exhibited daily in last 3 days
-	@Test(groups = "UAS Assessment Details: Socially inappropriate or disruptive behavior")
+	@Test(groups = "UAS Assessment Details: Socially Inappropriate Or Disruptive Behavior")
 	public void verifySIDBoption5() throws IOException, InterruptedException, AWTException {
 		login();
 		uploadFile();
@@ -594,9 +596,9 @@ public class DropdownTest extends BaseTestDD {
 		signatureAndLogout("afterTest", "UAS1006");
 	}
 
-	// Inappropriate public sexual behavior or public disrobing
-	// Option1:
-	@Test(groups = "UAS Assessment Details: Inappropriate public sexual behavior or public disrobing")
+	// Inappropriate Public Sexual Behavior Or Public Disrobing
+	// Option1: Select an Option
+	@Test(groups = "UAS Assessment Details: Inappropriate Public Sexual Behavior Or Public Disrobing")
 	public void verifyIPSBPDoption1() throws IOException, InterruptedException, AWTException {
 		login();
 		uploadFile();
@@ -606,7 +608,7 @@ public class DropdownTest extends BaseTestDD {
 	}
 
 	// Option2: Not Present
-	@Test(groups = "UAS Assessment Details: Inappropriate public sexual behavior or public disrobing")
+	@Test(groups = "UAS Assessment Details: Inappropriate Public Sexual Behavior Or Public Disrobing")
 	public void verifyIPSBPDoption2() throws IOException, InterruptedException, AWTException {
 		login();
 		uploadFile();
@@ -616,7 +618,7 @@ public class DropdownTest extends BaseTestDD {
 	}
 
 	// Option3: Present but not exhibited in last 3 days
-	@Test(groups = "UAS Assessment Details: Inappropriate public sexual behavior or public disrobing")
+	@Test(groups = "UAS Assessment Details: Inappropriate Public Sexual Behavior Or Public Disrobing")
 	public void verifyIPSBPDoption3() throws IOException, InterruptedException, AWTException {
 		login();
 		uploadFile();
@@ -626,7 +628,7 @@ public class DropdownTest extends BaseTestDD {
 	}
 
 	// Option4: Exhibited on 1-2 days of last 3 days
-	@Test(groups = "UAS Assessment Details: Inappropriate public sexual behavior or public disrobing")
+	@Test(groups = "UAS Assessment Details: Inappropriate Public Sexual Behavior Or Public Disrobing")
 	public void verifyIPSBPDoption4() throws IOException, InterruptedException, AWTException {
 		login();
 		uploadFile();
@@ -636,7 +638,7 @@ public class DropdownTest extends BaseTestDD {
 	}
 
 	// Option5: Exhibited daily in last 3 days
-	@Test(groups = "UAS Assessment Details: Inappropriate public sexual behavior or public disrobing")
+	@Test(groups = "UAS Assessment Details: Inappropriate Public Sexual Behavior Or Public Disrobing")
 	public void verifyIPSBPDoption5() throws IOException, InterruptedException, AWTException {
 		login();
 		uploadFile();
@@ -782,7 +784,7 @@ public class DropdownTest extends BaseTestDD {
 		signatureAndLogout("afterTest", "IADL0101");
 	}
 
-	// option2: //Option2: Independent - no physical assistance, setup, or
+	// option2: Independent - no physical assistance, setup, or
 	// supervision in any episode
 	@Test(groups = "IADL - Capacity: Meal Preparation Response")
 	public void verifyMealPrepOption2() throws IOException, InterruptedException, AWTException {
@@ -848,8 +850,7 @@ public class DropdownTest extends BaseTestDD {
 		signatureAndLogout("afterTest", "IADL0107");
 	}
 
-	// Option8: Select: Total dependence - full performance by others during all
-	// episodes
+	// Option8: Total dependence - full performance by others during all episodes
 	@Test(groups = "IADL - Capacity: Meal Preparation Response")
 	public void verifyMealPrepOption8() throws IOException, InterruptedException, AWTException {
 		login();
@@ -946,7 +947,7 @@ public class DropdownTest extends BaseTestDD {
 		signatureAndLogout("afterTest", "IADL0207");
 	}
 
-	// Option8: //Option8: Total dependence - full performance by others during all
+	// Option8: Total dependence - full performance by others during all
 	// episodes
 	@Test(groups = "IADL - Capacity: Ordinary Housework Response")
 	public void verifyOrdinaryHouseworkOption8() throws IOException, InterruptedException, AWTException {
@@ -1229,7 +1230,7 @@ public class DropdownTest extends BaseTestDD {
 		signatureAndLogout("afterTest", "ADL0206");
 	}
 
-	// Option7: //Option7: Maximal assistance - weight-bearing support (including
+	// Option7: Maximal assistance - weight-bearing support (including
 	// lifting limbs) by 2+
 	// helpers - OR - weight-bearing support for more than 50% of subtasks
 	@Test(groups = "ADL - Self Performance: Personal Hygiene")
@@ -1558,7 +1559,6 @@ public class DropdownTest extends BaseTestDD {
 	}
 
 	// Transfer Toilet
-
 	// Option1: Select an option
 	@Test(groups = "ADL - Self Performance: Transfer Toilet")
 	public void verifyTransToiletOption1() throws IOException, InterruptedException, AWTException {
@@ -1623,7 +1623,7 @@ public class DropdownTest extends BaseTestDD {
 		signatureAndLogout("afterTest", "ADL0606");
 	}
 
-	// Option7:Maximal assistance - weight-bearing support (including lifting limbs)
+	// Option7: Maximal assistance - weight-bearing support (including lifting limbs)
 	// by 2+ helpers - OR - weight-bearing support for more than 60% of subtasks
 	@Test(groups = "ADL - Self Performance: Transfer Toilet")
 	public void verifyTransToiletOption7() throws IOException, InterruptedException, AWTException {
@@ -1655,7 +1655,6 @@ public class DropdownTest extends BaseTestDD {
 	}
 
 	// Toileting
-
 	// Option1: Select an option
 	@Test(groups = "ADL - Self Performance: Toileting")
 	public void verifyToiletingOption1() throws IOException, InterruptedException, AWTException {

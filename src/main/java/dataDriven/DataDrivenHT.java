@@ -20,8 +20,8 @@ public class DataDrivenHT {
 		ArrayList<String> a = new ArrayList<String>();
 
 		FileInputStream fis = new FileInputStream(
-				"C:\\Users\\802072\\eclipse-workspace1\\helpsToolDropdown\\src\\test\\resources\\testCases\\helpsToolDropdownTC.xlsx");
-		XSSFWorkbook workbook = new XSSFWorkbook(fis);
+				System.getProperty("user.dir")+"\\src\\test\\resources\\testCases\\helpsToolDropdownTC.xlsx");
+				XSSFWorkbook workbook = new XSSFWorkbook(fis);
 
 		int sheets = workbook.getNumberOfSheets();
 		System.out.println("no of sheets are :" + sheets);
@@ -40,12 +40,13 @@ public class DataDrivenHT {
 
 					if (value.getStringCellValue().equalsIgnoreCase("Test Steps ID")) {
 						column = k;
+						System.out.println("column is :" + column);
 					}
 
 					k++;
 				}
 				System.out.println("sheet name is :" + workbook.getSheetName(i));
-				System.out.println("column is :" + column);
+				
 
 				while (rows.hasNext()) {
 
