@@ -62,12 +62,12 @@ public class BaseTestDD {
 	@BeforeSuite
 	public void initialiseExtentReports() {
 		// ALL
-		ExtentSparkReporter sparkReporter_all = new ExtentSparkReporter("HelpsToolDropdown.html");
-		sparkReporter_all.config().setReportName("Helps Tool: Verify Dropdown Option Values");
+		//ExtentSparkReporter sparkReporter_all = new ExtentSparkReporter("HelpsToolDropdown.html");
+		//sparkReporter_all.config().setReportName("Helps Tool: Verify Dropdown Option Values");
 
 		// UAS
-//		ExtentSparkReporter sparkReporter_all = new ExtentSparkReporter("HelpsToolUASDropdown.html");
-//		sparkReporter_all.config().setReportName("Helps Tool: Verify UAS Assessment Details Dropdown Option Values");
+		ExtentSparkReporter sparkReporter_all = new ExtentSparkReporter("HelpsToolUASDropdown.html");
+		sparkReporter_all.config().setReportName("Helps Tool: Verify UAS Assessment Details Dropdown Option Values");
 
 		// IADL
 //		ExtentSparkReporter sparkReporter_all = new ExtentSparkReporter("HelpsToolIADLDropdown.html");
@@ -182,13 +182,13 @@ public class BaseTestDD {
 		WebElement signIn = driver.findElement(By.xpath((String) LI006.get(5)));
 		((JavascriptExecutor) driver).executeScript("arguments[0].click();", signIn);
 		ArrayList LI007 = d.getData("LI007", "beforeTest");
-		w.until(ExpectedConditions.visibilityOfElementLocated(By.xpath((String) LI007.get(6))));
+		w.until(ExpectedConditions.visibilityOfElementLocated(By.xpath((String) LI007.get(5))));
 		String log6 = (String) LI006.get(1);
 		extentTest.log(Status.PASS, log6,
 				MediaEntityBuilder.createScreenCaptureFromPath(captureScreenshot(log6 + ".jpg")).build());
 
 		// Click No to "Stay Signed In?"
-		WebElement no = driver.findElement(By.xpath((String) LI007.get(6)));
+		WebElement no = driver.findElement(By.xpath((String) LI007.get(5)));
 		no.click();
 		ArrayList UF001 = d.getData("UF001", "beforeTest");
 		w.until(ExpectedConditions.presenceOfElementLocated(By.xpath((String) UF001.get(5))));
@@ -201,20 +201,18 @@ public class BaseTestDD {
 	public void uploadFile() throws IOException, InterruptedException, AWTException {
 		WebDriverWait w = new WebDriverWait(driver, Duration.ofSeconds(3));
 		// w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("")));
-
-		// UPLOAD FILE
-		ArrayList file1 = d.getData("File1", "beforeTest");
-		String fileName = (String) file1.get(1);
-		String path = System.getProperty("user.dir") + (String) file1.get(2);
-
+		
 		// Click Import HCS Assessment
 		ArrayList UF001 = d.getData("UF001", "beforeTest");
+		ArrayList UF002 = d.getData("UF002", "beforeTest");
+		String fileName = (String) UF002.get(6);
+		
 		WebElement importBtn = driver.findElement(By.xpath((String) UF001.get(5)));
 		String log8 = (String) UF001.get(1);
 		extentTest.log(Status.PASS, log8,
 				MediaEntityBuilder.createScreenCaptureFromPath(captureScreenshot(log8 + fileName + ".jpg")).build());
 		importBtn.click();
-		ArrayList UF002 = d.getData("UF002", "beforeTest");
+		
 		w.until(ExpectedConditions.presenceOfElementLocated(By.xpath((String) UF002.get(5))));
 
 		// Click Choose File
@@ -225,6 +223,7 @@ public class BaseTestDD {
 
 		// Log Upload File
 		ArrayList UF003 = d.getData("UF003", "beforeTest");
+		String path = System.getProperty("user.dir") + (String) UF003.get(6);
 		String log10 = (String) UF003.get(1);
 		extentTest.log(Status.PASS, (String) UF003.get(0) + " " + UF003.get(1) + " " + fileName,
 				MediaEntityBuilder.createScreenCaptureFromPath(captureScreenshot(log10 + fileName + ".jpg")).build());
@@ -283,7 +282,7 @@ public class BaseTestDD {
 	public void clickDropdown(String rowNameDD) throws IOException, InterruptedException {
 		WebDriverWait w = new WebDriverWait(driver, Duration.ofSeconds(3));
 		// Click Dropdown
-		ArrayList<String> listDD = d.getData(rowNameDD, "TC01");
+		ArrayList<String> listDD = d.getData(rowNameDD, "testSteps");
 		w.until(ExpectedConditions.presenceOfElementLocated(By.xpath((String) listDD.get(7))));
 		WebElement dropdown = driver.findElement(By.xpath((String) listDD.get(7)));
 		dropdown.click();
@@ -293,7 +292,7 @@ public class BaseTestDD {
 
 	public void selectOption(String rowName) throws IOException, InterruptedException {
 		WebDriverWait w = new WebDriverWait(driver, Duration.ofSeconds(3));
-		ArrayList<String> list = d.getData(rowName, "TC01");
+		ArrayList<String> list = d.getData(rowName, "testSteps");
 		WebElement selectOption = driver.findElement(By.xpath((String) list.get(7)));
 		selectOption.click();
 		w.until(ExpectedConditions.presenceOfElementLocated(By.xpath((String) list.get(7))));
