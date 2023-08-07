@@ -301,8 +301,9 @@ public class BaseTestDD {
 				MediaEntityBuilder.createScreenCaptureFromPath(captureScreenshot(rowName + ".jpg")).build());
 	}
 
-	public void signatureAndLogout(String sheetName, String ssID) throws InterruptedException, IOException {
+	public void signatureAndLogout(String ssID) throws InterruptedException, IOException {
 		WebDriverWait w = new WebDriverWait(driver, Duration.ofSeconds(5));
+		String sheetName= "afterTest";
 		// Click Final Recommendation Menu
 		ArrayList AT001 = d.getData("AT001", sheetName);
 		WebElement finalRecMenu = driver.findElement(By.xpath((String) AT001.get(6)));
