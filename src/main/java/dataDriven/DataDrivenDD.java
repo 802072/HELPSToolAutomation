@@ -13,7 +13,7 @@ import org.apache.poi.ss.util.NumberToTextConverter;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-public class DataDrivenHT {
+public class DataDrivenDD {
 
 	@SuppressWarnings("deprecation")
 	public ArrayList<String> getData(String testcaseName, String sheetName) throws IOException {

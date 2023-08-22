@@ -13,7 +13,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.IADLcapacity">
 				<methods>
 					<include name="verifyMealPrepOption1" />
 				</methods>
@@ -30,7 +30,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.IADLcapacity">
 				<methods>
 					<include name="verifyMealPrepOption2" />
 				</methods>
@@ -47,7 +47,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.IADLcapacity">
 				<methods>
 					<include name="verifyMealPrepOption3" />
 				</methods>
@@ -64,7 +64,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.IADLcapacity">
 				<methods>
 					<include name="verifyMealPrepOption4" />
 				</methods>
@@ -81,7 +81,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.IADLcapacity">
 				<methods>
 					<include name="verifyMealPrepOption5" />
 				</methods>
@@ -98,7 +98,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.IADLcapacity">
 				<methods>
 					<include name="verifyMealPrepOption6" />
 				</methods>
@@ -115,7 +115,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.IADLcapacity">
 				<methods>
 					<include name="verifyMealPrepOption7" />
 				</methods>
@@ -132,7 +132,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.IADLcapacity">
 				<methods>
 					<include name="verifyMealPrepOption8" />
 				</methods>
@@ -149,7 +149,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.IADLcapacity">
 				<methods>
 					<include name="verifyMealPrepOption9" />
 				</methods>
@@ -166,7 +166,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.IADLcapacity">
 				<methods>
 					<include name="verifyOrdinaryHouseworkOption1" />
 				</methods>
@@ -183,7 +183,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.IADLcapacity">
 				<methods>
 					<include name="verifyOrdinaryHouseworkOption2" />
 				</methods>
@@ -200,7 +200,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.IADLcapacity">
 				<methods>
 					<include name="verifyOrdinaryHouseworkOption3" />
 				</methods>
@@ -216,7 +216,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.IADLcapacity">
 				<methods>
 					<include name="verifyOrdinaryHouseworkOption4" />
 				</methods>
@@ -232,7 +232,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.IADLcapacity">
 				<methods>
 					<include name="verifyOrdinaryHouseworkOption5" />
 				</methods>
@@ -248,7 +248,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.IADLcapacity">
 				<methods>
 					<include name="verifyOrdinaryHouseworkOption6" />
 				</methods>
@@ -265,7 +265,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.IADLcapacity">
 				<methods>
 					<include name="verifyOrdinaryHouseworkOption7" />
 				</methods>
@@ -281,7 +281,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.IADLcapacity">
 				<methods>
 					<include name="verifyOrdinaryHouseworkOption8" />
 				</methods>
@@ -298,7 +298,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.IADLcapacity">
 				<methods>
 					<include name="verifyOrdinaryHouseworkOption9" />
 				</methods>
@@ -316,7 +316,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.IADLcapacity">
 				<methods>
 					<include name="verifyShoppingOption1" />
 				</methods>
@@ -333,7 +333,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.IADLcapacity">
 				<methods>
 					<include name="verifyShoppingOption2" />
 				</methods>
@@ -349,7 +349,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.IADLcapacity">
 				<methods>
 					<include name="verifyShoppingOption3" />
 				</methods>
@@ -365,7 +365,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.IADLcapacity">
 				<methods>
 					<include name="verifyShoppingOption4" />
 				</methods>
@@ -381,7 +381,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.IADLcapacity">
 				<methods>
 					<include name="verifyShoppingOption5" />
 				</methods>
@@ -397,7 +397,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.IADLcapacity">
 				<methods>
 					<include name="verifyShoppingOption6" />
 				</methods>
@@ -413,7 +413,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.IADLcapacity">
 				<methods>
 					<include name="verifyShoppingOption7" />
 				</methods>
@@ -430,7 +430,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.IADLcapacity">
 				<methods>
 					<include name="verifyShoppingOption8" />
 				</methods>
@@ -446,7 +446,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.IADLcapacity">
 				<methods>
 					<include name="verifyShoppingOption9" />
 				</methods>

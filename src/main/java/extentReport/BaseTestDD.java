@@ -16,7 +16,6 @@ import java.util.concurrent.TimeUnit;
 
 import javax.imageio.ImageIO;
 
-import org.apache.hc.core5.util.Timeout;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -28,12 +27,8 @@ import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Optional;
-import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import com.assertthat.selenium_shutterbug.core.Capture;
 import com.assertthat.selenium_shutterbug.core.Shutterbug;
@@ -42,13 +37,10 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
-import com.aventstack.extentreports.reporter.ExtentSparkReporter;
-
-import dataDriven.DataDrivenHT;
+import dataDriven.DataDrivenDD;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import java.util.concurrent.TimeUnit;
 
 public class BaseTestDD {
 	public static WebDriver driver;
@@ -57,33 +49,7 @@ public class BaseTestDD {
 	public static ExtentTest extentTest;
 	public static ExtentTest testStepExtentTest;
 
-	DataDrivenHT d = new DataDrivenHT();
-
-	@BeforeSuite
-	public void initialiseExtentReports() {
-		// ALL
-		//ExtentSparkReporter sparkReporter_all = new ExtentSparkReporter("HelpsToolDropdown.html");
-		//sparkReporter_all.config().setReportName("Helps Tool: Verify Dropdown Option Values");
-
-		// UAS
-		ExtentSparkReporter sparkReporter_all = new ExtentSparkReporter("HelpsToolUASDropdown.html");
-		sparkReporter_all.config().setReportName("Helps Tool: Verify UAS Assessment Details Dropdown Option Values");
-
-		// IADL
-//		ExtentSparkReporter sparkReporter_all = new ExtentSparkReporter("HelpsToolIADLDropdown.html");
-//		sparkReporter_all.config().setReportName("Helps Tool: Verify IADL - Capacity Dropdown Option Values");
-
-		// ADL
-// 		ExtentSparkReporter sparkReporter_all = new ExtentSparkReporter("HelpsToolADLDropdown.html");
-//		sparkReporter_all.config().setReportName("Helps Tool: Verify ADL - Self Performance Option Values");	
-		extentReports = new ExtentReports();
-		extentReports.attachReporter(sparkReporter_all);
-
-		extentReports.setSystemInfo("OS", System.getProperty("os.name"));
-		extentReports.setSystemInfo("Java Version", System.getProperty("java.version"));
-		extentReports.setSystemInfo("Environment", "Test Environment");
-		// extentReports.setSystemInfo("Environment", "Production Environment");
-	}
+	DataDrivenDD d = new DataDrivenDD();
 
 	@AfterSuite
 	public void generateExtentReports() throws Exception {

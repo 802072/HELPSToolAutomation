@@ -12,7 +12,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.UASassessmentDetails">
 				<methods>
 					<include name="verifyCognitiveSkillOption1" />
 				</methods>
@@ -29,7 +29,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.UASassessmentDetails">
 				<methods>
 					<include name="verifyCognitiveSkillOption2" />
 				</methods>
@@ -46,7 +46,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.UASassessmentDetails">
 				<methods>
 					<include name="verifyCognitiveSkillOption3" />
 				</methods>
@@ -63,7 +63,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.UASassessmentDetails">
 				<methods>
 					<include name="verifyCognitiveSkillOption4" />
 				</methods>
@@ -80,7 +80,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.UASassessmentDetails">
 				<methods>
 					<include name="verifyCognitiveSkillOption5" />
 				</methods>
@@ -97,7 +97,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.UASassessmentDetails">
 				<methods>
 					<include name="verifyCognitiveSkillOption6" />
 				</methods>
@@ -114,7 +114,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.UASassessmentDetails">
 				<methods>
 					<include name="verifyCognitiveSkillOption7" />
 				</methods>
@@ -131,7 +131,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.UASassessmentDetails">
 				<methods>
 					<include name="verifyPsychiatricAnxietyOption1" />
 				</methods>
@@ -148,7 +148,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.UASassessmentDetails">
 				<methods>
 					<include name="verifyPsychiatricAnxietyOption2" />
 				</methods>
@@ -165,7 +165,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.UASassessmentDetails">
 				<methods>
 					<include name="verifyPsychiatricAnxietyOption3" />
 				</methods>
@@ -182,7 +182,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.UASassessmentDetails">
 				<methods>
 					<include name="verifyPsychiatricAnxietyOption4" />
 				</methods>
@@ -199,7 +199,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.UASassessmentDetails">
 				<methods>
 					<include name="verifyPsychiatricAnxietyOption5" />
 				</methods>
@@ -216,7 +216,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.UASassessmentDetails">
 				<methods>
 					<include name="verifyWanderingOption1" />
 				</methods>
@@ -233,7 +233,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.UASassessmentDetails">
 				<methods>
 					<include name="verifyWanderingOption2" />
 				</methods>
@@ -250,7 +250,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.UASassessmentDetails">
 				<methods>
 					<include name="verifyWanderingOption3" />
 				</methods>
@@ -267,7 +267,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.UASassessmentDetails">
 				<methods>
 					<include name="verifyWanderingOption4" />
 				</methods>
@@ -284,7 +284,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.UASassessmentDetails">
 				<methods>
 					<include name="verifyWanderingOption5" />
 				</methods>
@@ -301,7 +301,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.UASassessmentDetails">
 				<methods>
 					<include name="verifyPsychiatricDepressionOption1" />
 				</methods>
@@ -317,7 +317,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.UASassessmentDetails">
 				<methods>
 					<include name="verifyPsychiatricDepressionOption2" />
 				</methods>
@@ -334,7 +334,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.UASassessmentDetails">
 				<methods>
 					<include name="verifyPsychiatricDepressionOption3" />
 				</methods>
@@ -351,7 +351,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.UASassessmentDetails">
 				<methods>
 					<include name="verifyPsychiatricDepressionOption4" />
 				</methods>
@@ -368,7 +368,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.UASassessmentDetails">
 				<methods>
 					<include name="verifyPsychiatricDepressionOption5" />
 				</methods>
@@ -385,7 +385,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.UASassessmentDetails">
 				<methods>
 					<include name="verifyVerbalAbuseOption1" />
 				</methods>
@@ -402,7 +402,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.UASassessmentDetails">
 				<methods>
 					<include name="verifyVerbalAbuseOption2" />
 				</methods>
@@ -418,7 +418,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.UASassessmentDetails">
 				<methods>
 					<include name="verifyVerbalAbuseOption3" />
 				</methods>
@@ -434,7 +434,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.UASassessmentDetails">
 				<methods>
 					<include name="verifyVerbalAbuseOption4" />
 				</methods>
@@ -450,7 +450,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.UASassessmentDetails">
 				<methods>
 					<include name="verifyVerbalAbuseOption5" />
 				</methods>
@@ -467,7 +467,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.UASassessmentDetails">
 				<methods>
 					<include name="verifyPsychiatricSchizophreniaOption1" />
 				</methods>
@@ -484,7 +484,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.UASassessmentDetails">
 				<methods>
 					<include name="verifyPsychiatricSchizophreniaOption2" />
 				</methods>
@@ -501,7 +501,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.UASassessmentDetails">
 				<methods>
 					<include name="verifyPsychiatricSchizophreniaOption3" />
 				</methods>
@@ -518,7 +518,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.UASassessmentDetails">
 				<methods>
 					<include name="verifyPsychiatricSchizophreniaOption4" />
 				</methods>
@@ -535,7 +535,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.UASassessmentDetails">
 				<methods>
 					<include name="verifyPsychiatricSchizophreniaOption5" />
 				</methods>
@@ -552,7 +552,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.UASassessmentDetails">
 				<methods>
 					<include name="verifyPhysicalAbuseOption1" />
 				</methods>
@@ -568,7 +568,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.UASassessmentDetails">
 				<methods>
 					<include name="verifyPhysicalAbuseOption2" />
 				</methods>
@@ -584,7 +584,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.UASassessmentDetails">
 				<methods>
 					<include name="verifyPhysicalAbuseOption3" />
 				</methods>
@@ -600,7 +600,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.UASassessmentDetails">
 				<methods>
 					<include name="verifyPhysicalAbuseOption4" />
 				</methods>
@@ -616,7 +616,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.UASassessmentDetails">
 				<methods>
 					<include name="verifyPhysicalAbuseOption5" />
 				</methods>
@@ -633,7 +633,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.UASassessmentDetails">
 				<methods>
 					<include name="verifyDyspneaOption1" />
 				</methods>
@@ -650,7 +650,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.UASassessmentDetails">
 				<methods>
 					<include name="verifyDyspneaOption2" />
 				</methods>
@@ -667,7 +667,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.UASassessmentDetails">
 				<methods>
 					<include name="verifyDyspneaOption3" />
 				</methods>
@@ -684,7 +684,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.UASassessmentDetails">
 				<methods>
 					<include name="verifyDyspneaOption4" />
 				</methods>
@@ -701,7 +701,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.UASassessmentDetails">
 				<methods>
 					<include name="verifyDyspneaOption5" />
 				</methods>
@@ -718,7 +718,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.UASassessmentDetails">
 				<methods>
 					<include name="verifySIDBoption1" />
 				</methods>
@@ -734,7 +734,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.UASassessmentDetails">
 				<methods>
 					<include name="verifySIDBoption2" />
 				</methods>
@@ -750,7 +750,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.UASassessmentDetails">
 				<methods>
 					<include name="verifySIDBoption3" />
 				</methods>
@@ -766,7 +766,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.UASassessmentDetails">
 				<methods>
 					<include name="verifySIDBoption4" />
 				</methods>
@@ -782,7 +782,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.UASassessmentDetails">
 				<methods>
 					<include name="verifySIDBoption5" />
 				</methods>
@@ -799,7 +799,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.UASassessmentDetails">
 				<methods>
 					<include name="verifyFatigueOption1" />
 				</methods>
@@ -816,7 +816,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.UASassessmentDetails">
 				<methods>
 					<include name="verifyFatigueOption2" />
 				</methods>
@@ -832,7 +832,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.UASassessmentDetails">
 				<methods>
 					<include name="verifyFatigueOption3" />
 				</methods>
@@ -848,7 +848,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.UASassessmentDetails">
 				<methods>
 					<include name="verifyFatigueOption4" />
 				</methods>
@@ -864,7 +864,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.UASassessmentDetails">
 				<methods>
 					<include name="verifyFatigueOption5" />
 				</methods>
@@ -880,7 +880,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.UASassessmentDetails">
 				<methods>
 					<include name="verifyFatigueOption6" />
 				</methods>
@@ -897,7 +897,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.UASassessmentDetails">
 				<methods>
 					<include name="verifyIPSBPDoption1" />
 				</methods>
@@ -914,7 +914,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.UASassessmentDetails">
 				<methods>
 					<include name="verifyIPSBPDoption2" />
 				</methods>
@@ -931,7 +931,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.UASassessmentDetails">
 				<methods>
 					<include name="verifyIPSBPDoption3" />
 				</methods>
@@ -948,7 +948,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.UASassessmentDetails">
 				<methods>
 					<include name="verifyIPSBPDoption4" />
 				</methods>
@@ -965,7 +965,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.UASassessmentDetails">
 				<methods>
 					<include name="verifyIPSBPDoption5" />
 				</methods>
@@ -982,7 +982,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.UASassessmentDetails">
 				<methods>
 					<include name="verifyPainOption1" />
 				</methods>
@@ -999,7 +999,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.UASassessmentDetails">
 				<methods>
 					<include name="verifyPainOption2" />
 				</methods>
@@ -1016,7 +1016,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.UASassessmentDetails">
 				<methods>
 					<include name="verifyPainOption3" />
 				</methods>
@@ -1033,7 +1033,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.UASassessmentDetails">
 				<methods>
 					<include name="verifyPainOption4" />
 				</methods>
@@ -1050,7 +1050,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.UASassessmentDetails">
 				<methods>
 					<include name="verifyPainOption5" />
 				</methods>
@@ -1066,7 +1066,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.UASassessmentDetails">
 				<methods>
 					<include name="verifyPainOption6" />
 				</methods>
@@ -1083,7 +1083,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.UASassessmentDetails">
 				<methods>
 					<include name="verifyPainOption7" />
 				</methods>
@@ -1100,7 +1100,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.UASassessmentDetails">
 				<methods>
 					<include name="verifyResistCareOption1" />
 				</methods>
@@ -1117,7 +1117,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.UASassessmentDetails">
 				<methods>
 					<include name="verifyResistCareOption2" />
 				</methods>
@@ -1133,7 +1133,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.UASassessmentDetails">
 				<methods>
 					<include name="verifyResistCareOption3" />
 				</methods>
@@ -1149,7 +1149,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.UASassessmentDetails">
 				<methods>
 					<include name="verifyResistCareOption4" />
 				</methods>
@@ -1165,7 +1165,7 @@
 			value="Dayanzi" />
 		<classes>
 			<class
-				name="dropDownTest.DropdownTest">
+				name="dropDownTest.UASassessmentDetails">
 				<methods>
 					<include name="verifyResistCareOption5" />
 				</methods>
