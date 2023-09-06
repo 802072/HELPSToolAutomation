@@ -246,28 +246,30 @@ public class BaseTestDD {
 		}
 	}
 
-	public void clickDropdown(String rowNameDD) throws IOException, InterruptedException {
+	public void clickDropdown(String tsID) throws IOException, InterruptedException {
 		WebDriverWait w = new WebDriverWait(driver, Duration.ofSeconds(3));
 		// Click Dropdown
-		ArrayList<String> listDD = d.getData(rowNameDD, "testSteps");
+		ArrayList<String> listDD = d.getData(tsID, "testSteps");
 		w.until(ExpectedConditions.presenceOfElementLocated(By.xpath((String) listDD.get(7))));
 		WebElement dropdown = driver.findElement(By.xpath((String) listDD.get(7)));
 		dropdown.click();
 		extentTest.log(Status.PASS, (String) listDD.get(3), MediaEntityBuilder
 				.createScreenCaptureFromPath(captureScreenshot((String) listDD.get(0) +fileDate+ ".jpg")).build());
+		System.out.println("Dropdown "+tsID+ " clicked.");
 	}
 
-	public void selectOption(String rowName) throws IOException, InterruptedException {
+	public void selectOption(String tsID) throws IOException, InterruptedException {
 		WebDriverWait w = new WebDriverWait(driver, Duration.ofSeconds(3));
-		ArrayList<String> list = d.getData(rowName, "testSteps");
+		ArrayList<String> list = d.getData(tsID, "testSteps");
 		WebElement selectOption = driver.findElement(By.xpath((String) list.get(7)));
 		selectOption.click();
 		w.until(ExpectedConditions.presenceOfElementLocated(By.xpath((String) list.get(7))));
 		extentTest.log(Status.PASS, (String) list.get(3),
-				MediaEntityBuilder.createScreenCaptureFromPath(captureScreenshot(rowName + fileDate+".jpg")).build());
+				MediaEntityBuilder.createScreenCaptureFromPath(captureScreenshot(tsID + fileDate+".jpg")).build());
+		System.out.println("Option "+tsID+ " selected.");
 	}
 
-	public void signatureAndLogout(String ssID) throws InterruptedException, IOException {
+	public void signatureAndLogout(String tsID) throws InterruptedException, IOException {
 		WebDriverWait w = new WebDriverWait(driver, Duration.ofSeconds(5));
 		String sheetName = "afterTest";
 		// Click Final Recommendation Menu
@@ -275,7 +277,7 @@ public class BaseTestDD {
 		WebElement finalRecMenu = driver.findElement(By.xpath((String) AT001.get(6)));
 		finalRecMenu.click();
 		extentTest.log(Status.PASS, (String) AT001.get(2),
-				MediaEntityBuilder.createScreenCaptureFromPath(captureScreenshot("Final Rec" + ssID +fileDate+ ".jpg")).build());
+				MediaEntityBuilder.createScreenCaptureFromPath(captureScreenshot("Final Rec" + tsID +fileDate+ ".jpg")).build());
 
 		// Add a Signature into the Nurse Signature Box
 		ArrayList AT002 = d.getData("AT002", sheetName);
@@ -285,14 +287,14 @@ public class BaseTestDD {
 				.click().build();
 		signature.perform();
 		extentTest.log(Status.PASS, (String) AT002.get(2),
-				MediaEntityBuilder.createScreenCaptureFromPath(captureScreenshot("AT002" + ssID +fileDate+ ".jpg")).build());
+				MediaEntityBuilder.createScreenCaptureFromPath(captureScreenshot("AT002" + tsID +fileDate+ ".jpg")).build());
 
 		// Click Accept Signature Button
 		ArrayList AT003 = d.getData("AT003", sheetName);
 		WebElement acceptSign = driver.findElement(By.xpath((String) AT003.get(6)));
 		acceptSign.click();
 		extentTest.log(Status.PASS, (String) AT003.get(2),
-				MediaEntityBuilder.createScreenCaptureFromPath(captureScreenshot("AT003" + ssID +fileDate+ ".jpg")).build());
+				MediaEntityBuilder.createScreenCaptureFromPath(captureScreenshot("AT003" + tsID +fileDate+ ".jpg")).build());
 
 //		// Click Clear Signature Button
 //		ArrayList AT004 = d.getData("AT004", sheetName);
@@ -328,14 +330,14 @@ public class BaseTestDD {
 		WebElement completeAssessment = driver.findElement(By.xpath((String) AT007.get(6)));
 		completeAssessment.click();
 		extentTest.log(Status.PASS, (String) AT007.get(2),
-				MediaEntityBuilder.createScreenCaptureFromPath(captureScreenshot("AT007" + ssID + fileDate+".jpg")).build());
+				MediaEntityBuilder.createScreenCaptureFromPath(captureScreenshot("AT007" + tsID + fileDate+".jpg")).build());
 
 		// Click Welcome
 		ArrayList AT008 = d.getData("AT008", sheetName);
 		WebElement welcome = driver.findElement(By.xpath((String) AT008.get(6)));
 		welcome.click();
 		extentTest.log(Status.PASS, (String) AT008.get(2),
-				MediaEntityBuilder.createScreenCaptureFromPath(captureScreenshot("AT008" + ssID +fileDate+ ".jpg")).build());
+				MediaEntityBuilder.createScreenCaptureFromPath(captureScreenshot("AT008" + tsID +fileDate+ ".jpg")).build());
 
 		// Click Sign Out
 		ArrayList AT009 = d.getData("AT009", sheetName);
@@ -343,7 +345,8 @@ public class BaseTestDD {
 		signOut.click();
 		w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@ng-click='vm.login()']")));
 		extentTest.log(Status.PASS, (String) AT009.get(2),
-				MediaEntityBuilder.createScreenCaptureFromPath(captureScreenshot("AT009" + ssID +fileDate+ ".jpg")).build());
+				MediaEntityBuilder.createScreenCaptureFromPath(captureScreenshot("AT009" + tsID +fileDate+ ".jpg")).build());
+		System.out.println("Test Step "+ tsID+" has been completed.");
 	}
 
 }
