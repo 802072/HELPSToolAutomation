@@ -75,21 +75,15 @@ public class BaseTestDD {
 	@AfterMethod
 	public void checkStatus(Method m, ITestResult result) throws IOException {
 		if (result.getStatus() == ITestResult.FAILURE) {
-
-			String screenshotpath = null;
-			screenshotpath = captureScreenshot("failTest.jpg");
 			extentTest.fail(m.getName() + " has failed");
 			extentTest.log(Status.FAIL, result.getThrowable(),
-					MediaEntityBuilder.createScreenCaptureFromPath(screenshotpath).build());
+					MediaEntityBuilder.createScreenCaptureFromPath(captureScreenshot(m.getName() + fileDate + ".jpg")).build());
 
 		}
 		if (result.getStatus() == ITestResult.SKIP) {
-
-			String screenshotpath = null;
-			screenshotpath = captureScreenshot("skipTest.jpg");
 			extentTest.skip(m.getName() + " has skipped");
 			extentTest.log(Status.SKIP, result.getThrowable(),
-					MediaEntityBuilder.createScreenCaptureFromPath(screenshotpath).build());
+					MediaEntityBuilder.createScreenCaptureFromPath(captureScreenshot(m.getName() + fileDate + ".jpg")).build());
 		}
 
 		else if (result.getStatus() == ITestResult.SUCCESS) {
@@ -106,7 +100,6 @@ public class BaseTestDD {
 		WebDriverWait w = new WebDriverWait(driver, Duration.ofSeconds(10));
 		// w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("")));
 
-		
 		// Open Login Page
 		ArrayList LI001 = d.getData("LI001", "beforeTest");
 		driver.get((String) LI001.get(6));

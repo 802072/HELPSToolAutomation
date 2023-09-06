@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.awt.AWTException;
 
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.ExtentReports;
@@ -13,6 +14,7 @@ import extentReport.BaseTestDD;
 
 public class ADLselfPerformance extends BaseTestDD {
 
+	
 	@BeforeSuite
 	public void initialiseExtentReports() {
 		// ADL
@@ -24,7 +26,7 @@ public class ADLselfPerformance extends BaseTestDD {
 		extentReports.setSystemInfo("OS", System.getProperty("os.name"));
 		extentReports.setSystemInfo("Java Version", System.getProperty("java.version"));
 		// extentReports.setSystemInfo("Environment", "Test Environment");
-		// extentReports.setSystemInfo("Environment", "Production Environment");
+
 	}
 
 	// ADL - Self Performance
