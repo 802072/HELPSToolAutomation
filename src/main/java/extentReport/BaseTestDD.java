@@ -224,6 +224,7 @@ public class BaseTestDD {
 		ArrayList UF004 = d.getData("UF004", "beforeTest");
 		WebElement submitBtn = driver.findElement(By.xpath((String) UF004.get(5)));
 		submitBtn.click();
+		Thread.sleep(3000);
 		String log11 = (String) UF004.get(1);
 		extentTest.log(Status.PASS, (String) UF004.get(0) + " Submit File: " + fileName,
 				MediaEntityBuilder.createScreenCaptureFromPath(captureScreenshot(log11 + fileName +fileDate+ ".jpg")).build());
@@ -247,7 +248,7 @@ public class BaseTestDD {
 	}
 
 	public void clickDropdown(String tsID) throws IOException, InterruptedException {
-		WebDriverWait w = new WebDriverWait(driver, Duration.ofSeconds(3));
+		WebDriverWait w = new WebDriverWait(driver, Duration.ofSeconds(5));
 		// Click Dropdown
 		ArrayList<String> listDD = d.getData(tsID, "testSteps");
 		w.until(ExpectedConditions.presenceOfElementLocated(By.xpath((String) listDD.get(7))));
