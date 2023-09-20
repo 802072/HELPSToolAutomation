@@ -22,9 +22,11 @@ public class UASassessmentDetails extends BaseTestDD {
 
 		extentReports = new ExtentReports();
 		extentReports.attachReporter(sparkReporter_all);
+		
 
 		extentReports.setSystemInfo("OS", System.getProperty("os.name"));
 		extentReports.setSystemInfo("Java Version", System.getProperty("java.version"));
+		//extentReports.setSystemInfo("User ID", System.getProperty("user.name"));
 		// extentReports.setSystemInfo("Environment", "Test Environment");
 		// extentReports.setSystemInfo("Environment", "Production Environment");
 	}
