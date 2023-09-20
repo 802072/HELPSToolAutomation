@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite" parallel="methods" skipfailedinvocationcounts="true">
-	<!--<test
+	<test
 		name="TC01: Verify Document Upload: Sample 1 (chrome)">
 		<parameter
 			name="browserName" value="chrome" />
@@ -16,7 +16,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="TC02: Verify Document Upload: Sample 2 (chrome)">
 		<parameter
@@ -32,7 +31,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="TC03: Verify Document Upload: Sample 3 (chrome)">
 		<parameter
@@ -48,7 +46,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="TC04: Verify Document Upload: Sample 4 (chrome)">
 		<parameter
@@ -64,7 +61,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="TC05: Verify Document Upload: Sample 5 (chrome)">
 		<parameter
@@ -80,7 +76,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="TC06: Verify Document Upload: Sample 6 (chrome)">
 		<parameter
@@ -96,7 +91,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="TC07: Verify Document Upload: Sample 7 (chrome)">
 		<parameter
@@ -112,7 +106,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="TC08: Verify Document Upload: Sample 8 (chrome)">
 		<parameter
@@ -128,7 +121,10 @@
 			</class>
 		</classes>
 	</test>
-	EDGEDRIVER <test
+	
+	
+	
+	<test
 		name="TC01: Verify Document Upload: Sample 1 (edge)">
 		<parameter
 			name="browserName" value="edge" />
@@ -143,7 +139,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="TC02: Verify Document Upload: Sample 2 (edge)">
 		<parameter
@@ -159,7 +154,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="TC03: Verify Document Upload: Sample 3 (edge)">
 		<parameter
@@ -175,7 +169,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="TC04: Verify Document Upload: Sample 4 (edge)">
 		<parameter
@@ -191,7 +184,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="TC05: Verify Document Upload: Sample 5 (edge)">
 		<parameter
@@ -207,7 +199,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="TC06: Verify Document Upload: Sample 6 (edge)">
 		<parameter
@@ -223,7 +214,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="TC07: Verify Document Upload: Sample 7 (edge)">
 		<parameter
@@ -238,8 +228,7 @@
 				</methods>
 			</class>
 		</classes>
-	</test>-->
-
+	</test>
 	<test
 		name="TC08: Verify Document Upload: Sample 8 (edge)">
 		<parameter
@@ -255,6 +244,4 @@
 			</class>
 		</classes>
 	</test>
-
-</suite> 
-
+</suite>

@@ -19,8 +19,7 @@
 			</class>
 		</classes>
 	</test>
-
-	<!-- <test
+	<test
 		name="UAS0102 Cognitive Skills Dropdown: 2. Independent - Decisions consistent, reasonable and safe 
  (chrome)">
 		<parameter
@@ -36,7 +35,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS0103 Cognitive Skills Dropdown: 3. Modified independence - Some difficulty in new situations only
  (chrome)">
@@ -53,7 +51,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS0104 Cognitive Skills Dropdown: 4. Minimally impaired - In specific recurring situations, decisions become poor or unsafe; cues / supervision necessary at those times
  (chrome)">
@@ -70,7 +67,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS0105 Cognitive Skills Dropdown: 5. Moderately impaired - Decisions consistently poor or unsafe; cues/supervision required at all times
  (chrome)">
@@ -87,7 +83,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS0106 Cognitive Skills Dropdown: 6. Severely impaired - Never or rarely makes decisions
  (chrome)">
@@ -104,7 +99,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS0107 Cognitive Skills Dropdown: 7. No discernable consciousness
  (chrome)">
@@ -121,7 +115,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS0201 Psychiatric Anxiety Dropdown: 1. Select an option
  (chrome)">
@@ -138,7 +131,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS0202 Psychiatric Anxiety Dropdown: 2. Not Present
  (chrome)">
@@ -155,7 +147,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS0203 Psychiatric Anxiety Dropdown: 3. Primary diagnosis/diagnosis for stay/placement
  (chrome)">
@@ -172,7 +163,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS0204 Psychiatric Anxiety Dropdown: 4. Diagnosis present, receiving active treatment
  (chrome)">
@@ -189,7 +179,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS0205 Psychiatric Anxiety Dropdown: 5. Diagnosis present, monitored but no active treatment
  (chrome)">
@@ -206,7 +195,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS0301 Wandering Dropdown: 1. Select an option
  (chrome)">
@@ -223,7 +211,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS0302 Wandering Dropdown: 2. Not Present
  (chrome)">
@@ -240,7 +227,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS0303 Wandering Dropdown: 3. Present but not exhibited in last 3 days
  (chrome)">
@@ -257,7 +243,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS0304 Wandering Dropdown: 4. Exhibited on 1-2 days of last 3 days
  (chrome)">
@@ -274,7 +259,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS0305 Wandering Dropdown: 5. Exhibited daily in last 3 days
  (chrome)">
@@ -291,7 +275,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS0401 Psychiatric Depression Dropdown: 1. Select an option
  (chrome)">
@@ -324,7 +307,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS0403 Psychiatric Depression Dropdown: 3. Primary diagnosis/diagnosis for current stay
  (chrome)">
@@ -341,7 +323,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS0404 Psychiatric Depression Dropdown: 4. Diagnosis present, receiving active treatment
  (chrome)">
@@ -358,7 +339,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS0405 Psychiatric Depression Dropdown: 5. Diagnosis present, monitored but no active treatment
  (chrome)">
@@ -375,7 +355,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS0501 Verbal Abuse Dropdown: 1. Select an option
  (chrome)">
@@ -392,7 +371,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS0502 Verbal Abuse Dropdown: 2. Not Present
  (chrome)">
@@ -457,7 +435,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS0601 Psychiatric Schizophrenia Dropdown: 1. Select an option
  (chrome)">
@@ -474,7 +451,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS0602 Psychiatric Schizophrenia Dropdown: 2. Not Present
  (chrome)">
@@ -491,7 +467,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS0603 Psychiatric Schizophrenia Dropdown: 3. Primary diagnosis/diagnosis for current stay
  (chrome)">
@@ -508,7 +483,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS0604 Psychiatric Schizophrenia Dropdown: 4. Diagnosis present, receiving active treatment
  (chrome)">
@@ -525,7 +499,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS0605 Psychiatric Schizophrenia Dropdown: 5. Diagnosis present, monitored but no active treatment
  (chrome)">
@@ -542,7 +515,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS0701 Physical Abuse Dropdown: 1. Select an option
  (chrome)">
@@ -623,7 +595,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS0801 Dyspnea Dropdown: 1. Select an option
  (chrome)">
@@ -640,7 +611,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS0802 Dyspnea Dropdown: 2. Absence of symptom
  (chrome)">
@@ -657,7 +627,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS0803 Dyspnea Dropdown: 3. Absent at rest, but present when performed moderate activities
  (chrome)">
@@ -674,7 +643,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS0804 Dyspnea Dropdown: 4. Absent at rest, but present when performed normal day-to-day activities
  (chrome)">
@@ -691,7 +659,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS0805 Dyspnea Dropdown: 5. Present at rest
  (chrome)">
@@ -708,7 +675,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS0901 Socially inappropriate or disruptive behavior Dropdown: 1. Select an option
  (chrome)">
@@ -789,7 +755,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS1001 Fatige Dropdown: 1. Select an option
  (chrome)">
@@ -806,7 +771,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS1002 Fatige Dropdown: 2. None
  (chrome)">
@@ -887,7 +851,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS1101 IPSBPD Dropdown: 1. Select an option
  (chrome)">
@@ -904,7 +867,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS1102 IPSBPD Dropdown: 2. Not Present
  (chrome)">
@@ -921,7 +883,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS1103 IPSBPD Dropdown: 3. Present but not exhibited in last 3 days
  (chrome)">
@@ -938,7 +899,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS1104 IPSBPD Dropdown: 4. Exhibited on 1-2 days of last 3 days
  (chrome)">
@@ -955,7 +915,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS1105 IPSBPD Dropdown: 5. Exhibited daily in last 3 days
  (chrome)">
@@ -972,7 +931,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS1201 Pain Dropdown: 1. Select an option
  (chrome)">
@@ -989,7 +947,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS1202 Pain Dropdown: 2. No issue of pain
  (chrome)">
@@ -1006,7 +963,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS1203 Pain Dropdown: 3. Pain intensity acceptable to individual; no treatment regimen or change in regimen required
  (chrome)">
@@ -1023,7 +979,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS1204 Pain Dropdown: 4. Controlled adequately by therapeutic regimen
  (chrome)">
@@ -1040,7 +995,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS1205 Pain Dropdown: 5. Controlled when therapeutic regimen followed, but not always followed as ordered 
  (chrome)">
@@ -1073,7 +1027,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS1207 Pain Dropdown: 7. No therapeutic regimen being followed for pain; pain not adequately controlled
  (chrome)">
@@ -1090,7 +1043,6 @@
 			</class>
 		</classes>
 	</test>
-	
 	<test
 		name="UAS1301 Resist Care Dropdown: 1. Select an option
  (chrome)">
@@ -1107,7 +1059,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS1302 Resist Care Dropdown: 2. Not Present
  (chrome)">
@@ -1171,11 +1122,10 @@
 				</methods>
 			</class>
 		</classes>
-	</test>-->
+	</test>
 	
 	<!--EDGEBROWSER-->
-	
-		<test
+	<test
 		name="UAS0101 Cognitive Skills Dropdown: 1. Select an option (edge)">
 		<parameter
 			name="browserName" value="edge" />
@@ -1190,8 +1140,7 @@
 			</class>
 		</classes>
 	</test>
-
-	<!-- <test
+	<test
 		name="UAS0102 Cognitive Skills Dropdown: 2. Independent - Decisions consistent, reasonable and safe 
  (edge)">
 		<parameter
@@ -1207,7 +1156,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS0103 Cognitive Skills Dropdown: 3. Modified independence - Some difficulty in new situations only
  (edge)">
@@ -1224,7 +1172,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS0104 Cognitive Skills Dropdown: 4. Minimally impaired - In specific recurring situations, decisions become poor or unsafe; cues / supervision necessary at those times
  (edge)">
@@ -1241,7 +1188,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS0105 Cognitive Skills Dropdown: 5. Moderately impaired - Decisions consistently poor or unsafe; cues/supervision required at all times
  (edge)">
@@ -1258,7 +1204,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS0106 Cognitive Skills Dropdown: 6. Severely impaired - Never or rarely makes decisions
  (edge)">
@@ -1275,7 +1220,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS0107 Cognitive Skills Dropdown: 7. No discernable consciousness
  (edge)">
@@ -1292,7 +1236,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS0201 Psychiatric Anxiety Dropdown: 1. Select an option
  (edge)">
@@ -1309,7 +1252,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS0202 Psychiatric Anxiety Dropdown: 2. Not Present
  (edge)">
@@ -1326,7 +1268,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS0203 Psychiatric Anxiety Dropdown: 3. Primary diagnosis/diagnosis for stay/placement
  (edge)">
@@ -1343,7 +1284,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS0204 Psychiatric Anxiety Dropdown: 4. Diagnosis present, receiving active treatment
  (edge)">
@@ -1360,7 +1300,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS0205 Psychiatric Anxiety Dropdown: 5. Diagnosis present, monitored but no active treatment
  (edge)">
@@ -1377,7 +1316,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS0301 Wandering Dropdown: 1. Select an option
  (edge)">
@@ -1394,7 +1332,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS0302 Wandering Dropdown: 2. Not Present
  (edge)">
@@ -1411,7 +1348,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS0303 Wandering Dropdown: 3. Present but not exhibited in last 3 days
  (edge)">
@@ -1428,7 +1364,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS0304 Wandering Dropdown: 4. Exhibited on 1-2 days of last 3 days
  (edge)">
@@ -1445,7 +1380,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS0305 Wandering Dropdown: 5. Exhibited daily in last 3 days
  (edge)">
@@ -1462,7 +1396,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS0401 Psychiatric Depression Dropdown: 1. Select an option
  (edge)">
@@ -1495,7 +1428,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS0403 Psychiatric Depression Dropdown: 3. Primary diagnosis/diagnosis for current stay
  (edge)">
@@ -1512,7 +1444,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS0404 Psychiatric Depression Dropdown: 4. Diagnosis present, receiving active treatment
  (edge)">
@@ -1529,7 +1460,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS0405 Psychiatric Depression Dropdown: 5. Diagnosis present, monitored but no active treatment
  (edge)">
@@ -1546,7 +1476,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS0501 Verbal Abuse Dropdown: 1. Select an option
  (edge)">
@@ -1563,7 +1492,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS0502 Verbal Abuse Dropdown: 2. Not Present
  (edge)">
@@ -1628,7 +1556,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS0601 Psychiatric Schizophrenia Dropdown: 1. Select an option
  (edge)">
@@ -1645,7 +1572,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS0602 Psychiatric Schizophrenia Dropdown: 2. Not Present
  (edge)">
@@ -1662,7 +1588,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS0603 Psychiatric Schizophrenia Dropdown: 3. Primary diagnosis/diagnosis for current stay
  (edge)">
@@ -1679,7 +1604,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS0604 Psychiatric Schizophrenia Dropdown: 4. Diagnosis present, receiving active treatment
  (edge)">
@@ -1696,7 +1620,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS0605 Psychiatric Schizophrenia Dropdown: 5. Diagnosis present, monitored but no active treatment
  (edge)">
@@ -1713,7 +1636,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS0701 Physical Abuse Dropdown: 1. Select an option
  (edge)">
@@ -1794,7 +1716,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS0801 Dyspnea Dropdown: 1. Select an option
  (edge)">
@@ -1811,7 +1732,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS0802 Dyspnea Dropdown: 2. Absence of symptom
  (edge)">
@@ -1828,7 +1748,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS0803 Dyspnea Dropdown: 3. Absent at rest, but present when performed moderate activities
  (edge)">
@@ -1845,7 +1764,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS0804 Dyspnea Dropdown: 4. Absent at rest, but present when performed normal day-to-day activities
  (edge)">
@@ -1862,7 +1780,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS0805 Dyspnea Dropdown: 5. Present at rest
  (edge)">
@@ -1879,7 +1796,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS0901 Socially inappropriate or disruptive behavior Dropdown: 1. Select an option
  (edge)">
@@ -1960,7 +1876,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS1001 Fatige Dropdown: 1. Select an option
  (edge)">
@@ -1977,7 +1892,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS1002 Fatige Dropdown: 2. None
  (edge)">
@@ -2058,7 +1972,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS1101 IPSBPD Dropdown: 1. Select an option
  (edge)">
@@ -2075,7 +1988,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS1102 IPSBPD Dropdown: 2. Not Present
  (edge)">
@@ -2092,7 +2004,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS1103 IPSBPD Dropdown: 3. Present but not exhibited in last 3 days
  (edge)">
@@ -2109,7 +2020,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS1104 IPSBPD Dropdown: 4. Exhibited on 1-2 days of last 3 days
  (edge)">
@@ -2126,7 +2036,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS1105 IPSBPD Dropdown: 5. Exhibited daily in last 3 days
  (edge)">
@@ -2143,7 +2052,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS1201 Pain Dropdown: 1. Select an option
  (edge)">
@@ -2160,7 +2068,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS1202 Pain Dropdown: 2. No issue of pain
  (edge)">
@@ -2177,7 +2084,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS1203 Pain Dropdown: 3. Pain intensity acceptable to individual; no treatment regimen or change in regimen required
  (edge)">
@@ -2194,7 +2100,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS1204 Pain Dropdown: 4. Controlled adequately by therapeutic regimen
  (edge)">
@@ -2211,7 +2116,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS1205 Pain Dropdown: 5. Controlled when therapeutic regimen followed, but not always followed as ordered 
  (edge)">
@@ -2244,7 +2148,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS1207 Pain Dropdown: 7. No therapeutic regimen being followed for pain; pain not adequately controlled
  (edge)">
@@ -2261,7 +2164,6 @@
 			</class>
 		</classes>
 	</test>
-	
 	<test
 		name="UAS1301 Resist Care Dropdown: 1. Select an option
  (edge)">
@@ -2278,7 +2180,6 @@
 			</class>
 		</classes>
 	</test>
-
 	<test
 		name="UAS1302 Resist Care Dropdown: 2. Not Present
  (edge)">
@@ -2342,6 +2243,6 @@
 				</methods>
 			</class>
 		</classes>
-	</test>-->
-</suite> 
-
+	</test>
+	
+</suite>

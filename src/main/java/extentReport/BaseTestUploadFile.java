@@ -76,7 +76,7 @@ import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
 import dataDriven.DataDrivenHT;
-import dataDriven.writeDataExcel;
+//import dataDriven.writeDataExcel;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import io.github.bonigarcia.wdm.config.WebDriverManagerException;
 import java.util.HashMap;
@@ -91,7 +91,7 @@ public class BaseTestUploadFile {
 
 	DataDrivenHT d = new DataDrivenHT();
 
-	writeDataExcel excelWR = new writeDataExcel();
+	//writeDataExcel excelWR = new writeDataExcel();
 
 	Date date = new Date();
 	String fileDate = date.toString().replace(":", "_").replace(" ", "_");
