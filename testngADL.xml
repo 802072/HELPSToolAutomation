@@ -5,12 +5,13 @@
 		<listener class-name="ListenerImp.AnnotationListener"></listener>
 	</listeners>
 	<test
-		name="ADL0101 Bathing Response: 1. Select an option
+		name="ADL0101 Bathing Response: 1. Select an option (chrome)
 ">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
 			value="Dayanzi" />
+
 		<classes>
 			<class
 				name="dropDownTest.ADLselfPerformance">
@@ -23,7 +24,7 @@
 
 	<test
 		name="ADL0102 Bathing Response: 2. Independent - no physical assistance, setup, or supervision in any episode
-">
+ (chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -39,7 +40,7 @@
 	</test>
 	<test
 		name="ADL0103 Bathing Response: 3. Independent, setup help only - article or device provided or placed within reach, no physical assistance or supervision in any episode
-">
+ (chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -55,7 +56,7 @@
 	</test>
 	<test
 		name="ADL0104 Bathing Response: 4. Supervision - oversight/cueing
-">
+ (chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -71,7 +72,7 @@
 	</test>
 	<test
 		name="ADL0105 Bathing Response: 5. Limited assistance - guided maneuvering of limbs, physical guidance without taking weight
-">
+ (chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -87,7 +88,7 @@
 	</test>
 	<test
 		name="ADL0106 Bathing Response: 6. Extensive assistance - weight-bearing support (including lifting limbs) by 1 helper where person still performs 50% or more of subtasks
-">
+ (chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -103,7 +104,7 @@
 	</test>
 	<test
 		name="ADL0107 Bathing Response: 7. Maximal assistance - weight-bearing support (including lifting limbs) by 2+ helpers - OR - weight-bearing support for more than 50% of subtasks
-">
+ (chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -119,7 +120,7 @@
 	</test>
 	<test
 		name="ADL0108 Bathing Response: 8. Total dependence - full performance by others during all episodes
-">
+ (chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -135,7 +136,7 @@
 	</test>
 	<test
 		name="ADL0109 Bathing Response: 9. Activity did not occur during entire period
-">
+ (chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -152,7 +153,7 @@
 
 	<test
 		name="ADL0201 Personal Hygiene Response: 1. Select an option
-">
+ (chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -169,7 +170,7 @@
 
 	<test
 		name="ADL0202 Personal Hygiene Response: 2. Independent - no physical assistance, setup, or supervision in any episode
-">
+ (chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -185,7 +186,7 @@
 	</test>
 	<test
 		name="ADL0203 Personal Hygiene Response: 3. Independent, setup help only - article or device provided or placed within reach, no physical assistance or supervision in any episode
-">
+ (chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -201,7 +202,7 @@
 	</test>
 	<test
 		name="ADL0204 Personal Hygiene Response: 4. Supervision - oversight/cueing
-">
+ (chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -217,7 +218,7 @@
 	</test>
 	<test
 		name="ADL0205 Personal Hygiene Response: 5. Limited assistance - guided maneuvering of limbs, physical guidance without taking weight
-">
+ (chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -233,7 +234,7 @@
 	</test>
 	<test
 		name="ADL0206 Personal Hygiene Response: 6. Extensive assistance - weight-bearing support (including lifting limbs) by 1 helper where person still performs 50% or more of subtasks
-">
+ (chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -249,7 +250,7 @@
 	</test>
 	<test
 		name="ADL0207 Personal Hygiene Response: 7. Maximal assistance - weight-bearing support (including lifting limbs) by 2+ helpers - OR - weight-bearing support for more than 50% of subtasks
-">
+ (chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -265,7 +266,7 @@
 	</test>
 	<test
 		name="ADL0208 Personal Hygiene Response: 8. Total dependence - full performance by others during all episodes
-">
+ (chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -281,7 +282,7 @@
 	</test>
 	<test
 		name="ADL0209 Personal Hygiene Response: 9. Activity did not occur during entire period
-">
+ (chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -298,7 +299,7 @@
 
 	<test
 		name="ADL0301 Dressing Upper Body Response: 1. Select an option
-">
+ (chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -315,7 +316,7 @@
 
 	<test
 		name="ADL0302 Dressing Upper Body Response: 2. Independent - no physical assistance, setup, or supervision in any episode
-">
+ (chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -331,7 +332,7 @@
 	</test>
 	<test
 		name="ADL0303 Dressing Upper Body Response: 3. Independent, setup help only - article or device provided or placed within reach, no physical assistance or supervision in any episode
-">
+ (chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -347,7 +348,7 @@
 	</test>
 	<test
 		name="ADL0304 Dressing Upper Body Response: 4. Supervision - oversight/cueing
-">
+ (chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -363,7 +364,7 @@
 	</test>
 	<test
 		name="ADL0305 Dressing Upper Body Response: 5. Limited assistance - guided maneuvering of limbs, physical guidance without taking weight
-">
+ (chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -379,7 +380,7 @@
 	</test>
 	<test
 		name="ADL0306 Dressing Upper Body Response: 6. Extensive assistance - weight-bearing support (including lifting limbs) by 1 helper where person still performs 50% or more of subtasks
-">
+ (chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -395,7 +396,7 @@
 	</test>
 	<test
 		name="ADL0307 Dressing Upper Body Response: 7. Maximal assistance - weight-bearing support (including lifting limbs) by 2+ helpers - OR - weight-bearing support for more than 50% of subtasks
-">
+ (chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -411,7 +412,7 @@
 	</test>
 	<test
 		name="ADL0308 Dressing Upper Body Response: 8. Total dependence - full performance by others during all episodes
-">
+ (chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -427,7 +428,7 @@
 	</test>
 	<test
 		name="ADL0309 Dressing Upper Body Response: 9. Activity did not occur during entire period
-">
+ (chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -444,7 +445,7 @@
 
 	<test
 		name="ADL0401 Dressing Lower Body Response: 1. Select an option
-">
+ (chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -461,7 +462,7 @@
 
 	<test
 		name="ADL0402 Dressing Lower Body Response: 2. Independent - no physical assistance, setup, or supervision in any episode
-">
+ (chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -477,7 +478,7 @@
 	</test>
 	<test
 		name="ADL0403 Dressing Lower Body Response: 3. Independent, setup help only - article or device provided or placed within reach, no physical assistance or supervision in any episode
-">
+ (chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -493,7 +494,7 @@
 	</test>
 	<test
 		name="ADL0404 Dressing Lower Body Response: 4. Supervision - oversight/cueing
-">
+ (chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -509,7 +510,7 @@
 	</test>
 	<test
 		name="ADL0405 Dressing Lower Body Response: 5. Limited assistance - guided maneuvering of limbs, physical guidance without taking weight
-">
+ (chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -525,7 +526,7 @@
 	</test>
 	<test
 		name="ADL0406 Dressing Lower Body Response: 6. Extensive assistance - weight-bearing support (including lifting limbs) by 1 helper where person still performs 50% or more of subtasks
-">
+ (chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -541,7 +542,7 @@
 	</test>
 	<test
 		name="ADL0407 Dressing Lower Body Response: 7. Maximal assistance - weight-bearing support (including lifting limbs) by 2+ helpers - OR - weight-bearing support for more than 50% of subtasks
-">
+ (chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -557,7 +558,7 @@
 	</test>
 	<test
 		name="ADL0408 Dressing Lower Body Response: 8. Total dependence - full performance by others during all episodes
-">
+ (chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -573,7 +574,7 @@
 	</test>
 	<test
 		name="ADL0409 Dressing Lower Body Response: 9. Activity did not occur during entire period
-">
+ (chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -590,7 +591,7 @@
 
 	<test
 		name="ADL0501 Locomotion Response: 1. Select an option
-">
+ (chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -607,7 +608,7 @@
 
 	<test
 		name="ADL0502 Locomotion Response: 2. Independent - no physical assistance, setup, or supervision in any episode
-">
+ (chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -623,7 +624,7 @@
 	</test>
 	<test
 		name="ADL0503 Locomotion Response: 3. Independent, setup help only - article or device provided or placed within reach, no physical assistance or supervision in any episode
-">
+ (chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -639,7 +640,7 @@
 	</test>
 	<test
 		name="ADL0504 Locomotion Response: 4. Supervision - oversight/cueing
-">
+ (chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -655,7 +656,7 @@
 	</test>
 	<test
 		name="ADL0505 Locomotion Response: 5. Limited assistance - guided maneuvering of limbs, physical guidance without taking weight
-">
+ (chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -671,7 +672,7 @@
 	</test>
 	<test
 		name="ADL0506 Locomotion Response: 6. Extensive assistance - weight-bearing support (including lifting limbs) by 1 helper where person still performs 50% or more of subtasks
-">
+ (chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -687,7 +688,7 @@
 	</test>
 	<test
 		name="ADL0507 Locomotion Response: 7. Maximal assistance - weight-bearing support (including lifting limbs) by 2+ helpers - OR - weight-bearing support for more than 50% of subtasks
-">
+ (chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -703,7 +704,7 @@
 	</test>
 	<test
 		name="ADL0508 Locomotion Response: 8. Total dependence - full performance by others during all episodes
-">
+ (chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -719,7 +720,7 @@
 	</test>
 	<test
 		name="ADL0509 Locomotion Response: 9. Activity did not occur during entire period
-">
+ (chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -736,7 +737,7 @@
 
 	<test
 		name="ADL0601 Transfer Toilet Response: 1. Select an option
-">
+ (chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -753,7 +754,7 @@
 
 	<test
 		name="ADL0602 Transfer Toilet Response: 2. Independent - no physical assistance, setup, or supervision in any episode
-">
+ (chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -769,7 +770,7 @@
 	</test>
 	<test
 		name="ADL0603 Transfer Toilet Response: 3. Independent, setup help only - article or device provided or placed within reach, no physical assistance or supervision in any episode
-">
+ (chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -785,7 +786,7 @@
 	</test>
 	<test
 		name="ADL0604 Transfer Toilet Response: 4. Supervision - oversight/cueing
-">
+ (chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -801,7 +802,7 @@
 	</test>
 	<test
 		name="ADL0605 Transfer Toilet Response: 5. Limited assistance - guided maneuvering of limbs, physical guidance without taking weight
-">
+ (chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -817,7 +818,7 @@
 	</test>
 	<test
 		name="ADL0606 Transfer Toilet Response: 6. Extensive assistance - weight-bearing support (including lifting limbs) by 1 helper where person still performs 50% or more of subtasks
-">
+ (chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -833,7 +834,7 @@
 	</test>
 	<test
 		name="ADL0607 Transfer Toilet Response: 7. Maximal assistance - weight-bearing support (including lifting limbs) by 2+ helpers - OR - weight-bearing support for more than 50% of subtasks
-">
+ (chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -849,7 +850,7 @@
 	</test>
 	<test
 		name="ADL0608 Transfer Toilet Response: 8. Total dependence - full performance by others during all episodes
-">
+ (chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -865,7 +866,7 @@
 	</test>
 	<test
 		name="ADL0609 Transfer Toilet Response: 9. Activity did not occur during entire period
-">
+ (chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -882,7 +883,7 @@
 
 	<test
 		name="ADL0701 Toileting Response: 1. Select an option
-">
+ (chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -899,7 +900,7 @@
 
 	<test
 		name="ADL0702 Toileting Response: 2. Independent - no physical assistance, setup, or supervision in any episode
-">
+ (chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -915,7 +916,7 @@
 	</test>
 	<test
 		name="ADL0703 Toileting Response: 3. Independent, setup help only - article or device provided or placed within reach, no physical assistance or supervision in any episode
-">
+ (chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -931,7 +932,7 @@
 	</test>
 	<test
 		name="ADL0704 Toileting Response: 4. Supervision - oversight/cueing
-">
+ (chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -947,7 +948,7 @@
 	</test>
 	<test
 		name="ADL0705 Toileting Response: 5. Limited assistance - guided maneuvering of limbs, physical guidance without taking weight
-">
+ (chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -963,7 +964,7 @@
 	</test>
 	<test
 		name="ADL0706 Toileting Response: 6. Extensive assistance - weight-bearing support (including lifting limbs) by 1 helper where person still performs 50% or more of subtasks
-">
+ (chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -979,7 +980,7 @@
 	</test>
 	<test
 		name="ADL0707 Toileting Response: 7. Maximal assistance - weight-bearing support (including lifting limbs) by 2+ helpers - OR - weight-bearing support for more than 50% of subtasks
-">
+ (chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -995,7 +996,7 @@
 	</test>
 	<test
 		name="ADL0708 Toileting Response: 8. Total dependence - full performance by others during all episodes
-">
+ (chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -1011,7 +1012,7 @@
 	</test>
 	<test
 		name="ADL0709 Toileting Response: 9. Activity did not occur during entire period
-">
+ (chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -1028,7 +1029,7 @@
 
 	<test
 		name="ADL0801 Bed Mobility Response: 1. Select an option
-">
+ (chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -1045,7 +1046,7 @@
 
 	<test
 		name="ADL0802 Bed Mobility Response: 2. Independent - no physical assistance, setup, or supervision in any episode
-">
+ (chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -1061,7 +1062,7 @@
 	</test>
 	<test
 		name="ADL0803 Bed Mobility Response: 3. Independent, setup help only - article or device provided or placed within reach, no physical assistance or supervision in any episode
-">
+ (chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -1077,7 +1078,7 @@
 	</test>
 	<test
 		name="ADL0804 Bed Mobility Response: 4. Supervision - oversight/cueing
-">
+ (chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -1093,7 +1094,7 @@
 	</test>
 	<test
 		name="ADL0805 Bed Mobility Response: 5. Limited assistance - guided maneuvering of limbs, physical guidance without taking weight
-">
+ (chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -1109,7 +1110,7 @@
 	</test>
 	<test
 		name="ADL0806 Bed Mobility Response: 6. Extensive assistance - weight-bearing support (including lifting limbs) by 1 helper where person still performs 50% or more of subtasks
-">
+ (chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -1125,7 +1126,7 @@
 	</test>
 	<test
 		name="ADL0807 Bed Mobility Response: 7. Maximal assistance - weight-bearing support (including lifting limbs) by 2+ helpers - OR - weight-bearing support for more than 50% of subtasks
-">
+ (chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -1141,7 +1142,7 @@
 	</test>
 	<test
 		name="ADL0808 Bed Mobility Response: 8. Total dependence - full performance by others during all episodes
-">
+ (chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -1157,7 +1158,7 @@
 	</test>
 	<test
 		name="ADL0809 Bed Mobility Response: 9. Activity did not occur during entire period
-">
+ (chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -1174,7 +1175,7 @@
 
 	<test
 		name="ADL0901 Eating Response: 1. Select an option
-">
+ (chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -1191,7 +1192,7 @@
 
 	<test
 		name="ADL0902 Eating Response: 2. Independent - no physical assistance, setup, or supervision in any episode
-">
+ (chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -1207,7 +1208,7 @@
 	</test>
 	<test
 		name="ADL0903 Eating Response: 3. Independent, setup help only - article or device provided or placed within reach, no physical assistance or supervision in any episode
-">
+ (chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -1223,7 +1224,7 @@
 	</test>
 	<test
 		name="ADL0904 Eating Response: 4. Supervision - oversight/cueing
-">
+ (chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -1239,7 +1240,7 @@
 	</test>
 	<test
 		name="ADL0905 Eating Response: 5. Limited assistance - guided maneuvering of limbs, physical guidance without taking weight
-">
+ (chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -1255,7 +1256,7 @@
 	</test>
 	<test
 		name="ADL0906 Eating Response: 6. Extensive assistance - weight-bearing support (including lifting limbs) by 1 helper where person still performs 50% or more of subtasks
-">
+ (chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -1271,7 +1272,7 @@
 	</test>
 	<test
 		name="ADL0907 Eating Response: 7. Maximal assistance - weight-bearing support (including lifting limbs) by 2+ helpers - OR - weight-bearing support for more than 50% of subtasks
-">
+ (chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -1287,7 +1288,7 @@
 	</test>
 	<test
 		name="ADL0908 Eating Response: 8. Total dependence - full performance by others during all episodes
-">
+ (chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -1303,7 +1304,7 @@
 	</test>
 	<test
 		name="ADL0909 Eating Response: 9. Activity did not occur during entire period
-">
+ (chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -1318,6 +1319,1322 @@
 		</classes>
 	</test>
 
+<!--EDGEBROWSER-->
+
+	<test
+		name="ADL0101 Bathing Response: 1. Select an option (edge)
+">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+
+		<classes>
+			<class
+				name="dropDownTest.ADLselfPerformance">
+				<methods>
+					<include name="verifyBathingOption1" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="ADL0102 Bathing Response: 2. Independent - no physical assistance, setup, or supervision in any episode
+ (edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.ADLselfPerformance">
+				<methods>
+					<include name="verifyBathingOption2" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="ADL0103 Bathing Response: 3. Independent, setup help only - article or device provided or placed within reach, no physical assistance or supervision in any episode
+ (edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.ADLselfPerformance">
+				<methods>
+					<include name="verifyBathingOption3" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="ADL0104 Bathing Response: 4. Supervision - oversight/cueing
+ (edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.ADLselfPerformance">
+				<methods>
+					<include name="verifyBathingOption4" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="ADL0105 Bathing Response: 5. Limited assistance - guided maneuvering of limbs, physical guidance without taking weight
+ (edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.ADLselfPerformance">
+				<methods>
+					<include name="verifyBathingOption5" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="ADL0106 Bathing Response: 6. Extensive assistance - weight-bearing support (including lifting limbs) by 1 helper where person still performs 50% or more of subtasks
+ (edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.ADLselfPerformance">
+				<methods>
+					<include name="verifyBathingOption6" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="ADL0107 Bathing Response: 7. Maximal assistance - weight-bearing support (including lifting limbs) by 2+ helpers - OR - weight-bearing support for more than 50% of subtasks
+ (edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.ADLselfPerformance">
+				<methods>
+					<include name="verifyBathingOption7" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="ADL0108 Bathing Response: 8. Total dependence - full performance by others during all episodes
+ (edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.ADLselfPerformance">
+				<methods>
+					<include name="verifyBathingOption8" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="ADL0109 Bathing Response: 9. Activity did not occur during entire period
+ (edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.ADLselfPerformance">
+				<methods>
+					<include name="verifyBathingOption9" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="ADL0201 Personal Hygiene Response: 1. Select an option
+ (edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.ADLselfPerformance">
+				<methods>
+					<include name="verifyPersonalHygieneOption1" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="ADL0202 Personal Hygiene Response: 2. Independent - no physical assistance, setup, or supervision in any episode
+ (edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.ADLselfPerformance">
+				<methods>
+					<include name="verifyPersonalHygieneOption2" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="ADL0203 Personal Hygiene Response: 3. Independent, setup help only - article or device provided or placed within reach, no physical assistance or supervision in any episode
+ (edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.ADLselfPerformance">
+				<methods>
+					<include name="verifyPersonalHygieneOption3" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="ADL0204 Personal Hygiene Response: 4. Supervision - oversight/cueing
+ (edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.ADLselfPerformance">
+				<methods>
+					<include name="verifyPersonalHygieneOption4" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="ADL0205 Personal Hygiene Response: 5. Limited assistance - guided maneuvering of limbs, physical guidance without taking weight
+ (edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.ADLselfPerformance">
+				<methods>
+					<include name="verifyPersonalHygieneOption5" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="ADL0206 Personal Hygiene Response: 6. Extensive assistance - weight-bearing support (including lifting limbs) by 1 helper where person still performs 50% or more of subtasks
+ (edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.ADLselfPerformance">
+				<methods>
+					<include name="verifyPersonalHygieneOption6" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="ADL0207 Personal Hygiene Response: 7. Maximal assistance - weight-bearing support (including lifting limbs) by 2+ helpers - OR - weight-bearing support for more than 50% of subtasks
+ (edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.ADLselfPerformance">
+				<methods>
+					<include name="verifyPersonalHygieneOption7" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="ADL0208 Personal Hygiene Response: 8. Total dependence - full performance by others during all episodes
+ (edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.ADLselfPerformance">
+				<methods>
+					<include name="verifyPersonalHygieneOption8" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="ADL0209 Personal Hygiene Response: 9. Activity did not occur during entire period
+ (edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.ADLselfPerformance">
+				<methods>
+					<include name="verifyPersonalHygieneOption9" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="ADL0301 Dressing Upper Body Response: 1. Select an option
+ (edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.ADLselfPerformance">
+				<methods>
+					<include name="verifyDressingUbodyOption1" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="ADL0302 Dressing Upper Body Response: 2. Independent - no physical assistance, setup, or supervision in any episode
+ (edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.ADLselfPerformance">
+				<methods>
+					<include name="verifyDressingUbodyOption2" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="ADL0303 Dressing Upper Body Response: 3. Independent, setup help only - article or device provided or placed within reach, no physical assistance or supervision in any episode
+ (edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.ADLselfPerformance">
+				<methods>
+					<include name="verifyDressingUbodyOption3" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="ADL0304 Dressing Upper Body Response: 4. Supervision - oversight/cueing
+ (edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.ADLselfPerformance">
+				<methods>
+					<include name="verifyDressingUbodyOption4" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="ADL0305 Dressing Upper Body Response: 5. Limited assistance - guided maneuvering of limbs, physical guidance without taking weight
+ (edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.ADLselfPerformance">
+				<methods>
+					<include name="verifyDressingUbodyOption5" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="ADL0306 Dressing Upper Body Response: 6. Extensive assistance - weight-bearing support (including lifting limbs) by 1 helper where person still performs 50% or more of subtasks
+ (edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.ADLselfPerformance">
+				<methods>
+					<include name="verifyDressingUbodyOption6" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="ADL0307 Dressing Upper Body Response: 7. Maximal assistance - weight-bearing support (including lifting limbs) by 2+ helpers - OR - weight-bearing support for more than 50% of subtasks
+ (edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.ADLselfPerformance">
+				<methods>
+					<include name="verifyDressingUbodyOption7" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="ADL0308 Dressing Upper Body Response: 8. Total dependence - full performance by others during all episodes
+ (edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.ADLselfPerformance">
+				<methods>
+					<include name="verifyDressingUbodyOption8" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="ADL0309 Dressing Upper Body Response: 9. Activity did not occur during entire period
+ (edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.ADLselfPerformance">
+				<methods>
+					<include name="verifyDressingUbodyOption9" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="ADL0401 Dressing Lower Body Response: 1. Select an option
+ (edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.ADLselfPerformance">
+				<methods>
+					<include name="verifyDressingLbodyOption1" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="ADL0402 Dressing Lower Body Response: 2. Independent - no physical assistance, setup, or supervision in any episode
+ (edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.ADLselfPerformance">
+				<methods>
+					<include name="verifyDressingLbodyOption2" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="ADL0403 Dressing Lower Body Response: 3. Independent, setup help only - article or device provided or placed within reach, no physical assistance or supervision in any episode
+ (edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.ADLselfPerformance">
+				<methods>
+					<include name="verifyDressingLbodyOption3" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="ADL0404 Dressing Lower Body Response: 4. Supervision - oversight/cueing
+ (edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.ADLselfPerformance">
+				<methods>
+					<include name="verifyDressingLbodyOption4" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="ADL0405 Dressing Lower Body Response: 5. Limited assistance - guided maneuvering of limbs, physical guidance without taking weight
+ (edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.ADLselfPerformance">
+				<methods>
+					<include name="verifyDressingLbodyOption5" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="ADL0406 Dressing Lower Body Response: 6. Extensive assistance - weight-bearing support (including lifting limbs) by 1 helper where person still performs 50% or more of subtasks
+ (edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.ADLselfPerformance">
+				<methods>
+					<include name="verifyDressingLbodyOption6" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="ADL0407 Dressing Lower Body Response: 7. Maximal assistance - weight-bearing support (including lifting limbs) by 2+ helpers - OR - weight-bearing support for more than 50% of subtasks
+ (edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.ADLselfPerformance">
+				<methods>
+					<include name="verifyDressingLbodyOption7" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="ADL0408 Dressing Lower Body Response: 8. Total dependence - full performance by others during all episodes
+ (edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.ADLselfPerformance">
+				<methods>
+					<include name="verifyDressingLbodyOption8" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="ADL0409 Dressing Lower Body Response: 9. Activity did not occur during entire period
+ (edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.ADLselfPerformance">
+				<methods>
+					<include name="verifyDressingLbodyOption9" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="ADL0501 Locomotion Response: 1. Select an option
+ (edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.ADLselfPerformance">
+				<methods>
+					<include name="verifyLocomotionOption1" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="ADL0502 Locomotion Response: 2. Independent - no physical assistance, setup, or supervision in any episode
+ (edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.ADLselfPerformance">
+				<methods>
+					<include name="verifyLocomotionOption2" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="ADL0503 Locomotion Response: 3. Independent, setup help only - article or device provided or placed within reach, no physical assistance or supervision in any episode
+ (edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.ADLselfPerformance">
+				<methods>
+					<include name="verifyLocomotionOption3" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="ADL0504 Locomotion Response: 4. Supervision - oversight/cueing
+ (edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.ADLselfPerformance">
+				<methods>
+					<include name="verifyLocomotionOption4" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="ADL0505 Locomotion Response: 5. Limited assistance - guided maneuvering of limbs, physical guidance without taking weight
+ (edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.ADLselfPerformance">
+				<methods>
+					<include name="verifyLocomotionOption5" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="ADL0506 Locomotion Response: 6. Extensive assistance - weight-bearing support (including lifting limbs) by 1 helper where person still performs 50% or more of subtasks
+ (edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.ADLselfPerformance">
+				<methods>
+					<include name="verifyLocomotionOption6" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="ADL0507 Locomotion Response: 7. Maximal assistance - weight-bearing support (including lifting limbs) by 2+ helpers - OR - weight-bearing support for more than 50% of subtasks
+ (edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.ADLselfPerformance">
+				<methods>
+					<include name="verifyLocomotionOption7" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="ADL0508 Locomotion Response: 8. Total dependence - full performance by others during all episodes
+ (edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.ADLselfPerformance">
+				<methods>
+					<include name="verifyLocomotionOption8" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="ADL0509 Locomotion Response: 9. Activity did not occur during entire period
+ (edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.ADLselfPerformance">
+				<methods>
+					<include name="verifyLocomotionOption9" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="ADL0601 Transfer Toilet Response: 1. Select an option
+ (edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.ADLselfPerformance">
+				<methods>
+					<include name="verifyTransToiletOption1" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="ADL0602 Transfer Toilet Response: 2. Independent - no physical assistance, setup, or supervision in any episode
+ (edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.ADLselfPerformance">
+				<methods>
+					<include name="verifyTransToiletOption2" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="ADL0603 Transfer Toilet Response: 3. Independent, setup help only - article or device provided or placed within reach, no physical assistance or supervision in any episode
+ (edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.ADLselfPerformance">
+				<methods>
+					<include name="verifyTransToiletOption3" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="ADL0604 Transfer Toilet Response: 4. Supervision - oversight/cueing
+ (edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.ADLselfPerformance">
+				<methods>
+					<include name="verifyTransToiletOption4" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="ADL0605 Transfer Toilet Response: 5. Limited assistance - guided maneuvering of limbs, physical guidance without taking weight
+ (edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.ADLselfPerformance">
+				<methods>
+					<include name="verifyTransToiletOption5" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="ADL0606 Transfer Toilet Response: 6. Extensive assistance - weight-bearing support (including lifting limbs) by 1 helper where person still performs 50% or more of subtasks
+ (edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.ADLselfPerformance">
+				<methods>
+					<include name="verifyTransToiletOption6" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="ADL0607 Transfer Toilet Response: 7. Maximal assistance - weight-bearing support (including lifting limbs) by 2+ helpers - OR - weight-bearing support for more than 50% of subtasks
+ (edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.ADLselfPerformance">
+				<methods>
+					<include name="verifyTransToiletOption7" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="ADL0608 Transfer Toilet Response: 8. Total dependence - full performance by others during all episodes
+ (edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.ADLselfPerformance">
+				<methods>
+					<include name="verifyTransToiletOption8" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="ADL0609 Transfer Toilet Response: 9. Activity did not occur during entire period
+ (edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.ADLselfPerformance">
+				<methods>
+					<include name="verifyTransToiletOption9" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="ADL0701 Toileting Response: 1. Select an option
+ (edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.ADLselfPerformance">
+				<methods>
+					<include name="verifyToiletingOption1" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="ADL0702 Toileting Response: 2. Independent - no physical assistance, setup, or supervision in any episode
+ (edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.ADLselfPerformance">
+				<methods>
+					<include name="verifyToiletingOption2" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="ADL0703 Toileting Response: 3. Independent, setup help only - article or device provided or placed within reach, no physical assistance or supervision in any episode
+ (edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.ADLselfPerformance">
+				<methods>
+					<include name="verifyToiletingOption3" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="ADL0704 Toileting Response: 4. Supervision - oversight/cueing
+ (edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.ADLselfPerformance">
+				<methods>
+					<include name="verifyToiletingOption4" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="ADL0705 Toileting Response: 5. Limited assistance - guided maneuvering of limbs, physical guidance without taking weight
+ (edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.ADLselfPerformance">
+				<methods>
+					<include name="verifyToiletingOption5" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="ADL0706 Toileting Response: 6. Extensive assistance - weight-bearing support (including lifting limbs) by 1 helper where person still performs 50% or more of subtasks
+ (edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.ADLselfPerformance">
+				<methods>
+					<include name="verifyToiletingOption6" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="ADL0707 Toileting Response: 7. Maximal assistance - weight-bearing support (including lifting limbs) by 2+ helpers - OR - weight-bearing support for more than 50% of subtasks
+ (edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.ADLselfPerformance">
+				<methods>
+					<include name="verifyToiletingOption7" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="ADL0708 Toileting Response: 8. Total dependence - full performance by others during all episodes
+ (edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.ADLselfPerformance">
+				<methods>
+					<include name="verifyToiletingOption8" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="ADL0709 Toileting Response: 9. Activity did not occur during entire period
+ (edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.ADLselfPerformance">
+				<methods>
+					<include name="verifyToiletingOption9" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="ADL0801 Bed Mobility Response: 1. Select an option
+ (edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.ADLselfPerformance">
+				<methods>
+					<include name="verifyBedMobilityOption1" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="ADL0802 Bed Mobility Response: 2. Independent - no physical assistance, setup, or supervision in any episode
+ (edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.ADLselfPerformance">
+				<methods>
+					<include name="verifyBedMobilityOption2" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="ADL0803 Bed Mobility Response: 3. Independent, setup help only - article or device provided or placed within reach, no physical assistance or supervision in any episode
+ (edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.ADLselfPerformance">
+				<methods>
+					<include name="verifyBedMobilityOption3" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="ADL0804 Bed Mobility Response: 4. Supervision - oversight/cueing
+ (edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.ADLselfPerformance">
+				<methods>
+					<include name="verifyBedMobilityOption4" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="ADL0805 Bed Mobility Response: 5. Limited assistance - guided maneuvering of limbs, physical guidance without taking weight
+ (edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.ADLselfPerformance">
+				<methods>
+					<include name="verifyBedMobilityOption5" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="ADL0806 Bed Mobility Response: 6. Extensive assistance - weight-bearing support (including lifting limbs) by 1 helper where person still performs 50% or more of subtasks
+ (edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.ADLselfPerformance">
+				<methods>
+					<include name="verifyBedMobilityOption6" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="ADL0807 Bed Mobility Response: 7. Maximal assistance - weight-bearing support (including lifting limbs) by 2+ helpers - OR - weight-bearing support for more than 50% of subtasks
+ (edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.ADLselfPerformance">
+				<methods>
+					<include name="verifyBedMobilityOption7" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="ADL0808 Bed Mobility Response: 8. Total dependence - full performance by others during all episodes
+ (edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.ADLselfPerformance">
+				<methods>
+					<include name="verifyBedMobilityOption8" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="ADL0809 Bed Mobility Response: 9. Activity did not occur during entire period
+ (edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.ADLselfPerformance">
+				<methods>
+					<include name="verifyBedMobilityOption9" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="ADL0901 Eating Response: 1. Select an option
+ (edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.ADLselfPerformance">
+				<methods>
+					<include name="verifyEatingOption1" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="ADL0902 Eating Response: 2. Independent - no physical assistance, setup, or supervision in any episode
+ (edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.ADLselfPerformance">
+				<methods>
+					<include name="verifyEatingOption2" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="ADL0903 Eating Response: 3. Independent, setup help only - article or device provided or placed within reach, no physical assistance or supervision in any episode
+ (edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.ADLselfPerformance">
+				<methods>
+					<include name="verifyEatingOption3" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="ADL0904 Eating Response: 4. Supervision - oversight/cueing
+ (edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.ADLselfPerformance">
+				<methods>
+					<include name="verifyEatingOption4" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="ADL0905 Eating Response: 5. Limited assistance - guided maneuvering of limbs, physical guidance without taking weight
+ (edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.ADLselfPerformance">
+				<methods>
+					<include name="verifyEatingOption5" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="ADL0906 Eating Response: 6. Extensive assistance - weight-bearing support (including lifting limbs) by 1 helper where person still performs 50% or more of subtasks
+ (edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.ADLselfPerformance">
+				<methods>
+					<include name="verifyEatingOption6" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="ADL0907 Eating Response: 7. Maximal assistance - weight-bearing support (including lifting limbs) by 2+ helpers - OR - weight-bearing support for more than 50% of subtasks
+ (edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.ADLselfPerformance">
+				<methods>
+					<include name="verifyEatingOption7" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="ADL0908 Eating Response: 8. Total dependence - full performance by others during all episodes
+ (edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.ADLselfPerformance">
+				<methods>
+					<include name="verifyEatingOption8" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="ADL0909 Eating Response: 9. Activity did not occur during entire period
+ (edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.ADLselfPerformance">
+				<methods>
+					<include name="verifyEatingOption9" />
+				</methods>
+			</class>
+		</classes>
+	</test>
 
 </suite> 
 

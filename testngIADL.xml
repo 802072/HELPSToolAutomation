@@ -6,7 +6,7 @@
 	</listeners>
 	<test
 		name="IADL0101 Meal Preparation Response: 1. Select an option
-">
+(chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -23,7 +23,7 @@
 
 	<test
 		name="IADL0102 Meal Preparation Response: 2. Independent - No help, setup, or supervision
-">
+(chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -40,7 +40,7 @@
 
 	<test
 		name="IADL0103 Meal Preparation Response: 3. Setup help only
-">
+(chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -57,7 +57,7 @@
 
 	<test
 		name="IADL0104 Meal Preparation Response: 4. Supervision - oversight/cueing
-">
+(chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -74,7 +74,7 @@
 
 	<test
 		name="IADL0105 Meal Preparation Response: 5. Limited assistance - help on some occasions
-">
+(chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -90,8 +90,8 @@
 	</test>
 
 	<test
-		name="IADL0106 Meal Preparation Response: Extensive assistance - help throughout task, but performs 50% or more
-">
+		name="IADL0106 Meal Preparation Response: 6. Extensive assistance - help throughout task, but performs 50% or more
+(chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -108,7 +108,7 @@
 
 	<test
 		name="IADL0107 Meal Preparation Response: 7. Maximal assistance - help throughout task, but performs less than 50% of task on own
-">
+(chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -125,7 +125,7 @@
 
 	<test
 		name="IADL0108 Meal Preparation Response: 8. Total dependence - full performance by others during entire period
-">
+(chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -142,7 +142,7 @@
 
 	<test
 		name="IADL0109 Meal Preparation Response: 9. Activity did not occur - during entire period
-">
+(chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -159,7 +159,7 @@
 
 	<test
 		name="IADL0201 Ordinary Housework Response: 1. Select an option
-">
+(chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -176,7 +176,7 @@
 
 	<test
 		name="IADL0202 Ordinary Housework Response: 2. Independent - No help, setup, or supervision
-">
+(chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -193,7 +193,7 @@
 
 	<test
 		name="IADL0203 Ordinary Housework Response: 3. Setup help only
-">
+(chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -209,7 +209,7 @@
 	</test>
 	<test
 		name="IADL0204 Ordinary Housework Response: 4. Supervision - oversight/cueing
-">
+(chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -225,7 +225,7 @@
 	</test>
 	<test
 		name="IADL0205 Ordinary Housework Response: 5. Limited assistance - help on some occasions
-">
+(chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -240,8 +240,8 @@
 		</classes>
 	</test>
 	<test
-		name="IADL0206 Ordinary Housework Response:Extensive assistance - help throughout task, but performs 50% or more
-">
+		name="IADL0206 Ordinary Housework Response: 6. Extensive assistance - help throughout task, but performs 50% or more
+(chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -258,7 +258,7 @@
 
 	<test
 		name="IADL0207 Ordinary Housework Response: 7. Maximal assistance - help throughout task, but performs less than 50% of task on own
-">
+(chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -274,7 +274,7 @@
 	</test>
 	<test
 		name="IADL0208 Ordinary Housework Response: 8. Total dependence - full performance by others during entire period
-">
+(chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -291,7 +291,7 @@
 
 	<test
 		name="IADL0209 Ordinary Housework Response: 9. Activity did not occur - during entire period
-">
+(chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -309,7 +309,7 @@
 
 	<test
 		name="IADL0301 Shopping Response: 1. Select an option
-">
+(chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -326,7 +326,7 @@
 
 	<test
 		name="IADL0302 Shopping Response: 2. Independent - No help, setup, or supervision
-">
+(chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -342,7 +342,7 @@
 	</test>
 	<test
 		name="IADL0303 Shopping Response: 3. Setup help only
-">
+(chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -358,7 +358,7 @@
 	</test>
 	<test
 		name="IADL0304 Shopping Response: 4. Supervision - oversight/cueing
-">
+(chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -374,7 +374,7 @@
 	</test>
 	<test
 		name="IADL0305 Shopping Response: 5. Limited assistance - help on some occasions
-">
+(chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -390,7 +390,7 @@
 	</test>
 	<test
 		name="IADL0306 Shopping Response: 6. Extensive assistance - help throughout task, but performs 50% or more of task on own
-">
+(chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -406,7 +406,7 @@
 	</test>
 	<test
 		name="IADL0307 Shopping Response: 7. Maximal assistance - help throughout task, but performs less than 50% of task on own of task on own
-">
+(chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -423,7 +423,7 @@
 
 	<test
 		name="IADL0308 Shopping Response: 8. Total dependence - full performance by others during entire period
-">
+(chrome)">
 		<parameter
 			name="browserName" value="chrome" />
 		<parameter name="author"
@@ -439,9 +439,461 @@
 	</test>
 	<test
 		name="IADL0309 Shopping Response: 9. Activity did not occur - during entire period
-">
+(chrome)">
 		<parameter
 			name="browserName" value="chrome" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.IADLcapacity">
+				<methods>
+					<include name="verifyShoppingOption9" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<!--EDGEBROWSER-->
+	
+	<test
+		name="IADL0101 Meal Preparation Response: 1. Select an option
+(edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.IADLcapacity">
+				<methods>
+					<include name="verifyMealPrepOption1" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="IADL0102 Meal Preparation Response: 2. Independent - No help, setup, or supervision
+(edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.IADLcapacity">
+				<methods>
+					<include name="verifyMealPrepOption2" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="IADL0103 Meal Preparation Response: 3. Setup help only
+(edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.IADLcapacity">
+				<methods>
+					<include name="verifyMealPrepOption3" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="IADL0104 Meal Preparation Response: 4. Supervision - oversight/cueing
+(edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.IADLcapacity">
+				<methods>
+					<include name="verifyMealPrepOption4" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="IADL0105 Meal Preparation Response: 5. Limited assistance - help on some occasions
+(edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.IADLcapacity">
+				<methods>
+					<include name="verifyMealPrepOption5" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="IADL0106 Meal Preparation Response: 6. Extensive assistance - help throughout task, but performs 50% or more
+(edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.IADLcapacity">
+				<methods>
+					<include name="verifyMealPrepOption6" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="IADL0107 Meal Preparation Response: 7. Maximal assistance - help throughout task, but performs less than 50% of task on own
+(edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.IADLcapacity">
+				<methods>
+					<include name="verifyMealPrepOption7" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="IADL0108 Meal Preparation Response: 8. Total dependence - full performance by others during entire period
+(edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.IADLcapacity">
+				<methods>
+					<include name="verifyMealPrepOption8" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="IADL0109 Meal Preparation Response: 9. Activity did not occur - during entire period
+(edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.IADLcapacity">
+				<methods>
+					<include name="verifyMealPrepOption9" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="IADL0201 Ordinary Housework Response: 1. Select an option
+(edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.IADLcapacity">
+				<methods>
+					<include name="verifyOrdinaryHouseworkOption1" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="IADL0202 Ordinary Housework Response: 2. Independent - No help, setup, or supervision
+(edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.IADLcapacity">
+				<methods>
+					<include name="verifyOrdinaryHouseworkOption2" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="IADL0203 Ordinary Housework Response: 3. Setup help only
+(edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.IADLcapacity">
+				<methods>
+					<include name="verifyOrdinaryHouseworkOption3" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="IADL0204 Ordinary Housework Response: 4. Supervision - oversight/cueing
+(edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.IADLcapacity">
+				<methods>
+					<include name="verifyOrdinaryHouseworkOption4" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="IADL0205 Ordinary Housework Response: 5. Limited assistance - help on some occasions
+(edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.IADLcapacity">
+				<methods>
+					<include name="verifyOrdinaryHouseworkOption5" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="IADL0206 Ordinary Housework Response: 6. Extensive assistance - help throughout task, but performs 50% or more
+(edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.IADLcapacity">
+				<methods>
+					<include name="verifyOrdinaryHouseworkOption6" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="IADL0207 Ordinary Housework Response: 7. Maximal assistance - help throughout task, but performs less than 50% of task on own
+(edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.IADLcapacity">
+				<methods>
+					<include name="verifyOrdinaryHouseworkOption7" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="IADL0208 Ordinary Housework Response: 8. Total dependence - full performance by others during entire period
+(edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.IADLcapacity">
+				<methods>
+					<include name="verifyOrdinaryHouseworkOption8" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="IADL0209 Ordinary Housework Response: 9. Activity did not occur - during entire period
+(edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.IADLcapacity">
+				<methods>
+					<include name="verifyOrdinaryHouseworkOption9" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+	<test
+		name="IADL0301 Shopping Response: 1. Select an option
+(edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.IADLcapacity">
+				<methods>
+					<include name="verifyShoppingOption1" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="IADL0302 Shopping Response: 2. Independent - No help, setup, or supervision
+(edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.IADLcapacity">
+				<methods>
+					<include name="verifyShoppingOption2" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="IADL0303 Shopping Response: 3. Setup help only
+(edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.IADLcapacity">
+				<methods>
+					<include name="verifyShoppingOption3" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="IADL0304 Shopping Response: 4. Supervision - oversight/cueing
+(edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.IADLcapacity">
+				<methods>
+					<include name="verifyShoppingOption4" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="IADL0305 Shopping Response: 5. Limited assistance - help on some occasions
+(edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.IADLcapacity">
+				<methods>
+					<include name="verifyShoppingOption5" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="IADL0306 Shopping Response: 6. Extensive assistance - help throughout task, but performs 50% or more of task on own
+(edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.IADLcapacity">
+				<methods>
+					<include name="verifyShoppingOption6" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="IADL0307 Shopping Response: 7. Maximal assistance - help throughout task, but performs less than 50% of task on own of task on own
+(edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.IADLcapacity">
+				<methods>
+					<include name="verifyShoppingOption7" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="IADL0308 Shopping Response: 8. Total dependence - full performance by others during entire period
+(edge)">
+		<parameter
+			name="browserName" value="edge" />
+		<parameter name="author"
+			value="Dayanzi" />
+		<classes>
+			<class
+				name="dropDownTest.IADLcapacity">
+				<methods>
+					<include name="verifyShoppingOption8" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="IADL0309 Shopping Response: 9. Activity did not occur - during entire period
+(edge)">
+		<parameter
+			name="browserName" value="edge" />
 		<parameter name="author"
 			value="Dayanzi" />
 		<classes>
