@@ -146,20 +146,20 @@ public class BaseTestDD {
 
 		// Click Welcome
 		try {
-			ArrayList AT008 = d.getData("AT008", "afterTest");
-			WebElement welcome = driver.findElement(By.xpath((String) AT008.get(6)));
+			ArrayList FR008 = d.getData("FR008", "afterTest");
+			WebElement welcome = driver.findElement(By.xpath((String) FR008.get(6)));
 			if (welcome.isDisplayed()) {
 
 				welcome.click();
-				String log008 = (String) AT008.get(0) + " " + AT008.get(2);
+				String log008 = (String) FR008.get(0) + " " + FR008.get(2);
 				extentTest.log(Status.PASS, "Click Welcome", MediaEntityBuilder
 						.createScreenCaptureFromPath(captureScreenshot(log008 + fileDate + ".jpg")).build());
 
 				// Click Sign Out
-				ArrayList AT009 = d.getData("AT009", "afterTest");
-				WebElement signOut = driver.findElement(By.xpath((String) AT009.get(6)));
+				ArrayList FR009 = d.getData("FR009", "afterTest");
+				WebElement signOut = driver.findElement(By.xpath((String) FR009.get(6)));
 				signOut.click();
-				String log009 = (String) AT009.get(0) + " " + AT009.get(2);
+				String log009 = (String) FR009.get(0) + " " + FR009.get(2);
 				extentTest.log(Status.PASS, "Click Sign Out Button", MediaEntityBuilder
 						.createScreenCaptureFromPath(captureScreenshot(log009 + fileDate + ".jpg")).build());
 
@@ -253,25 +253,25 @@ public class BaseTestDD {
 		String fileName = (String) UF002.get(6);
 
 		WebElement importBtn = driver.findElement(By.xpath((String) UF001.get(5)));
-		String log8 = (String) UF001.get(1);
+		String log8 = (String) UF001.get(0)+" "+(String) UF001.get(1);
 		extentTest.log(Status.PASS, log8, MediaEntityBuilder
-				.createScreenCaptureFromPath(captureScreenshot(log8 + fileName + fileDate + ".jpg")).build());
+				.createScreenCaptureFromPath(captureScreenshot(log8  + fileDate + ".jpg")).build());
 		importBtn.click();
 
 		w.until(ExpectedConditions.presenceOfElementLocated(By.xpath((String) UF002.get(5))));
 
 		// Choose File
 		WebElement chooseFileBtn = driver.findElement(By.xpath((String) UF002.get(5)));
-		String log9 = (String) UF002.get(1);
-		extentTest.log(Status.PASS, (String) UF002.get(0) + " Choose File: " + fileName, MediaEntityBuilder
-				.createScreenCaptureFromPath(captureScreenshot(log9 + fileName + fileDate + ".jpg")).build());
+		String log9 = (String) UF002.get(0)+ " "+ (String) UF002.get(1);
+		extentTest.log(Status.PASS,  log9+ ": " + fileName, MediaEntityBuilder
+				.createScreenCaptureFromPath(captureScreenshot(log9 + fileDate + ".jpg")).build());
 
 		// Log Upload File
 		ArrayList UF003 = d.getData("UF003", "beforeTest");
 		String path = System.getProperty("user.dir") + (String) UF003.get(6);
-		String log10 = (String) UF003.get(1);
-		extentTest.log(Status.PASS, (String) UF003.get(0) + " " + UF003.get(1) + " " + fileName, MediaEntityBuilder
-				.createScreenCaptureFromPath(captureScreenshot(log10 + fileName + fileDate + ".jpg")).build());
+		String log10 = (String) UF003.get(0) + " "+(String) UF003.get(1);
+		extentTest.log(Status.PASS, log10 , MediaEntityBuilder
+				.createScreenCaptureFromPath(captureScreenshot(log10+ fileDate + ".jpg")).build());
 
 		chooseFileBtn.sendKeys(path);
 
@@ -305,9 +305,9 @@ public class BaseTestDD {
 		WebElement submitBtn = driver.findElement(By.xpath((String) UF004.get(5)));
 		submitBtn.click();
 		Thread.sleep(3000);
-		String log11 = (String) UF004.get(1);
-		extentTest.log(Status.PASS, (String) UF004.get(0) + " Submit File: " + fileName, MediaEntityBuilder
-				.createScreenCaptureFromPath(captureScreenshot(log11 + fileName + fileDate + ".jpg")).build());
+		String log11 = (String) UF004.get(0)+" "+(String) UF004.get(1);
+		extentTest.log(Status.PASS,  log11 , MediaEntityBuilder
+				.createScreenCaptureFromPath(captureScreenshot(log11 + fileDate + ".jpg")).build());
 		Thread.sleep(3000);
 	}
 
@@ -335,7 +335,7 @@ public class BaseTestDD {
 		w.until(ExpectedConditions.presenceOfElementLocated(By.xpath((String) listDD.get(7))));
 		WebElement dropdown = driver.findElement(By.xpath((String) listDD.get(7)));
 		dropdown.click();
-		extentTest.log(Status.PASS, (String) listDD.get(3), MediaEntityBuilder
+		extentTest.log(Status.PASS, (String) listDD.get(0)+" "+(String) listDD.get(3), MediaEntityBuilder
 				.createScreenCaptureFromPath(captureScreenshot((String) listDD.get(0) + fileDate + ".jpg")).build());
 		System.out.println("Dropdown " + tsID + " clicked.");
 	}
@@ -346,7 +346,7 @@ public class BaseTestDD {
 		WebElement selectOption = driver.findElement(By.xpath((String) list.get(7)));
 		selectOption.click();
 		w.until(ExpectedConditions.presenceOfElementLocated(By.xpath((String) list.get(7))));
-		extentTest.log(Status.PASS, (String) list.get(3),
+		extentTest.log(Status.PASS, (String) list.get(0)+" "+(String) list.get(3),
 				MediaEntityBuilder.createScreenCaptureFromPath(captureScreenshot(tsID + fileDate + ".jpg")).build());
 		System.out.println("Option " + tsID + " selected.");
 	}
@@ -355,79 +355,79 @@ public class BaseTestDD {
 		WebDriverWait w = new WebDriverWait(driver, Duration.ofSeconds(5));
 		String sheetName = "afterTest";
 		// Click Final Recommendation Menu
-		ArrayList AT001 = d.getData("AT001", sheetName);
-		WebElement finalRecMenu = driver.findElement(By.xpath((String) AT001.get(6)));
+		ArrayList FR001 = d.getData("FR001", sheetName);
+		WebElement finalRecMenu = driver.findElement(By.xpath((String) FR001.get(6)));
 		finalRecMenu.click();
-		extentTest.log(Status.PASS, (String) AT001.get(2), MediaEntityBuilder
+		extentTest.log(Status.PASS, (String) FR001.get(0)+" "+(String) FR001.get(2), MediaEntityBuilder
 				.createScreenCaptureFromPath(captureScreenshot("Final Rec" + tsID + fileDate + ".jpg")).build());
 
 		// Add a Signature into the Nurse Signature Box
-		ArrayList AT002 = d.getData("AT002", sheetName);
-		WebElement canvas = driver.findElement(By.xpath((String) AT002.get(6)));
+		ArrayList FR002 = d.getData("FR002", sheetName);
+		WebElement canvas = driver.findElement(By.xpath((String) FR002.get(6)));
 		Actions builder = new Actions(driver);
 		Action signature = builder.moveToElement(canvas).clickAndHold().moveByOffset(200, 50).moveByOffset(10, 0)
 				.click().build();
 		signature.perform();
-		extentTest.log(Status.PASS, (String) AT002.get(2), MediaEntityBuilder
-				.createScreenCaptureFromPath(captureScreenshot("AT002" + tsID + fileDate + ".jpg")).build());
+		extentTest.log(Status.PASS, (String) FR002.get(0)+" "+(String) FR002.get(2), MediaEntityBuilder
+				.createScreenCaptureFromPath(captureScreenshot("FR002" + tsID + fileDate + ".jpg")).build());
 
 		// Click Accept Signature Button
-		ArrayList AT003 = d.getData("AT003", sheetName);
-		WebElement acceptSign = driver.findElement(By.xpath((String) AT003.get(6)));
+		ArrayList FR003 = d.getData("FR003", sheetName);
+		WebElement acceptSign = driver.findElement(By.xpath((String) FR003.get(6)));
 		acceptSign.click();
-		extentTest.log(Status.PASS, (String) AT003.get(2), MediaEntityBuilder
-				.createScreenCaptureFromPath(captureScreenshot("AT003" + tsID + fileDate + ".jpg")).build());
+		extentTest.log(Status.PASS, (String) FR003.get(0)+" "+(String) FR003.get(2), MediaEntityBuilder
+				.createScreenCaptureFromPath(captureScreenshot("FR003" + tsID + fileDate + ".jpg")).build());
 
 //		// Click Clear Signature Button
-//		ArrayList AT004 = d.getData("AT004", sheetName);
-//		WebElement clearSign = driver.findElement(By.xpath((String) AT004.get(6)));
+//		ArrayList FR004 = d.getData("FR004", sheetName);
+//		WebElement clearSign = driver.findElement(By.xpath((String) FR004.get(6)));
 //		clearSign.click();
 //		Thread.sleep(5000);
-//		extentTest.log(Status.PASS, (String) AT004.get(2),
-//				MediaEntityBuilder.createScreenCaptureFromPath(captureScreenshot("AT004" + ssID + ".jpg")).build());
+//		extentTest.log(Status.PASS, (String) FR004.get(2),
+//				MediaEntityBuilder.createScreenCaptureFromPath(captureScreenshot("FR004" + ssID + ".jpg")).build());
 //
 //		// Add a Signature into the Nurse Signature Box
-//		ArrayList AT005 = d.getData("AT005", sheetName);
-//		// WebElement canvas1 = driver.findElement(By.xpath((String) AT005.get(6)));
+//		ArrayList FR005 = d.getData("FR005", sheetName);
+//		// WebElement canvas1 = driver.findElement(By.xpath((String) FR005.get(6)));
 //		// Action signature1 =
 //		// builder.moveToElement(canvas).clickAndHold().moveByOffset(200,
 //		// 50).moveByOffset(10, 0)
 //		// .click().build();
 //		signature.perform();
 //		Thread.sleep(5000);
-//		extentTest.log(Status.PASS, (String) AT005.get(2),
-//				MediaEntityBuilder.createScreenCaptureFromPath(captureScreenshot("AT005" + ssID + ".jpg")).build());
+//		extentTest.log(Status.PASS, (String) FR005.get(2),
+//				MediaEntityBuilder.createScreenCaptureFromPath(captureScreenshot("FR005" + ssID + ".jpg")).build());
 //
 //		// Click Accept Signature Button
-//		ArrayList AT006 = d.getData("AT006", sheetName);
-//		WebElement acceptSign1 = driver.findElement(By.xpath((String) AT006.get(6)));
+//		ArrayList FR006 = d.getData("FR006", sheetName);
+//		WebElement acceptSign1 = driver.findElement(By.xpath((String) FR006.get(6)));
 //		acceptSign.click();
-//		String log65 = (String) AT006.get(0) + " " + AT006.get(2);
-//		extentTest.log(Status.PASS, (String) AT006.get(2),
-//				MediaEntityBuilder.createScreenCaptureFromPath(captureScreenshot("AT006" + ssID + ".jpg")).build());
+//		String log65 = (String) FR006.get(0) + " " + FR006.get(2);
+//		extentTest.log(Status.PASS, (String) FR006.get(2),
+//				MediaEntityBuilder.createScreenCaptureFromPath(captureScreenshot("FR006" + ssID + ".jpg")).build());
 
-		ArrayList AT007 = d.getData("AT007", sheetName);
-		w.until(ExpectedConditions.presenceOfElementLocated(By.xpath((String) AT007.get(6))));
+		ArrayList FR007 = d.getData("FR007", sheetName);
+		w.until(ExpectedConditions.presenceOfElementLocated(By.xpath((String) FR007.get(6))));
 		// Click the Complete Assessment Button
-		WebElement completeAssessment = driver.findElement(By.xpath((String) AT007.get(6)));
+		WebElement completeAssessment = driver.findElement(By.xpath((String) FR007.get(6)));
 		completeAssessment.click();
-		extentTest.log(Status.PASS, (String) AT007.get(2), MediaEntityBuilder
-				.createScreenCaptureFromPath(captureScreenshot("AT007" + tsID + fileDate + ".jpg")).build());
+		extentTest.log(Status.PASS, (String) FR007.get(0)+" "+(String) FR007.get(2), MediaEntityBuilder
+				.createScreenCaptureFromPath(captureScreenshot("FR007" + tsID + fileDate + ".jpg")).build());
 
 		// Click Welcome
-		ArrayList AT008 = d.getData("AT008", sheetName);
-		WebElement welcome = driver.findElement(By.xpath((String) AT008.get(6)));
+		ArrayList FR008 = d.getData("FR008", sheetName);
+		WebElement welcome = driver.findElement(By.xpath((String) FR008.get(6)));
 		welcome.click();
-		extentTest.log(Status.PASS, (String) AT008.get(2), MediaEntityBuilder
-				.createScreenCaptureFromPath(captureScreenshot("AT008" + tsID + fileDate + ".jpg")).build());
+		extentTest.log(Status.PASS, (String) FR008.get(0)+" "+(String) FR008.get(2), MediaEntityBuilder
+				.createScreenCaptureFromPath(captureScreenshot("FR008" + tsID + fileDate + ".jpg")).build());
 
 		// Click Sign Out
-		ArrayList AT009 = d.getData("AT009", sheetName);
-		WebElement signOut = driver.findElement(By.xpath((String) AT009.get(6)));
+		ArrayList FR009 = d.getData("FR009", sheetName);
+		WebElement signOut = driver.findElement(By.xpath((String) FR009.get(6)));
 		signOut.click();
 		w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@ng-click='vm.login()']")));
-		extentTest.log(Status.PASS, (String) AT009.get(2), MediaEntityBuilder
-				.createScreenCaptureFromPath(captureScreenshot("AT009" + tsID + fileDate + ".jpg")).build());
+		extentTest.log(Status.PASS, (String) FR009.get(0)+" "+(String) FR009.get(2), MediaEntityBuilder
+				.createScreenCaptureFromPath(captureScreenshot("FR009" + tsID + fileDate + ".jpg")).build());
 		System.out.println("Test Step " + tsID + " has been completed.");
 	}
 
