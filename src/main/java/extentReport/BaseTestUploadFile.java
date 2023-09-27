@@ -1,71 +1,37 @@
 package extentReport;
 
 import java.io.*;
-import ru.yandex.qatools.ashot.AShot;
-import ru.yandex.qatools.ashot.Screenshot;
-import ru.yandex.qatools.ashot.shooting.ShootingStrategies;
-
-import static org.testng.Assert.assertEquals;
-import static org.testng.Assert.assertTrue;
-
 import java.awt.AWTException;
-import java.awt.Desktop;
-import java.awt.Robot;
-import java.awt.Toolkit;
-import java.awt.datatransfer.StringSelection;
-import java.awt.event.KeyEvent;
 import java.awt.image.BufferedImage;
-import java.io.ByteArrayOutputStream;
-
 import java.io.IOException;
 import java.lang.reflect.Method;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.text.Format;
-import java.text.SimpleDateFormat;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
 import javax.imageio.ImageIO;
 
-import org.apache.commons.collections4.map.HashedMap;
-import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.chromium.ChromiumDriver;
-import org.openqa.selenium.chromium.HasCdp;
-import org.openqa.selenium.devtools.DevTools;
-import org.openqa.selenium.devtools.HasDevTools;
 import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.RemoteWebDriver;
-import org.openqa.selenium.support.ui.Select;
-import org.testng.Assert;
 import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-import org.testng.internal.TestNGMethod;
-
 import com.assertthat.selenium_shutterbug.core.Capture;
 import com.assertthat.selenium_shutterbug.core.Shutterbug;
 import com.assertthat.selenium_shutterbug.utils.file.UnableSaveSnapshotException;
@@ -76,11 +42,8 @@ import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
 import dataDriven.DataDrivenHT;
-//import dataDriven.writeDataExcel;
+import dataDriven.writeDataExcel;
 import io.github.bonigarcia.wdm.WebDriverManager;
-import io.github.bonigarcia.wdm.config.WebDriverManagerException;
-import java.util.HashMap;
-import org.testng.annotations.DataProvider;
 
 public class BaseTestUploadFile {
 	public static WebDriver driver;
@@ -91,7 +54,7 @@ public class BaseTestUploadFile {
 
 	DataDrivenHT d = new DataDrivenHT();
 
-	//writeDataExcel excelWR = new writeDataExcel();
+	writeDataExcel excelWR = new writeDataExcel();
 
 	Date date = new Date();
 	String fileDate = date.toString().replace(":", "_").replace(" ", "_");
@@ -337,14 +300,12 @@ public class BaseTestUploadFile {
 		WebElement submitBtn = driver.findElement(By.xpath((String) TS011.get(5)));
 		submitBtn.click();
 		String log11 = (String) TS011.get(0) + " " + TS011.get(1);
-		extentTest.log(Status.PASS, log11 + " : " + fileName,
+		extentTest.log(Status.PASS, log11,
 				MediaEntityBuilder.createScreenCaptureFromPath(captureScreenshot(log11 + fileName + fileDate + ".jpg")).build());
 
 		Thread.sleep(5000);
-
 	}
 
-	// Verify field data
 	public void signatureAndLogout() throws InterruptedException, IOException, AWTException {
 		String sheetName = "testSteps";
 		// Add a Signature into the Nurse Signature Box
