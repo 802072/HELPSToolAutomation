@@ -130,7 +130,7 @@ public class BaseTestDD {
 		}
 
 		extentTest.assignCategory(m.getAnnotation(Test.class).groups());
-		 driver.quit();
+		driver.quit();
 	}
 
 	public void login() throws InterruptedException, IOException {
@@ -265,6 +265,26 @@ public class BaseTestDD {
 		extentTest.log(Status.PASS, (String) FR001.get(0) + " " + (String) FR001.get(1), MediaEntityBuilder
 				.createScreenCaptureFromPath(captureScreenshot("Final Rec" + tsID + fileDate + ".jpg")).build());
 
+		ArrayList<String> list = d.getData(tsID, "testSteps");
+		WebElement selectOption = driver.findElement(By.xpath((String) list.get(7)));
+		String option = selectOption.getText();
+		System.out.println("Option: " + tsID + option + " selected.");
+
+		// log option selected
+		extentTest.log(Status.PASS, "Selected Option is: " + option, MediaEntityBuilder
+				.createScreenCaptureFromPath(captureScreenshot("optionSelected" + tsID + fileDate + ".jpg")).build());
+
+		if (selectOption.getText().equals("Select an option")) {
+			// Verify Progress Bar is 94%
+			assertEquals("FR001A", "afterTest");
+			System.out.println("94% Progress Bar for: " + selectOption.getText());
+
+		} else {
+			// Verify Progress Bar is 97%
+			assertEquals("FR001B", "afterTest");
+			System.out.println("97% Progress Bar for: " + selectOption.getText());
+		}
+
 		// Add a Signature into the Nurse Signature Box
 		ArrayList FR002 = d.getData("FR002", sheetName);
 		WebElement canvas = driver.findElement(By.xpath((String) FR002.get(5)));
@@ -277,25 +297,17 @@ public class BaseTestDD {
 
 		// Click Accept Signature Button
 		clickElement("FR003", sheetName, tsID);
-		
-		
-		ArrayList<String> selectList = d.getData(tsID, "testSteps");
-		WebElement selectOption = driver.findElement(By.xpath((String) selectList.get(7)));
-		selectOption.getText();
-		
-		System.out.println("Option selected is -->"+selectOption.getText());
-		
+
 		if (selectOption.getText().equals("Select an option")) {
 			// Verify Progress Bar is 97%
 			assertEquals("FR003A", "afterTest");
-			System.out.println("97% Progress Bar for: "+selectOption.getText());
-			
-		} else
-		{
+			System.out.println("97% Progress Bar for: " + selectOption.getText());
+
+		} else {
 			// Verify Progress Bar is 100%
 			assertEquals("FR003B", "afterTest");
-			System.out.println("100% Progress Bar for: "+selectOption.getText());
-			
+			System.out.println("100% Progress Bar for: " + selectOption.getText());
+
 			// Click the Complete Assessment Button
 			clickElement("FR004", sheetName, tsID);
 		}
@@ -340,21 +352,6 @@ public class BaseTestDD {
 		w.until(ExpectedConditions.presenceOfElementLocated(By.xpath((String) list.get(7))));
 		extentTest.log(Status.PASS, (String) list.get(0) + " " + (String) list.get(3),
 				MediaEntityBuilder.createScreenCaptureFromPath(captureScreenshot(tsID + fileDate + ".jpg")).build());
-		
-		String option = selectOption.getText();
-		System.out.println("Option: " + tsID + option + " selected.");
-		
-		if (selectOption.getText().equals("Select an option")) {
-			// Verify Progress Bar is 94%
-			assertEquals("FR001A", "afterTest");
-			System.out.println("94% Progress Bar for: "+selectOption.getText());
-			
-		} else
-		{
-			// Verify Progress Bar is 97%
-			assertEquals("FR001B", "afterTest");
-			System.out.println("97% Progress Bar for: "+selectOption.getText());
-		}
 	}
 
 	public void assertIsDisplayed(String rowName, String sheetName) throws InterruptedException, IOException {
