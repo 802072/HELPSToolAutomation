@@ -4,7 +4,6 @@ import java.io.IOException;
 import java.awt.AWTException;
 
 import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.ExtentReports;

@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite" parallel="methods" skipfailedinvocationcounts="true">
+
+	<listeners>
+		<listener class-name="ListenerImp.AnnotationListener"></listener>
+	</listeners>
+
 	<test
 		name="TC01: Verify Document Upload: Sample 1 (chrome)">
 		<parameter
@@ -121,9 +126,8 @@
 			</class>
 		</classes>
 	</test>
-	
-	
-	
+
+
 	<test
 		name="TC01: Verify Document Upload: Sample 1 (edge)">
 		<parameter

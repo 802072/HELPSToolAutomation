@@ -57,7 +57,6 @@ public class DocumentsUploadTest extends BaseTestUploadFile {
 		login();
 		uploadAndSubmitFile("Sample 1");
 		signatureAndLogout();
-		//verifyInfo("TC01", "SampleData1");
 	}
 
 	// File Sample-2
@@ -66,7 +65,6 @@ public class DocumentsUploadTest extends BaseTestUploadFile {
 		login();
 		uploadAndSubmitFile("Sample 2");
 		signatureAndLogout();
-		//verifyInfo("TC02", "SampleData2");
 	}
 
 	// File Sample-3
@@ -75,7 +73,6 @@ public class DocumentsUploadTest extends BaseTestUploadFile {
 		login();
 		uploadAndSubmitFile("Sample 3");
 		signatureAndLogout();
-		//verifyInfo("TC03", "SampleData3");
 	}
 
 	// File Sample-4
@@ -84,7 +81,6 @@ public class DocumentsUploadTest extends BaseTestUploadFile {
 		login();
 		uploadAndSubmitFile("Sample 4");
 		signatureAndLogout();
-		//verifyInfo("TC04", "SampleData4");
 	}
 
 	// File Sample-5
@@ -93,7 +89,6 @@ public class DocumentsUploadTest extends BaseTestUploadFile {
 		login();
 		uploadAndSubmitFile("Sample 5");
 		signatureAndLogout();
-		//verifyInfo("TC05", "SampleData5");
 	}
 
 	// File Sample-6
@@ -102,7 +97,6 @@ public class DocumentsUploadTest extends BaseTestUploadFile {
 		login();
 		uploadAndSubmitFile("Sample 6");
 		signatureAndLogout();
-		//verifyInfo("TC06", "SampleData6");
 	}
 
 	// File Sample-7
@@ -111,7 +105,6 @@ public class DocumentsUploadTest extends BaseTestUploadFile {
 		login();
 		uploadAndSubmitFile("Sample 7");
 		signatureAndLogout();
-		//verifyInfo("TC07", "SampleData7");
 	}
 
 	// File Sample-8
@@ -120,7 +113,6 @@ public class DocumentsUploadTest extends BaseTestUploadFile {
 		login();
 		uploadAndSubmitFile("Sample 8");
 		signatureAndLogout();
-		//verifyInfo("TC08", "SampleData8");
 	}
 
 	@AfterTest()

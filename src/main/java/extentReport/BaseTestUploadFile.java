@@ -23,6 +23,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.testng.Assert;
 import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
@@ -130,6 +131,7 @@ public class BaseTestUploadFile {
 		}
 
 		extentTest.assignCategory(m.getAnnotation(Test.class).groups());
+		//driver.quit();
 	}
 
 	public String captureScreenshot(String screenShotName) throws IOException {
@@ -260,6 +262,9 @@ public class BaseTestUploadFile {
 		} catch (Exception e) {
 
 		}
+		
+		//verify welcome text
+		assertEquals("TS007A", "testSteps");
 	}
 
 	@SuppressWarnings("rawtypes")
@@ -281,7 +286,6 @@ public class BaseTestUploadFile {
 
 		// Click Choose File
 		ArrayList TS009 = d.getData("TS009", "testSteps");
-		// String fileName = (String) TS009.get(6);
 		WebElement chooseFileBtn = driver.findElement(By.xpath((String) TS009.get(5)));
 		String log9 = (String) TS009.get(0) + " " + TS009.get(1);
 		extentTest.log(Status.PASS, log9,
@@ -289,7 +293,6 @@ public class BaseTestUploadFile {
 
 		// log Upload File
 		ArrayList TS010 = d.getData("TS010", "testSteps");
-		// String path= (String) TS010.get(6);
 		String log10 = (String) TS010.get(0) + " " + TS010.get(1);
 		extentTest.log(Status.PASS, log10 + " : " + fileName,
 				MediaEntityBuilder.createScreenCaptureFromPath(captureScreenshot(log10 + fileName + fileDate + ".jpg")).build());
@@ -303,6 +306,8 @@ public class BaseTestUploadFile {
 		extentTest.log(Status.PASS, log11,
 				MediaEntityBuilder.createScreenCaptureFromPath(captureScreenshot(log11 + fileName + fileDate + ".jpg")).build());
 
+		//Verify Progress Bar is at 97%
+		assertEquals("TS011A", "testSteps");
 		Thread.sleep(5000);
 	}
 
@@ -315,7 +320,7 @@ public class BaseTestUploadFile {
 		Action signature = builder.moveToElement(canvas).clickAndHold().moveByOffset(200, 50).moveByOffset(10, 0)
 				.click().build();
 		signature.perform();
-		Thread.sleep(5000);
+		Thread.sleep(3000);
 		String log12 = (String) TS012.get(0) + " " + TS012.get(1);
 		extentTest.log(Status.PASS, log12, MediaEntityBuilder
 				.createScreenCaptureFromPath(captureScreenshot(log12 + sheetName + fileDate + ".jpg")).build());
@@ -328,22 +333,28 @@ public class BaseTestUploadFile {
 		extentTest.log(Status.PASS, log13, MediaEntityBuilder
 				.createScreenCaptureFromPath(captureScreenshot(log13 + sheetName + fileDate + ".jpg")).build());
 
+		//Verify Progress Bar is at 100%
+		assertEquals("TS013A", "testSteps");
+		
 		// Click Clear Signature Button
 		ArrayList TS014 = d.getData("TS014", sheetName);
 		WebElement clearSign = driver.findElement(By.xpath((String) TS014.get(5)));
 		clearSign.click();
-		Thread.sleep(5000);
+		Thread.sleep(3000);
 		String log14 = (String) TS014.get(0) + " " + TS014.get(1);
 		extentTest.log(Status.PASS, log14, MediaEntityBuilder
 				.createScreenCaptureFromPath(captureScreenshot(log14 + sheetName + fileDate + ".jpg")).build());
-
+		
+		//Verify Progress Bar is at 97%
+		assertEquals("TS011A", "testSteps");
+		
 		// Add a Signature into the Nurse Signature Box
 		ArrayList TS015 = d.getData("TS015", sheetName);
 		WebElement canvas1 = driver.findElement(By.xpath((String) TS015.get(5)));
 		Action signature1 = builder.moveToElement(canvas1).clickAndHold().moveByOffset(200, 50).moveByOffset(10, 0)
 				.click().build();
 		signature1.perform();
-		Thread.sleep(5000);
+		Thread.sleep(3000);
 		String log15 = (String) TS015.get(0) + " " + TS015.get(1);
 		extentTest.log(Status.PASS, log15, MediaEntityBuilder
 				.createScreenCaptureFromPath(captureScreenshot(log15 + sheetName + fileDate + ".jpg")).build());
@@ -355,7 +366,10 @@ public class BaseTestUploadFile {
 		String log16 = (String) TS016.get(0) + " " + TS016.get(1);
 		extentTest.log(Status.PASS, log16, MediaEntityBuilder
 				.createScreenCaptureFromPath(captureScreenshot(log16 + sheetName + fileDate + ".jpg")).build());
-
+		
+		//Verify Progress Bar is at 100%
+		assertEquals("TS013A", "testSteps");
+		
 		// Click the Complete Assessment Button
 		ArrayList TS017 = d.getData("TS017", sheetName);
 		WebElement completeAssessment = driver.findElement(By.xpath((String) TS017.get(5)));
@@ -376,10 +390,28 @@ public class BaseTestUploadFile {
 		ArrayList TS019 = d.getData("TS019", sheetName);
 		WebElement signOut = driver.findElement(By.xpath((String) TS019.get(5)));
 		signOut.click();
+		Thread.sleep(3000);
 		String log19 = (String) TS019.get(0) + " " + TS019.get(1);
 		extentTest.log(Status.PASS, log19, MediaEntityBuilder
 				.createScreenCaptureFromPath(captureScreenshot(log19 + sheetName + fileDate + ".jpg")).build());
 
+	}
+	
+	public void assertIsDisplayed(String rowName, String sheetName) throws InterruptedException, IOException {
+		ArrayList list = d.getData(rowName, sheetName);
+		Assert.assertEquals(driver.findElement(By.xpath((String) list.get(5))).isDisplayed(), true);
+		extentTest.log(Status.PASS, (String) list.get(0) + " " + list.get(1), MediaEntityBuilder
+				.createScreenCaptureFromPath(captureScreenshot(rowName + sheetName + fileDate + ".jpg")).build());
+	}
+	
+	public void assertEquals(String rowName, String sheetName) throws InterruptedException, IOException {
+		ArrayList list = d.getData(rowName, sheetName);
+		WebElement element = driver.findElement(By.xpath((String) list.get(5)));
+		String actualValue= element.getText();
+		String expectedValue= (String) list.get(6);
+		Assert.assertEquals(actualValue, expectedValue);
+		extentTest.log(Status.PASS, (String) list.get(0) + " " +(String) list.get(1)+" Actual Value: "+actualValue, MediaEntityBuilder
+				.createScreenCaptureFromPath(captureScreenshot(rowName + sheetName + "assert"+fileDate + ".jpg")).build());
 	}
 
 }
