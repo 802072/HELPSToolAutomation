@@ -29,7 +29,7 @@ public class IADLcapacity extends BaseTestDD {
 	}
 
 	// IADL
-	// Meal Preparation Response
+	// Dropdown1: Meal Preparation Response
 	// Option1: Select an option
 	@Test(groups = "IADL - Capacity: Meal Preparation Response")
 	public void verifyMealPrepOption1() throws IOException, InterruptedException, AWTException {
@@ -37,6 +37,7 @@ public class IADLcapacity extends BaseTestDD {
 		uploadFile();
 		clickDropdown("IADL0100");
 		selectOption("IADL0101");
+		verifyOptionIsSelected("IADL0100", "IADL0101");
 		signatureAndLogout("IADL0101");
 	}
 
@@ -48,6 +49,7 @@ public class IADLcapacity extends BaseTestDD {
 		uploadFile();
 		clickDropdown("IADL0100");
 		selectOption("IADL0102");
+		verifyOptionIsSelected("IADL0100", "IADL0102");
 		signatureAndLogout("IADL0102");
 	}
 
@@ -58,6 +60,7 @@ public class IADLcapacity extends BaseTestDD {
 		uploadFile();
 		clickDropdown("IADL0100");
 		selectOption("IADL0103");
+		verifyOptionIsSelected("IADL0100", "IADL0103");
 		signatureAndLogout("IADL0103");
 	}
 
@@ -68,6 +71,7 @@ public class IADLcapacity extends BaseTestDD {
 		uploadFile();
 		clickDropdown("IADL0100");
 		selectOption("IADL0104");
+		verifyOptionIsSelected("IADL0100", "IADL0104");
 		signatureAndLogout("IADL0104");
 	}
 
@@ -79,6 +83,7 @@ public class IADLcapacity extends BaseTestDD {
 		uploadFile();
 		clickDropdown("IADL0100");
 		selectOption("IADL0105");
+		verifyOptionIsSelected("IADL0100", "IADL0105");
 		signatureAndLogout("IADL0105");
 	}
 
@@ -91,6 +96,7 @@ public class IADLcapacity extends BaseTestDD {
 		uploadFile();
 		clickDropdown("IADL0100");
 		selectOption("IADL0106");
+		verifyOptionIsSelected("IADL0100", "IADL0106");
 		signatureAndLogout("IADL0106");
 	}
 
@@ -103,6 +109,7 @@ public class IADLcapacity extends BaseTestDD {
 		uploadFile();
 		clickDropdown("IADL0100");
 		selectOption("IADL0107");
+		verifyOptionIsSelected("IADL0100", "IADL0107");
 		signatureAndLogout("IADL0107");
 	}
 
@@ -113,6 +120,7 @@ public class IADLcapacity extends BaseTestDD {
 		uploadFile();
 		clickDropdown("IADL0100");
 		selectOption("IADL0108");
+		verifyOptionIsSelected("IADL0100", "IADL0108");
 		signatureAndLogout("IADL0108");
 	}
 
@@ -123,10 +131,11 @@ public class IADLcapacity extends BaseTestDD {
 		uploadFile();
 		clickDropdown("IADL0100");
 		selectOption("IADL0109");
+		verifyOptionIsSelected("IADL0100", "IADL0109");
 		signatureAndLogout("IADL0109");
 	}
 
-	// Ordinary Housework Response
+	// Dropdown2: Ordinary Housework Response
 	// Option1: Select an option
 	@Test(groups = "IADL - Capacity: Ordinary Housework Response")
 	public void verifyOrdinaryHouseworkOption1() throws IOException, InterruptedException, AWTException {
@@ -134,6 +143,7 @@ public class IADLcapacity extends BaseTestDD {
 		uploadFile();
 		clickDropdown("IADL0200");
 		selectOption("IADL0201");
+		verifyOptionIsSelected("IADL0200", "IADL0201");
 		signatureAndLogout("IADL0201");
 	}
 
@@ -145,6 +155,7 @@ public class IADLcapacity extends BaseTestDD {
 		uploadFile();
 		clickDropdown("IADL0200");
 		selectOption("IADL0202");
+		verifyOptionIsSelected("IADL0200", "IADL0202");
 		signatureAndLogout("IADL0202");
 	}
 
@@ -155,6 +166,7 @@ public class IADLcapacity extends BaseTestDD {
 		uploadFile();
 		clickDropdown("IADL0200");
 		selectOption("IADL0203");
+		verifyOptionIsSelected("IADL0200", "IADL0203");
 		signatureAndLogout("IADL0203");
 	}
 
@@ -165,6 +177,7 @@ public class IADLcapacity extends BaseTestDD {
 		uploadFile();
 		clickDropdown("IADL0200");
 		selectOption("IADL0204");
+		verifyOptionIsSelected("IADL0200", "IADL0204");
 		signatureAndLogout("IADL0204");
 	}
 
@@ -176,6 +189,7 @@ public class IADLcapacity extends BaseTestDD {
 		uploadFile();
 		clickDropdown("IADL0200");
 		selectOption("IADL0205");
+		verifyOptionIsSelected("IADL0200", "IADL0205");
 		signatureAndLogout("IADL0205");
 	}
 
@@ -188,6 +202,7 @@ public class IADLcapacity extends BaseTestDD {
 		uploadFile();
 		clickDropdown("IADL0200");
 		selectOption("IADL0206");
+		verifyOptionIsSelected("IADL0200", "IADL0206");
 		signatureAndLogout("IADL0206");
 	}
 
@@ -200,6 +215,7 @@ public class IADLcapacity extends BaseTestDD {
 		uploadFile();
 		clickDropdown("IADL0200");
 		selectOption("IADL0207");
+		verifyOptionIsSelected("IADL0200", "IADL0207");
 		signatureAndLogout("IADL0207");
 	}
 
@@ -211,6 +227,7 @@ public class IADLcapacity extends BaseTestDD {
 		uploadFile();
 		clickDropdown("IADL0200");
 		selectOption("IADL0208");
+		verifyOptionIsSelected("IADL0200", "IADL0208");
 		signatureAndLogout("IADL0208");
 	}
 
@@ -221,10 +238,11 @@ public class IADLcapacity extends BaseTestDD {
 		uploadFile();
 		clickDropdown("IADL0200");
 		selectOption("IADL0209");
+		verifyOptionIsSelected("IADL0200", "IADL0209");
 		signatureAndLogout("IADL0209");
 	}
 
-	// Shopping Response
+	// Dropdown3: Shopping Response
 	// Option1: Select an option
 	@Test(groups = "IADL - Capacity: Shopping Response")
 	public void verifyShoppingOption1() throws IOException, InterruptedException, AWTException {
@@ -232,6 +250,7 @@ public class IADLcapacity extends BaseTestDD {
 		uploadFile();
 		clickDropdown("IADL0300");
 		selectOption("IADL0301");
+		verifyOptionIsSelected("IADL0300", "IADL0301");
 		signatureAndLogout("IADL0301");
 	}
 
@@ -243,6 +262,7 @@ public class IADLcapacity extends BaseTestDD {
 		uploadFile();
 		clickDropdown("IADL0300");
 		selectOption("IADL0302");
+		verifyOptionIsSelected("IADL0300", "IADL0302");
 		signatureAndLogout("IADL0302");
 	}
 
@@ -253,6 +273,7 @@ public class IADLcapacity extends BaseTestDD {
 		uploadFile();
 		clickDropdown("IADL0300");
 		selectOption("IADL0303");
+		verifyOptionIsSelected("IADL0300", "IADL0303");
 		signatureAndLogout("IADL0303");
 	}
 
@@ -263,6 +284,7 @@ public class IADLcapacity extends BaseTestDD {
 		uploadFile();
 		clickDropdown("IADL0300");
 		selectOption("IADL0304");
+		verifyOptionIsSelected("IADL0300", "IADL0304");
 		signatureAndLogout("IADL0304");
 	}
 
@@ -274,6 +296,7 @@ public class IADLcapacity extends BaseTestDD {
 		uploadFile();
 		clickDropdown("IADL0300");
 		selectOption("IADL0305");
+		verifyOptionIsSelected("IADL0300", "IADL0305");
 		signatureAndLogout("IADL0305");
 	}
 
@@ -285,6 +308,7 @@ public class IADLcapacity extends BaseTestDD {
 		uploadFile();
 		clickDropdown("IADL0300");
 		selectOption("IADL0306");
+		verifyOptionIsSelected("IADL0300", "IADL0306");
 		signatureAndLogout("IADL0306");
 	}
 
@@ -297,6 +321,7 @@ public class IADLcapacity extends BaseTestDD {
 		uploadFile();
 		clickDropdown("IADL0300");
 		selectOption("IADL0307");
+		verifyOptionIsSelected("IADL0300", "IADL0307");
 		signatureAndLogout("IADL0307");
 	}
 
@@ -308,6 +333,7 @@ public class IADLcapacity extends BaseTestDD {
 		uploadFile();
 		clickDropdown("IADL0300");
 		selectOption("IADL0308");
+		verifyOptionIsSelected("IADL0300", "IADL0308");
 		signatureAndLogout("IADL0308");
 	}
 
@@ -318,6 +344,7 @@ public class IADLcapacity extends BaseTestDD {
 		uploadFile();
 		clickDropdown("IADL0300");
 		selectOption("IADL0309");
+		verifyOptionIsSelected("IADL0300", "IADL0309");
 		signatureAndLogout("IADL0309");
 	}
 }

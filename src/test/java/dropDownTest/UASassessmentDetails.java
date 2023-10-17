@@ -22,17 +22,16 @@ public class UASassessmentDetails extends BaseTestDD {
 
 		extentReports = new ExtentReports();
 		extentReports.attachReporter(sparkReporter_all);
-		
 
 		extentReports.setSystemInfo("OS", System.getProperty("os.name"));
 		extentReports.setSystemInfo("Java Version", System.getProperty("java.version"));
-		//extentReports.setSystemInfo("User ID", System.getProperty("user.name"));
+		// extentReports.setSystemInfo("User ID", System.getProperty("user.name"));
 		// extentReports.setSystemInfo("Environment", "Test Environment");
 		// extentReports.setSystemInfo("Environment", "Production Environment");
 	}
 
 	// UAS Assessment Details
-	// Cognitive Skills for Daily Decision Making
+	// Dropdown 1: Cognitive Skills for Daily Decision Making
 	// Option1: Select an option
 	@Test(groups = "UAS Assessment Details: Cognitive Skills for Daily Decision Making")
 	public void verifyCognitiveSkillOption1() throws IOException, InterruptedException, AWTException {
@@ -40,6 +39,7 @@ public class UASassessmentDetails extends BaseTestDD {
 		uploadFile();
 		clickDropdown("UAS0100");
 		selectOption("UAS0101");
+		verifyOptionIsSelected("UAS0100", "UAS0101");
 		signatureAndLogout("UAS0101");
 	}
 
@@ -50,6 +50,7 @@ public class UASassessmentDetails extends BaseTestDD {
 		uploadFile();
 		clickDropdown("UAS0100");
 		selectOption("UAS0102");
+		verifyOptionIsSelected("UAS0100", "UAS0102");
 		signatureAndLogout("UAS0102");
 	}
 
@@ -60,6 +61,7 @@ public class UASassessmentDetails extends BaseTestDD {
 		uploadFile();
 		clickDropdown("UAS0100");
 		selectOption("UAS0103");
+		verifyOptionIsSelected("UAS0100", "UAS0103");
 		signatureAndLogout("UAS0103");
 	}
 
@@ -71,6 +73,7 @@ public class UASassessmentDetails extends BaseTestDD {
 		uploadFile();
 		clickDropdown("UAS0100");
 		selectOption("UAS0104");
+		verifyOptionIsSelected("UAS0100", "UAS0104");
 		signatureAndLogout("UAS0104");
 	}
 
@@ -80,8 +83,9 @@ public class UASassessmentDetails extends BaseTestDD {
 	public void verifyCognitiveSkillOption5() throws IOException, InterruptedException, AWTException {
 		login();
 		uploadFile();
-		clickDropdown("UAS0105");
+		clickDropdown("UAS0100");
 		selectOption("UAS0105");
+		verifyOptionIsSelected("UAS0100", "UAS0105");
 		signatureAndLogout("UAS0105");
 	}
 
@@ -92,6 +96,7 @@ public class UASassessmentDetails extends BaseTestDD {
 		uploadFile();
 		clickDropdown("UAS0100");
 		selectOption("UAS0106");
+		verifyOptionIsSelected("UAS0100", "UAS0106");
 		signatureAndLogout("UAS0106");
 	}
 
@@ -102,9 +107,11 @@ public class UASassessmentDetails extends BaseTestDD {
 		uploadFile();
 		clickDropdown("UAS0100");
 		selectOption("UAS0107");
+		verifyOptionIsSelected("UAS0100", "UAS0107");
 		signatureAndLogout("UAS0107");
 	}
 
+	// Dropdown 2: Psychiatric Anxiety
 	// Option1: Select an option
 	@Test(groups = "UAS Assessment Details: Psychiatric Anxiety")
 	public void verifyPsychiatricAnxietyOption1() throws IOException, InterruptedException, AWTException {
@@ -112,6 +119,7 @@ public class UASassessmentDetails extends BaseTestDD {
 		uploadFile();
 		clickDropdown("UAS0200");
 		selectOption("UAS0201");
+		verifyOptionIsSelected("UAS0200", "UAS0201");
 		signatureAndLogout("UAS0201");
 	}
 
@@ -122,6 +130,7 @@ public class UASassessmentDetails extends BaseTestDD {
 		uploadFile();
 		clickDropdown("UAS0200");
 		selectOption("UAS0202");
+		verifyOptionIsSelected("UAS0200", "UAS0202");
 		signatureAndLogout("UAS0202");
 	}
 
@@ -132,6 +141,7 @@ public class UASassessmentDetails extends BaseTestDD {
 		uploadFile();
 		clickDropdown("UAS0200");
 		selectOption("UAS0203");
+		verifyOptionIsSelected("UAS0200", "UAS0203");
 		signatureAndLogout("UAS0203");
 	}
 
@@ -142,6 +152,7 @@ public class UASassessmentDetails extends BaseTestDD {
 		uploadFile();
 		clickDropdown("UAS0200");
 		selectOption("UAS0204");
+		verifyOptionIsSelected("UAS0200", "UAS0204");
 		signatureAndLogout("UAS0204");
 	}
 
@@ -152,10 +163,11 @@ public class UASassessmentDetails extends BaseTestDD {
 		uploadFile();
 		clickDropdown("UAS0200");
 		selectOption("UAS0205");
+		verifyOptionIsSelected("UAS0200", "UAS0205");
 		signatureAndLogout("UAS0205");
 	}
 
-	// Wandering
+	// Dropdown 3: Wandering
 	// Option1: Select an option
 	@Test(groups = "UAS Assessment Details: Wandering")
 	public void verifyWanderingOption1() throws IOException, InterruptedException, AWTException {
@@ -163,6 +175,7 @@ public class UASassessmentDetails extends BaseTestDD {
 		uploadFile();
 		clickDropdown("UAS0300");
 		selectOption("UAS0301");
+		verifyOptionIsSelected("UAS0300", "UAS0301");
 		signatureAndLogout("UAS0301");
 	}
 
@@ -173,6 +186,7 @@ public class UASassessmentDetails extends BaseTestDD {
 		uploadFile();
 		clickDropdown("UAS0300");
 		selectOption("UAS0302");
+		verifyOptionIsSelected("UAS0300", "UAS0302");
 		signatureAndLogout("UAS0302");
 	}
 
@@ -183,6 +197,7 @@ public class UASassessmentDetails extends BaseTestDD {
 		uploadFile();
 		clickDropdown("UAS0300");
 		selectOption("UAS0303");
+		verifyOptionIsSelected("UAS0300", "UAS0303");
 		signatureAndLogout("UAS0303");
 	}
 
@@ -193,6 +208,7 @@ public class UASassessmentDetails extends BaseTestDD {
 		uploadFile();
 		clickDropdown("UAS0300");
 		selectOption("UAS0304");
+		verifyOptionIsSelected("UAS0300", "UAS0304");
 		signatureAndLogout("UAS0304");
 	}
 
@@ -203,10 +219,11 @@ public class UASassessmentDetails extends BaseTestDD {
 		uploadFile();
 		clickDropdown("UAS0300");
 		selectOption("UAS0305");
+		verifyOptionIsSelected("UAS0300", "UAS0305");
 		signatureAndLogout("UAS0305");
 	}
 
-	// PsychiatricDepression
+	// Dropdown 4: PsychiatricDepression
 	// Option1: Select an option
 	@Test(groups = "UAS Assessment Details: Psychiatric Depression")
 	public void verifyPsychiatricDepressionOption1() throws IOException, InterruptedException, AWTException {
@@ -214,6 +231,7 @@ public class UASassessmentDetails extends BaseTestDD {
 		uploadFile();
 		clickDropdown("UAS0400");
 		selectOption("UAS0401");
+		verifyOptionIsSelected("UAS0400", "UAS0401");
 		signatureAndLogout("UAS0401");
 	}
 
@@ -224,6 +242,7 @@ public class UASassessmentDetails extends BaseTestDD {
 		uploadFile();
 		clickDropdown("UAS0400");
 		selectOption("UAS0402");
+		verifyOptionIsSelected("UAS0400", "UAS0402");
 		signatureAndLogout("UAS0402");
 	}
 
@@ -234,6 +253,7 @@ public class UASassessmentDetails extends BaseTestDD {
 		uploadFile();
 		clickDropdown("UAS0400");
 		selectOption("UAS0403");
+		verifyOptionIsSelected("UAS0400", "UAS0403");
 		signatureAndLogout("UAS0403");
 	}
 
@@ -244,6 +264,7 @@ public class UASassessmentDetails extends BaseTestDD {
 		uploadFile();
 		clickDropdown("UAS0400");
 		selectOption("UAS0404");
+		verifyOptionIsSelected("UAS0400", "UAS0404");
 		signatureAndLogout("UAS0404");
 	}
 
@@ -254,10 +275,11 @@ public class UASassessmentDetails extends BaseTestDD {
 		uploadFile();
 		clickDropdown("UAS0400");
 		selectOption("UAS0405");
+		verifyOptionIsSelected("UAS0400", "UAS0405");
 		signatureAndLogout("UAS0405");
 	}
 
-	// VerbalAbuse
+	// Dropdown 5: VerbalAbuse
 	// Option1: Select an option
 	@Test(groups = "UAS Assessment Details: Verbal Abuse")
 	public void verifyVerbalAbuseOption1() throws IOException, InterruptedException, AWTException {
@@ -265,6 +287,7 @@ public class UASassessmentDetails extends BaseTestDD {
 		uploadFile();
 		clickDropdown("UAS0500");
 		selectOption("UAS0501");
+		verifyOptionIsSelected("UAS0500", "UAS0501");
 		signatureAndLogout("UAS0501");
 	}
 
@@ -275,6 +298,7 @@ public class UASassessmentDetails extends BaseTestDD {
 		uploadFile();
 		clickDropdown("UAS0500");
 		selectOption("UAS0502");
+		verifyOptionIsSelected("UAS0500", "UAS0502");
 		signatureAndLogout("UAS0502");
 	}
 
@@ -285,6 +309,7 @@ public class UASassessmentDetails extends BaseTestDD {
 		uploadFile();
 		clickDropdown("UAS0500");
 		selectOption("UAS0503");
+		verifyOptionIsSelected("UAS0500", "UAS0503");
 		signatureAndLogout("UAS0503");
 	}
 
@@ -295,6 +320,7 @@ public class UASassessmentDetails extends BaseTestDD {
 		uploadFile();
 		clickDropdown("UAS0500");
 		selectOption("UAS0504");
+		verifyOptionIsSelected("UAS0500", "UAS0504");
 		signatureAndLogout("UAS0504");
 	}
 
@@ -305,10 +331,11 @@ public class UASassessmentDetails extends BaseTestDD {
 		uploadFile();
 		clickDropdown("UAS0500");
 		selectOption("UAS0505");
+		verifyOptionIsSelected("UAS0500", "UAS0505");
 		signatureAndLogout("UAS0505");
 	}
 
-	// Psychiatric Schizophrenia
+	// Dropdown 6: Psychiatric Schizophrenia
 	// Option1: Select an option
 	@Test(groups = "UAS Assessment Details: Psychiatric Schizophrenia")
 	public void verifyPsychiatricSchizophreniaOption1() throws IOException, InterruptedException, AWTException {
@@ -316,6 +343,7 @@ public class UASassessmentDetails extends BaseTestDD {
 		uploadFile();
 		clickDropdown("UAS0600");
 		selectOption("UAS0601");
+		verifyOptionIsSelected("UAS0600", "UAS0601");
 		signatureAndLogout("UAS0601");
 	}
 
@@ -326,6 +354,7 @@ public class UASassessmentDetails extends BaseTestDD {
 		uploadFile();
 		clickDropdown("UAS0600");
 		selectOption("UAS0602");
+		verifyOptionIsSelected("UAS0600", "UAS0602");
 		signatureAndLogout("UAS0602");
 	}
 
@@ -336,6 +365,7 @@ public class UASassessmentDetails extends BaseTestDD {
 		uploadFile();
 		clickDropdown("UAS0600");
 		selectOption("UAS0603");
+		verifyOptionIsSelected("UAS0600", "UAS0603");
 		signatureAndLogout("UAS0603");
 	}
 
@@ -346,6 +376,7 @@ public class UASassessmentDetails extends BaseTestDD {
 		uploadFile();
 		clickDropdown("UAS0600");
 		selectOption("UAS0604");
+		verifyOptionIsSelected("UAS0600", "UAS0604");
 		signatureAndLogout("UAS0604");
 	}
 
@@ -356,10 +387,11 @@ public class UASassessmentDetails extends BaseTestDD {
 		uploadFile();
 		clickDropdown("UAS0600");
 		selectOption("UAS0605");
+		verifyOptionIsSelected("UAS0600", "UAS0605");
 		signatureAndLogout("UAS0605");
 	}
 
-	// Physical Abuse
+	// Dropdown 7: Physical Abuse
 	// Option1: Select an option
 	@Test(groups = "UAS Assessment Details: Physical Abuse")
 	public void verifyPhysicalAbuseOption1() throws IOException, InterruptedException, AWTException {
@@ -367,6 +399,7 @@ public class UASassessmentDetails extends BaseTestDD {
 		uploadFile();
 		clickDropdown("UAS0700");
 		selectOption("UAS0701");
+		verifyOptionIsSelected("UAS0700", "UAS0701");
 		signatureAndLogout("UAS0701");
 	}
 
@@ -377,6 +410,7 @@ public class UASassessmentDetails extends BaseTestDD {
 		uploadFile();
 		clickDropdown("UAS0700");
 		selectOption("UAS0702");
+		verifyOptionIsSelected("UAS0700", "UAS0702");
 		signatureAndLogout("UAS0702");
 	}
 
@@ -387,6 +421,7 @@ public class UASassessmentDetails extends BaseTestDD {
 		uploadFile();
 		clickDropdown("UAS0700");
 		selectOption("UAS0703");
+		verifyOptionIsSelected("UAS0700", "UAS0703");
 		signatureAndLogout("UAS0703");
 	}
 
@@ -397,6 +432,7 @@ public class UASassessmentDetails extends BaseTestDD {
 		uploadFile();
 		clickDropdown("UAS0700");
 		selectOption("UAS0704");
+		verifyOptionIsSelected("UAS0700", "UAS0704");
 		signatureAndLogout("UAS0704");
 	}
 
@@ -407,10 +443,11 @@ public class UASassessmentDetails extends BaseTestDD {
 		uploadFile();
 		clickDropdown("UAS0700");
 		selectOption("UAS0705");
+		verifyOptionIsSelected("UAS0700", "UAS0705");
 		signatureAndLogout("UAS0705");
 	}
 
-	// Dyspnea
+	// Dropdown 8: Dyspnea
 	// Option1: Select an option
 	@Test(groups = "UAS Assessment Details: Dyspnea")
 	public void verifyDyspneaOption1() throws IOException, InterruptedException, AWTException {
@@ -418,6 +455,7 @@ public class UASassessmentDetails extends BaseTestDD {
 		uploadFile();
 		clickDropdown("UAS0800");
 		selectOption("UAS0801");
+		verifyOptionIsSelected("UAS0800", "UAS0801");
 		signatureAndLogout("UAS0801");
 	}
 
@@ -428,6 +466,7 @@ public class UASassessmentDetails extends BaseTestDD {
 		uploadFile();
 		clickDropdown("UAS0800");
 		selectOption("UAS0802");
+		verifyOptionIsSelected("UAS0800", "UAS0802");
 		signatureAndLogout("UAS0802");
 	}
 
@@ -438,6 +477,7 @@ public class UASassessmentDetails extends BaseTestDD {
 		uploadFile();
 		clickDropdown("UAS0800");
 		selectOption("UAS0803");
+		verifyOptionIsSelected("UAS0800", "UAS0803");
 		signatureAndLogout("UAS0803");
 	}
 
@@ -449,6 +489,7 @@ public class UASassessmentDetails extends BaseTestDD {
 		uploadFile();
 		clickDropdown("UAS0800");
 		selectOption("UAS0804");
+		verifyOptionIsSelected("UAS0800", "UAS0804");
 		signatureAndLogout("UAS0804");
 	}
 
@@ -459,10 +500,11 @@ public class UASassessmentDetails extends BaseTestDD {
 		uploadFile();
 		clickDropdown("UAS0800");
 		selectOption("UAS0805");
+		verifyOptionIsSelected("UAS0800", "UAS0805");
 		signatureAndLogout("UAS0805");
 	}
 
-	// Socially Inappropriate Or Disruptive Behavior
+	// Dropdown 9: Socially Inappropriate Or Disruptive Behavior
 	// Option1: Select an Option
 	@Test(groups = "UAS Assessment Details: Socially Inappropriate Or Disruptive Behavior")
 	public void verifySIDBoption1() throws IOException, InterruptedException, AWTException {
@@ -470,6 +512,7 @@ public class UASassessmentDetails extends BaseTestDD {
 		uploadFile();
 		clickDropdown("UAS0900");
 		selectOption("UAS0901");
+		verifyOptionIsSelected("UAS0900", "UAS0901");
 		signatureAndLogout("UAS0901");
 	}
 
@@ -480,6 +523,7 @@ public class UASassessmentDetails extends BaseTestDD {
 		uploadFile();
 		clickDropdown("UAS0900");
 		selectOption("UAS0902");
+		verifyOptionIsSelected("UAS0900", "UAS0902");
 		signatureAndLogout("UAS0902");
 	}
 
@@ -490,6 +534,7 @@ public class UASassessmentDetails extends BaseTestDD {
 		uploadFile();
 		clickDropdown("UAS0900");
 		selectOption("UAS0903");
+		verifyOptionIsSelected("UAS0900", "UAS0903");
 		signatureAndLogout("UAS0903");
 	}
 
@@ -500,6 +545,7 @@ public class UASassessmentDetails extends BaseTestDD {
 		uploadFile();
 		clickDropdown("UAS0900");
 		selectOption("UAS0904");
+		verifyOptionIsSelected("UAS0900", "UAS0904");
 		signatureAndLogout("UAS0904");
 	}
 
@@ -510,10 +556,11 @@ public class UASassessmentDetails extends BaseTestDD {
 		uploadFile();
 		clickDropdown("UAS0900");
 		selectOption("UAS0905");
+		verifyOptionIsSelected("UAS0900", "UAS0905");
 		signatureAndLogout("UAS0905");
 	}
 
-	// Fatigue
+	// Dropdown 10: Fatigue
 	// Option1: Select an option
 	@Test(groups = "UAS Assessment Details: Fatigue")
 	public void verifyFatigueOption1() throws IOException, InterruptedException, AWTException {
@@ -521,6 +568,7 @@ public class UASassessmentDetails extends BaseTestDD {
 		uploadFile();
 		clickDropdown("UAS1000");
 		selectOption("UAS1001");
+		verifyOptionIsSelected("UAS1000", "UAS1001");
 		signatureAndLogout("UAS1001");
 	}
 
@@ -531,6 +579,7 @@ public class UASassessmentDetails extends BaseTestDD {
 		uploadFile();
 		clickDropdown("UAS1000");
 		selectOption("UAS1002");
+		verifyOptionIsSelected("UAS1000", "UAS1002");
 		signatureAndLogout("UAS1002");
 	}
 
@@ -542,6 +591,7 @@ public class UASassessmentDetails extends BaseTestDD {
 		uploadFile();
 		clickDropdown("UAS1000");
 		selectOption("UAS1003");
+		verifyOptionIsSelected("UAS1000", "UAS1003");
 		signatureAndLogout("UAS1003");
 	}
 
@@ -553,6 +603,7 @@ public class UASassessmentDetails extends BaseTestDD {
 		uploadFile();
 		clickDropdown("UAS1000");
 		selectOption("UAS1004");
+		verifyOptionIsSelected("UAS1000", "UAS1004");
 		signatureAndLogout("UAS1004");
 	}
 
@@ -564,6 +615,7 @@ public class UASassessmentDetails extends BaseTestDD {
 		uploadFile();
 		clickDropdown("UAS1000");
 		selectOption("UAS1005");
+		verifyOptionIsSelected("UAS1000", "UAS1005");
 		signatureAndLogout("UAS1005");
 	}
 
@@ -575,10 +627,11 @@ public class UASassessmentDetails extends BaseTestDD {
 		uploadFile();
 		clickDropdown("UAS1000");
 		selectOption("UAS1006");
+		verifyOptionIsSelected("UAS1000", "UAS1006");
 		signatureAndLogout("UAS1006");
 	}
 
-	// Inappropriate Public Sexual Behavior Or Public Disrobing
+	// Dropdown 11: Inappropriate Public Sexual Behavior Or Public Disrobing
 	// Option1: Select an Option
 	@Test(groups = "UAS Assessment Details: Inappropriate Public Sexual Behavior Or Public Disrobing")
 	public void verifyIPSBPDoption1() throws IOException, InterruptedException, AWTException {
@@ -586,6 +639,7 @@ public class UASassessmentDetails extends BaseTestDD {
 		uploadFile();
 		clickDropdown("UAS1100");
 		selectOption("UAS1101");
+		verifyOptionIsSelected("UAS1100", "UAS1101");
 		signatureAndLogout("UAS1101");
 	}
 
@@ -596,6 +650,7 @@ public class UASassessmentDetails extends BaseTestDD {
 		uploadFile();
 		clickDropdown("UAS1100");
 		selectOption("UAS1102");
+		verifyOptionIsSelected("UAS1100", "UAS1102");
 		signatureAndLogout("UAS1102");
 	}
 
@@ -606,6 +661,7 @@ public class UASassessmentDetails extends BaseTestDD {
 		uploadFile();
 		clickDropdown("UAS1100");
 		selectOption("UAS1103");
+		verifyOptionIsSelected("UAS1100", "UAS1103");
 		signatureAndLogout("UAS1103");
 	}
 
@@ -616,6 +672,7 @@ public class UASassessmentDetails extends BaseTestDD {
 		uploadFile();
 		clickDropdown("UAS1100");
 		selectOption("UAS1104");
+		verifyOptionIsSelected("UAS1100", "UAS1104");
 		signatureAndLogout("UAS1104");
 	}
 
@@ -626,10 +683,11 @@ public class UASassessmentDetails extends BaseTestDD {
 		uploadFile();
 		clickDropdown("UAS1100");
 		selectOption("UAS1105");
+		verifyOptionIsSelected("UAS1100", "UAS1105");
 		signatureAndLogout("UAS1105");
 	}
 
-	// Pain
+	// Dropdown 12: Pain
 	// Option1: Select an option
 	@Test(groups = "UAS Assessment Details: Pain")
 	public void verifyPainOption1() throws IOException, InterruptedException, AWTException {
@@ -637,6 +695,7 @@ public class UASassessmentDetails extends BaseTestDD {
 		uploadFile();
 		clickDropdown("UAS1200");
 		selectOption("UAS1201");
+		verifyOptionIsSelected("UAS1200", "UAS1201");
 		signatureAndLogout("UAS1201");
 	}
 
@@ -647,6 +706,7 @@ public class UASassessmentDetails extends BaseTestDD {
 		uploadFile();
 		clickDropdown("UAS1200");
 		selectOption("UAS1202");
+		verifyOptionIsSelected("UAS1200", "UAS1202");
 		signatureAndLogout("UAS1202");
 	}
 
@@ -658,6 +718,7 @@ public class UASassessmentDetails extends BaseTestDD {
 		uploadFile();
 		clickDropdown("UAS1200");
 		selectOption("UAS1203");
+		verifyOptionIsSelected("UAS1200", "UAS1203");
 		signatureAndLogout("UAS1203");
 	}
 
@@ -668,6 +729,7 @@ public class UASassessmentDetails extends BaseTestDD {
 		uploadFile();
 		clickDropdown("UAS1200");
 		selectOption("UAS1204");
+		verifyOptionIsSelected("UAS1200", "UAS1204");
 		signatureAndLogout("UAS1204");
 	}
 
@@ -679,6 +741,7 @@ public class UASassessmentDetails extends BaseTestDD {
 		uploadFile();
 		clickDropdown("UAS1200");
 		selectOption("UAS1205");
+		verifyOptionIsSelected("UAS1200", "UAS1205");
 		signatureAndLogout("UAS1205");
 	}
 
@@ -689,6 +752,7 @@ public class UASassessmentDetails extends BaseTestDD {
 		uploadFile();
 		clickDropdown("UAS1200");
 		selectOption("UAS1206");
+		verifyOptionIsSelected("UAS1200", "UAS1206");
 		signatureAndLogout("UAS1206");
 	}
 
@@ -700,10 +764,11 @@ public class UASassessmentDetails extends BaseTestDD {
 		uploadFile();
 		clickDropdown("UAS1200");
 		selectOption("UAS1207");
+		verifyOptionIsSelected("UAS1200", "UAS1207");
 		signatureAndLogout("UAS1207");
 	}
 
-	// Resist Care
+	// Dropdown 13: Resist Care
 	// Option1: Select an option
 	@Test(groups = "UAS Assessment Details: Resist Care")
 	public void verifyResistCareOption1() throws IOException, InterruptedException, AWTException {
@@ -711,6 +776,7 @@ public class UASassessmentDetails extends BaseTestDD {
 		uploadFile();
 		clickDropdown("UAS1300");
 		selectOption("UAS1301");
+		verifyOptionIsSelected("UAS1300", "UAS1301");
 		signatureAndLogout("UAS1301");
 	}
 
@@ -721,6 +787,7 @@ public class UASassessmentDetails extends BaseTestDD {
 		uploadFile();
 		clickDropdown("UAS1300");
 		selectOption("UAS1302");
+		verifyOptionIsSelected("UAS1300", "UAS1302");
 		signatureAndLogout("UAS1302");
 	}
 
@@ -731,6 +798,7 @@ public class UASassessmentDetails extends BaseTestDD {
 		uploadFile();
 		clickDropdown("UAS1300");
 		selectOption("UAS1303");
+		verifyOptionIsSelected("UAS1300", "UAS1303");
 		signatureAndLogout("UAS1303");
 	}
 
@@ -741,6 +809,7 @@ public class UASassessmentDetails extends BaseTestDD {
 		uploadFile();
 		clickDropdown("UAS1300");
 		selectOption("UAS1304");
+		verifyOptionIsSelected("UAS1300", "UAS1304");
 		signatureAndLogout("UAS1304");
 	}
 
@@ -751,6 +820,7 @@ public class UASassessmentDetails extends BaseTestDD {
 		uploadFile();
 		clickDropdown("UAS1300");
 		selectOption("UAS1305");
+		verifyOptionIsSelected("UAS1300", "UAS1305");
 		signatureAndLogout("UAS1305");
 	}
 }

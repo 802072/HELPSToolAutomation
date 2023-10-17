@@ -306,6 +306,7 @@ public class BaseTestUploadFile {
 		extentTest.log(Status.PASS, log11,
 				MediaEntityBuilder.createScreenCaptureFromPath(captureScreenshot(log11 + fileName + fileDate + ".jpg")).build());
 
+		Thread.sleep(5000);
 		//Verify Progress Bar is at 97%
 		assertEquals("TS011A", "testSteps");
 		Thread.sleep(5000);
@@ -410,7 +411,7 @@ public class BaseTestUploadFile {
 		String actualValue= element.getText();
 		String expectedValue= (String) list.get(6);
 		Assert.assertEquals(actualValue, expectedValue);
-		extentTest.log(Status.PASS, (String) list.get(0) + " " +(String) list.get(1)+" Actual Value: "+actualValue, MediaEntityBuilder
+		extentTest.log(Status.PASS, (String) list.get(0) + " " +(String) list.get(1), MediaEntityBuilder
 				.createScreenCaptureFromPath(captureScreenshot(rowName + sheetName + "assert"+fileDate + ".jpg")).build());
 	}
 

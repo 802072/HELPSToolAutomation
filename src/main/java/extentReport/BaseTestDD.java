@@ -112,7 +112,8 @@ public class BaseTestDD {
 	}
 
 	@AfterMethod
-	public void checkStatus(Method m, ITestResult result) throws IOException {
+	public void checkStatus(Method m, ITestResult result) throws IOException, InterruptedException {
+		Thread.sleep(3000);
 		if (result.getStatus() == ITestResult.FAILURE) {
 			extentTest.fail(m.getName() + " has failed");
 			extentTest.log(Status.FAIL, result.getThrowable(), MediaEntityBuilder
@@ -133,6 +134,7 @@ public class BaseTestDD {
 		driver.quit();
 	}
 
+	// LOGIN
 	public void login() throws InterruptedException, IOException {
 		// open login page
 		ArrayList LI001 = d.getData("LI001", "beforeTest");
@@ -145,20 +147,19 @@ public class BaseTestDD {
 		// Click Login Button
 		clickElement("LI002", "beforeTest", "Click Login Button");
 
-		// Click Welcome
+		Thread.sleep(5000);
+
+		// Log out (Edge Browser only)
 		try {
 			ArrayList FR005 = d.getData("FR005", "afterTest");
 			WebElement welcome = driver.findElement(By.xpath((String) FR005.get(5)));
 			if (welcome.isDisplayed()) {
 				// Click Welcome
 				clickElement("FR005", "afterTest", "Click Welcome");
-
 				// Click Sign Out
 				clickElement("FR006", "afterTest", "Logout of default user id");
-
 				// Click Login Button
 				clickElement("LI002", "beforeTest", "Click Login Button");
-
 				// Click Use Another Account
 				clickElement("LI003A", "beforeTest", "Click Use Another Account");
 			}
@@ -166,9 +167,11 @@ public class BaseTestDD {
 
 		}
 
-		// enter username
+		// Enter Username
 		ArrayList LI003 = d.getData("LI003", "beforeTest");
 		WebElement userName = driver.findElement(By.xpath((String) LI003.get(5)));
+		WebDriverWait w = new WebDriverWait(driver, Duration.ofSeconds(5));
+		w.until(ExpectedConditions.visibilityOf(userName));
 		userName.sendKeys((String) LI003.get(6));
 		String log3 = (String) LI003.get(0) + " " + LI003.get(1);
 		extentTest.log(Status.PASS, log3,
@@ -215,23 +218,22 @@ public class BaseTestDD {
 								.build());
 			}
 		} catch (Exception e) {
-			System.out.println("NO is not displayed");
+			System.out.println("Stay Signed In? is not displayed");
 
 		}
-
+		// Verify Welcome Text
 		assertEquals("LI008", "beforeTest");
 	}
 
 	// UPLOAD FILE
 	public void uploadFile() throws IOException, InterruptedException, AWTException {
-		WebDriverWait w = new WebDriverWait(driver, Duration.ofSeconds(3));
-		// w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("")));
 
 		// Click Import HCS Assessment
 		clickElement("UF001", "beforeTest", "Click Import Button");
 
 		// Choose File
 		ArrayList UF002 = d.getData("UF002", "beforeTest");
+		WebDriverWait w = new WebDriverWait(driver, Duration.ofSeconds(5));
 		w.until(ExpectedConditions.presenceOfElementLocated(By.xpath((String) UF002.get(5))));
 		String fileName = (String) UF002.get(6);
 		WebElement chooseFileBtn = driver.findElement(By.xpath((String) UF002.get(5)));
@@ -268,13 +270,8 @@ public class BaseTestDD {
 		ArrayList<String> list = d.getData(tsID, "testSteps");
 		WebElement selectOption = driver.findElement(By.xpath((String) list.get(7)));
 		String option = selectOption.getText();
-		System.out.println("Option: " + tsID + option + " selected.");
 
-		// log option selected
-		extentTest.log(Status.PASS, "Selected Option is: " + option, MediaEntityBuilder
-				.createScreenCaptureFromPath(captureScreenshot("optionSelected" + tsID + fileDate + ".jpg")).build());
-
-		if (selectOption.getText().equals("Select an option")) {
+		if (option.equals("Select an option")) {
 			// Verify Progress Bar is 94%
 			assertEquals("FR001A", "afterTest");
 			System.out.println("94% Progress Bar for: " + selectOption.getText());
@@ -321,7 +318,6 @@ public class BaseTestDD {
 	}
 
 	public void clickElement(String rowName, String sheetName, String tsID) throws IOException {
-		// WebDriverWait w = new WebDriverWait(driver, Duration.ofSeconds(5));
 		// Click Element
 		ArrayList list = d.getData(rowName, sheetName);
 		WebElement element = driver.findElement(By.xpath((String) list.get(5)));
@@ -339,6 +335,7 @@ public class BaseTestDD {
 		w.until(ExpectedConditions.presenceOfElementLocated(By.xpath((String) listDD.get(7))));
 		WebElement dropdown = driver.findElement(By.xpath((String) listDD.get(7)));
 		dropdown.click();
+		// log
 		extentTest.log(Status.PASS, (String) listDD.get(0) + " " + (String) listDD.get(3), MediaEntityBuilder
 				.createScreenCaptureFromPath(captureScreenshot((String) listDD.get(0) + fileDate + ".jpg")).build());
 		System.out.println("Dropdown " + tsID + " clicked.");
@@ -357,25 +354,26 @@ public class BaseTestDD {
 	public void assertIsDisplayed(String rowName, String sheetName) throws InterruptedException, IOException {
 		ArrayList list = d.getData(rowName, sheetName);
 		Assert.assertEquals(driver.findElement(By.xpath((String) list.get(5))).isDisplayed(), true);
-		Thread.sleep(10000);
+		Thread.sleep(3000);
 		extentTest.log(Status.PASS, (String) list.get(0) + " " + list.get(1), MediaEntityBuilder
 				.createScreenCaptureFromPath(captureScreenshot(rowName + sheetName + fileDate + ".jpg")).build());
 	}
 
 	public void assertEquals(String rowName, String sheetName) throws InterruptedException, IOException {
+		WebDriverWait w = new WebDriverWait(driver, Duration.ofSeconds(5));
 		ArrayList list = d.getData(rowName, sheetName);
 		WebElement element = driver.findElement(By.xpath((String) list.get(5)));
 		String actualValue = element.getText();
+		w.until(ExpectedConditions.textToBePresentInElement(element, actualValue));
 		String expectedValue = (String) list.get(6);
 		Assert.assertEquals(actualValue, expectedValue);
-		Thread.sleep(10000);
-		extentTest.log(Status.PASS, (String) list.get(0) + " " + (String) list.get(1) + " Actual Value: " + actualValue,
-				MediaEntityBuilder.createScreenCaptureFromPath(
-						captureScreenshot(rowName + sheetName + "assert" + fileDate + ".jpg")).build());
+		extentTest.log(Status.PASS, (String) list.get(0) + " " + (String) list.get(1), MediaEntityBuilder
+				.createScreenCaptureFromPath(captureScreenshot(rowName + sheetName + "assert" + fileDate + ".jpg"))
+				.build());
 	}
 
 	public String captureScreenshot(String screenShotName) throws IOException {
-		// Shutterbug Working Code
+		// Shutterbug
 		Files.createDirectories(Paths.get(System.getProperty("user.dir") + "/screenshots/"));
 		BufferedImage image = Shutterbug.shootPage(driver, Capture.FULL, true).getImage();
 		String dest = "./screenshots/" + screenShotName;
@@ -389,6 +387,24 @@ public class BaseTestDD {
 		} catch (IOException e) {
 			throw new UnableSaveSnapshotException(e);
 		}
+	}
+
+	public void verifyOptionIsSelected(String tsIDDropdown, String tsIDOption) throws IOException {
+		ArrayList<String> dropdownList = d.getData(tsIDDropdown, "testSteps");
+		WebElement dropdown = driver.findElement(By.xpath((String) dropdownList.get(7)));
+		Select select = new Select(dropdown);
+		String option = select.getFirstSelectedOption().getText();
+
+		ArrayList<String> optionList = d.getData(tsIDOption, "testSteps");
+		String expectedValue = (String) optionList.get(8);
+		Assert.assertEquals(option, expectedValue);
+
+		extentTest
+				.log(Status.PASS, "Verify Selected Option is: " + expectedValue,
+						MediaEntityBuilder
+								.createScreenCaptureFromPath(
+										captureScreenshot(tsIDDropdown + tsIDOption + "assert" + fileDate + ".jpg"))
+								.build());
 	}
 
 }
